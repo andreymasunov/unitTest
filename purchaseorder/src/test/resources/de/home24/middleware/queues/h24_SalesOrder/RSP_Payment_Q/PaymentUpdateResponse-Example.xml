@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ProcessRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://home24.de/data/navision/paymentupdatemessages/v1">
+  <header>
+    <Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <CreationDate>2015-10-05</CreationDate>
+      <Type></Type>
+      <ID></ID>
+      <Version>v1</Version>
+      <ReferenceID></ReferenceID>
+    </Message>
+    <Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <SourceSystemName>NAV</SourceSystemName>
+      <Environment>TEST</Environment>
+      <User>
+        <UserID></UserID>
+        <UserPassword></UserPassword>
+        <UserLocation></UserLocation>
+      </User>
+    </Caller>
+    <Operation xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <OperationName></OperationName>
+      <Batch>
+        <BatchNr>-1</BatchNr>
+        <JobNr>-1</JobNr>
+      </Batch>
+    </Operation>
+    <CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1"></CorrelationID>
+    <ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1"></ActivityID>
+    <KeyValueList xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <KeyValuePair>
+        <Key></Key>
+        <Value></Value>
+      </KeyValuePair>
+    </KeyValueList>
+  </header>
+  <responseText>
+    <Transfer>
+      <Header xmlns="http://schema.mp-gruppe.de/NAVconnect/Webshop/"></Header>
+      <Body xmlns="http://schema.mp-gruppe.de/NAVconnect/Webshop/">
+        <PaymentUpdateResponse>
+          <Document no="30101002023480">
+            <Payment no="172556126"></Payment>
+          </Document>
+        </PaymentUpdateResponse>
+      </Body>
+    </Transfer>
+  </responseText>
+</ProcessRequest>

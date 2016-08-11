@@ -1,0 +1,13 @@
+<v1:moveFileRequest xmlns:v1="http://home24.de/interfaces/bes/ftproutingservice/ftproutingservicemessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1">
+	<v1:requestHeader>
+		<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+			<Version>v1</Version>
+		</Message>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">test-001</ActivityID>
+	</v1:requestHeader>
+	<v1:connection>${CONNECTION}</v1:connection>
+	<v1:sourceFileReference>${SOURCE_FILE_REFERENCE}</v1:sourceFileReference>
+	<v1:destinationFileReference>${DESTINATION_FILE_REFERENCE}</v1:destinationFileReference>
+</v1:moveFileRequest>

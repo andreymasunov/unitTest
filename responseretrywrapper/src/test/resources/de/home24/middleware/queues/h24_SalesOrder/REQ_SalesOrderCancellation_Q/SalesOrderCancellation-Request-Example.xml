@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ProcessRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://home24.de/data/navision/salesordercancellationmessages/v1">
+  <header>
+    <Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <CreationDate>2015-10-05T16:00:00</CreationDate>
+      <Type></Type>
+      <ID></ID>
+      <Version></Version>
+      <ReferenceID></ReferenceID>
+    </Message>
+    <Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <SourceSystemName>MW-TEST</SourceSystemName>
+      <Environment>fmw-testing1.middleware.app:7005</Environment>
+      <User>
+        <UserID></UserID>
+        <UserPassword></UserPassword>
+        <UserLocation></UserLocation>
+      </User>
+    </Caller>
+    <Operation xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <OperationName></OperationName>
+      <Batch>
+        <BatchNr>-1</BatchNr>
+        <JobNr>-1</JobNr>
+      </Batch>
+    </Operation>
+    <CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1"></CorrelationID>
+    <ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1"></ActivityID>
+    <KeyValueList xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <KeyValuePair>
+        <Key></Key>
+        <Value></Value>
+      </KeyValuePair>
+    </KeyValueList>
+  </header>
+  <requestText>
+    <SalesOrderCancellation>
+      <Cancellation xmlns="http://home24.de/data/navision/salesordercancellation/v1">
+        <salesOrderNumber>30101002023474</salesOrderNumber>
+      </Cancellation>
+    </SalesOrderCancellation>
+  </requestText>
+</ProcessRequest>

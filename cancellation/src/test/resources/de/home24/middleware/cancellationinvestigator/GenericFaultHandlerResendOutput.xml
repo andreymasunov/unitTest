@@ -1,0 +1,34 @@
+<handleFaultResponse
+	xmlns="http://home24.de/interfaces/bas/genericfaulthandler/genericfaulthandlerservicemessages/v1">
+	<responseHeader>
+		<Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<SourceSystemName>Middleware</SourceSystemName>
+		</Caller>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">1231376876</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P1001-DELNT</ActivityID>
+	</responseHeader>
+	<faultHandlingStrategy>
+		<transactionId xmlns="http://home24.de/data/custom/genericfaulthandler/v1">1231376876</transactionId>
+		<faultStrategy xmlns="http://home24.de/data/custom/genericfaulthandler/v1">Resend</faultStrategy>
+		<payload xmlns="http://home24.de/data/custom/genericfaulthandler/v1">
+			<soap-env:Body xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+				<receiveDeliveryNoteRequest
+					xmlns="http://home24.de/interfaces/bts/printingtrigger/printingtriggermessages/v1">
+					<documentInfoLink>http://localhost:8088/api/v1/docs/3341
+					</documentInfoLink>
+					<documentDownloadLink>http://localhost:8088/api/v1/docs/3341/download
+					</documentDownloadLink>
+					<printStatus>success</printStatus>
+					<documentTags>
+						<replyToAddress>http://localhost:7101/PrintingTrigger/exposed/v1/PrintingTriggerPingback/deliveryNote
+						</replyToAddress>
+						<messageId>987654322234566543</messageId>
+						<salesOrderId>1231376876</salesOrderId>
+						<purchaseOrderId>1234567</purchaseOrderId>
+						<vedorId>71808</vedorId>
+					</documentTags>
+				</receiveDeliveryNoteRequest>
+			</soap-env:Body>
+		</payload>
+	</faultHandlingStrategy>
+</handleFaultResponse>

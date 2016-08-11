@@ -1,0 +1,57 @@
+<ns2:ProcessRequest xmlns="" xmlns:ns2="http://www.example.org">
+       <MessageHeader xmlns="http://home24.de/data/common/messageheadertypes/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://home24.de/data/common/messageheadertypes/v1 untitled1.xsd">
+        <Message>
+         <CreationDate>19.10.15</CreationDate>
+         <Type>type1</Type>
+         <ID>123144</ID>
+         <Version>v1</Version>
+         <ReferenceID>ref1</ReferenceID>
+        </Message>
+        <Caller>
+         <SourceSystemName/>
+         <Environment/>
+         <User>
+          <UserID/>
+          <UserPassword/>
+          <UserLocation/>
+         </User>
+        </Caller>
+        <Operation>
+         <OperationName/>
+         <Batch>
+          <BatchNr/>
+          <JobNr/>
+         </Batch>
+        </Operation>
+        <CorrelationID/>
+        <ActivityID/>
+        <KeyValueList>
+         <KeyValuePair>
+          <Key>SIILOGENTRYNO</Key>
+          <Value>15299605</Value>
+         </KeyValuePair>
+        </KeyValueList>
+       </MessageHeader>
+       <ns2:responseText>
+        <update>
+         <base_data>
+          <order reference-id="1" order_number="10104001759442">
+           <order_items>
+            <order_item reference-id="2" item_id="1"/>
+           </order_items>
+          </order>
+         </base_data>
+         <transaction_data>
+          <message type="order.item.delivery.finish" Structure_Version="1.00" Created="2015-10-19T02:56:43+01:00"/>
+          <actions>
+           <action for="2">
+            <code>update.order.item.delivery.finish</code>
+            <data>
+             <date>2015-10-19T00:00:00+01:00</date>
+            </data>
+           </action>
+          </actions>
+         </transaction_data>
+        </update>
+       </ns2:responseText>
+      </ns2:ProcessRequest>

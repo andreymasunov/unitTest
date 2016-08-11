@@ -1,0 +1,5 @@
+<ns2:sendInboundReclamationToERPResponse
+	xmlns:ns2="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1">
+	<ns2:responseHeader />
+	<ns2:updateAcknowledgement>ACK</ns2:updateAcknowledgement>
+</ns2:sendInboundReclamationToERPResponse>

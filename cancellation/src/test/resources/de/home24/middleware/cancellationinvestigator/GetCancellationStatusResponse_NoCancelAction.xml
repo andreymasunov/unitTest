@@ -1,0 +1,5 @@
+<ns2:getReferenceValueResponse xmlns:ns2="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1">
+	<ns2:referenceValue>
+		<ns4:ReturnValue xmlns:ns4="http://home24.de/data/custom/ordertransaction/v1">No cancel stuff found</ns4:ReturnValue>
+	</ns2:referenceValue>
+</ns2:getReferenceValueResponse>

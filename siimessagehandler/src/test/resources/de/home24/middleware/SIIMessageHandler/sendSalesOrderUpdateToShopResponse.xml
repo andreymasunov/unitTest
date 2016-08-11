@@ -1,0 +1,6 @@
+<ns1:sendSalesOrderUpdateToShopResponse xmlns:ns1="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<ns1:updateAcknowledgementFromShop>
+		<o_n:queueId xmlns:o_n="NO_NAMESPACE">46874002</o_n:queueId>
+		<o_n:error xmlns:o_n="NO_NAMESPACE"/>
+	</ns1:updateAcknowledgementFromShop>
+</ns1:sendSalesOrderUpdateToShopResponse>

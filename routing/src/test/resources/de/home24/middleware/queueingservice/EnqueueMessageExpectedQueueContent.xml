@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<desc:description xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1" xmlns:v1="http://home24.de/interfaces/bes/queueingservice/queueingservicemessages/v1" xmlns:desc="http://home24.de/data/common/desctypes/v1">Write me to the queue</desc:description>

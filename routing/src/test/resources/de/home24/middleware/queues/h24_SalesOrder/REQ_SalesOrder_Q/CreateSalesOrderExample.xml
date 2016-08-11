@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:ProcessRequest xmlns:ns2="urn:microsoft-dynamics-schemas/codeunit/NavConnectorWS" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><ns2:header><ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"><ns3:CreationDate>2015-10-16T19:31:07.399+02:00</ns3:CreationDate><ns3:Type/><ns3:ID/><ns3:Version>v1</ns3:Version><ns3:ReferenceID/></ns3:Message><ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"><ns3:SourceSystemName/><ns3:Environment/><ns3:User><ns3:UserID/><ns3:UserPassword/><ns3:UserLocation/></ns3:User></ns3:Caller><ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"><ns3:OperationName/><ns3:Batch><ns3:BatchNr/><ns3:JobNr/></ns3:Batch></ns3:Operation><ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/><ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/><ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"><ns3:KeyValuePair><ns3:Key/><ns3:Value/></ns3:KeyValuePair></ns3:KeyValueList></ns2:header><ns2:requestText><Transfer xmls="http://schema.mp-gruppe.de/NAVconnect/Webshop/">
+  <Header AppDom="1" object="RemoteProcedureCall" action="Request"/>
+  <Body>
+    <CreateDocumentRequest>
+      <Document>
+        <ExternalDocumentNo>30101001869065</ExternalDocumentNo>
+        <OrderDate>2015-10-16 07:56:14</OrderDate>
+        <LanguageCode>de_DE</LanguageCode>
+        <Comment/>
+        <CompleteDelivery>0</CompleteDelivery>
+        <AccountNumber>1000431198</AccountNumber>
+        <Payment>
+          <Method>
+            <WebshopMethod>CREDITCARD</WebshopMethod>
+            <TransactionId>173574515</TransactionId>
+            <Codes/>
+            <Account no=""/>
+          </Method>
+        </Payment>
+        <Address>
+          <Shipping>
+            <Gender>M</Gender>
+            <FirstName>Dawid</FirstName>
+            <LastName>Pauksztelo</LastName>
+            <Street>Heerstrasse 20</Street>
+            <Number/>
+            <AdditionalAddress/>
+            <ZipCode>53111</ZipCode>
+            <City>Bonn</City>
+            <Country>DE</Country>
+            <Phone>+4915123456789</Phone>
+            <Company/>
+            <IsPackStation>0</IsPackStation>
+          </Shipping>
+          <Billing>
+            <Gender>M</Gender>
+            <FirstName>Dawid</FirstName>
+            <LastName>Pauksztelo</LastName>
+            <Street>Heerstrasse 20</Street>
+            <Number/>
+            <AdditionalAddress/>
+            <ZipCode>53111</ZipCode>
+            <City>Bonn</City>
+            <Country>DE</Country>
+            <Phone>+4915123456789</Phone>
+            <Company/>
+          </Billing>
+        </Address>
+        <Shipment>
+          <Charges>
+            <Original>
+              <Gross currency="EUR">0.00</Gross>
+            </Original>
+            <Discount>
+              <Gross currency="EUR">0</Gross>
+            </Discount>
+            <Final>
+              <Gross currency="EUR">0.00</Gross>
+            </Final>
+          </Charges>
+        </Shipment>
+        <SalesSummary>
+          <SubTotal>
+            <Gross currency="EUR">1589.97</Gross>
+          </SubTotal>
+          <GrandTotal>
+            <Gross currency="EUR">1589.97</Gross>
+          </GrandTotal>
+          <Discounts>
+            <Discount>
+              <Gross currency="EUR">0.00</Gross>
+              <Type/>
+            </Discount>
+          </Discounts>
+        </SalesSummary>
+        <Lines>
+          <Line>
+            <SKU>M-TK-T00070</SKU>
+            <Description>Teppich Nakarta - Wolle/Grau - 120 cm x 180 cm</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice>
+              <Gross currency="EUR">199.99</Gross>
+            </UnitPrice>
+            <RowTotal>
+              <Gross currency="EUR">199.99</Gross>
+            </RowTotal>
+            <ID>3</ID>
+            <ParentID/>
+            <DeliveryDays>5</DeliveryDays>
+            <StockLocation>10550</StockLocation>
+            <TransportationType>parcelservice</TransportationType>
+            <Carrier>DPD</Carrier>
+          </Line>
+          <Line>
+            <SKU>P-LO-3963</SKU>
+            <Description>Handspiegel Empuré - Zinn/Glas/MDF - Creme</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice>
+              <Gross currency="EUR">14.99</Gross>
+            </UnitPrice>
+            <RowTotal>
+              <Gross currency="EUR">14.99</Gross>
+            </RowTotal>
+            <ID>1</ID>
+            <ParentID/>
+            <DeliveryDays>4</DeliveryDays>
+            <StockLocation>10728</StockLocation>
+            <TransportationType>parcelservice</TransportationType>
+            <Carrier>Selfsender</Carrier>
+          </Line>
+          <Line>
+            <SKU>P-LO-3963</SKU>
+            <Description>Handspiegel Empuré - Zinn/Glas/MDF - Creme</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice>
+              <Gross currency="EUR">14.99</Gross>
+            </UnitPrice>
+            <RowTotal>
+              <Gross currency="EUR">14.99</Gross>
+            </RowTotal>
+            <ID>2</ID>
+            <ParentID/>
+            <DeliveryDays>4</DeliveryDays>
+            <StockLocation>10728</StockLocation>
+            <TransportationType>parcelservice</TransportationType>
+            <Carrier>Selfsender</Carrier>
+          </Line>
+          <Line>
+            <SKU>P-LW-1157682507842</SKU>
+            <Description>Ledersessel Village - Douglas Cognac (Kupfer)</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice>
+              <Gross currency="EUR">1360.00</Gross>
+            </UnitPrice>
+            <RowTotal>
+              <Gross currency="EUR">1360.00</Gross>
+            </RowTotal>
+            <ID>4</ID>
+            <ParentID/>
+            <DeliveryDays>30</DeliveryDays>
+            <StockLocation>11422</StockLocation>
+            <TransportationType>furnitureshipping</TransportationType>
+            <Carrier>Selfsender</Carrier>
+          </Line>
+        </Lines>
+        <OrderHandlinginNAV>0</OrderHandlinginNAV>
+      </Document>
+    </CreateDocumentRequest>
+  </Body>
+</Transfer></ns2:requestText><ns2:responseText/></ns2:ProcessRequest>

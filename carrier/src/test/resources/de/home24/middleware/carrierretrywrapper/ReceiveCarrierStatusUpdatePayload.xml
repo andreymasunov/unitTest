@@ -1,0 +1,29 @@
+<ns1:receiveCarrierStatusUpdateRequest
+	xmlns:ns1="http://home24.de/interfaces/bps/carrierstatus/carrierstatusprocessmessages/v1">
+	<ns1:requestHeader>
+		<ns2:Caller xmlns:ns2="http://home24.de/data/common/messageheadertypes/v1">
+			<ns2:SourceSystemName>Middleware</ns2:SourceSystemName>
+		</ns2:Caller>
+		<ns2:CorrelationID
+			xmlns:ns2="http://home24.de/data/common/messageheadertypes/v1">76291231</ns2:CorrelationID>
+		<ns2:ActivityID xmlns:ns2="http://home24.de/data/common/messageheadertypes/v1">P202-INIT</ns2:ActivityID>
+	</ns1:requestHeader>
+	<ns1:salesOrder>
+		<oagis:SalesOrderHeader xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:ID>76291231</oagis:ID>
+		</oagis:SalesOrderHeader>
+		<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:LineNumberID>1000</oagis:LineNumberID>
+			<oagis:Item>
+				<oagis:Packaging>
+					<oagis:ID>666</oagis:ID>
+					<oagis:Note typeCode="Status" status=""
+						entryDateTime="2016-01-18T17:41:59.7347+01:00">Shipment created</oagis:Note>
+				</oagis:Packaging>
+			</oagis:Item>
+			<oagis:Party typeCode="Carrier">
+				<oagis:ID typeCode="ConsolidatedCarrier">71808</oagis:ID>
+			</oagis:Party>
+		</oagis:SalesOrderLine>
+	</ns1:salesOrder>
+</ns1:receiveCarrierStatusUpdateRequest>

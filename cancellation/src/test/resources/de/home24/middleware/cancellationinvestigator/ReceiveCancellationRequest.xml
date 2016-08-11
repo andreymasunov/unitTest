@@ -1,0 +1,9 @@
+<message:receiveCancellationRequest xmlns:message="http://home24.de/interfaces/bps/cancellationinvestigatorprocess/cancellationinvestigatorprocessmessages/v1" xmlns:p="http://home24.de/data/common/messageheadertypes/v1" xmlns:tns="http://home24.de/data/common/serviceinformationtypes/v1" xmlns:tns1="http://home24.de/data/custom/cancellation/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://home24.de/interfaces/bps/cancellationinvestigatorprocess/cancellationinvestigatorprocessmessages/v1 CancellationInvestigatorProcessMessages.xsd ">
+  <message:requestHeader>
+    <p:CorrelationID>30115002345288</p:CorrelationID>
+  </message:requestHeader>
+  <message:cancellationStatus>
+    <tns1:Status>DummyStatusCancelRequest</tns1:Status>
+    <tns1:SubStatus>DummySubStatusCancelRequest</tns1:SubStatus>
+  </message:cancellationStatus>
+</message:receiveCancellationRequest>

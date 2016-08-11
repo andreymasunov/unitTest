@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:ProcessRequest xmlns:ns2="http://home24.de/data/navision/purchaseordermessages/v1" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<ns2:header>
+		<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:CreationDate>2015-10-16T14:12:38.767+02:00</ns3:CreationDate>
+			<ns3:Type/>
+			<ns3:ID/>
+			<ns3:Version>v1</ns3:Version>
+			<ns3:ReferenceID/>
+		</ns3:Message>
+		<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:SourceSystemName/>
+			<ns3:Environment/>
+			<ns3:User>
+				<ns3:UserID/>
+				<ns3:UserPassword/>
+				<ns3:UserLocation/>
+			</ns3:User>
+		</ns3:Caller>
+		<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:OperationName/>
+			<ns3:Batch>
+				<ns3:BatchNr/>
+				<ns3:JobNr/>
+			</ns3:Batch>
+		</ns3:Operation>
+		<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">758010947</ns3:CorrelationID>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:KeyValuePair>
+				<ns3:Key/>
+				<ns3:Value/>
+			</ns3:KeyValuePair>
+		</ns3:KeyValueList>
+	</ns2:header>
+	<ns2:requestText>
+		<ns4:Transfer xmlns:ns4="http://de.home24/interfaces/purchaseorder/v1">
+			<ns4:salesOrderNumber>758010947</ns4:salesOrderNumber>
+		</ns4:Transfer>
+	</ns2:requestText>
+</ns2:ProcessRequest>

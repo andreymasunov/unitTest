@@ -1,0 +1,12 @@
+<ns1:generateZipPackageRequest xmlns:ns1="http://home24.de/interfaces/bas/attachment/attachmentservicemessages/v1" xmlns:mht="http://home24.de/data/common/messageheadertypes/v1">
+	<ns1:requestHeader>
+		<mht:Caller>
+			<mht:SourceSystemName>Middleware</mht:SourceSystemName>
+		</mht:Caller>
+		<mht:CorrelationID>${CORRELATION_ID}</mht:CorrelationID>
+	</ns1:requestHeader>
+         <ns1:zipPackageReference>${ZIP_PACKAGE_REFERENCE}</ns1:zipPackageReference>
+         <ns1:purchaseOrderXMLReference>${FILE_REFERENCE_1}</ns1:purchaseOrderXMLReference>
+         <ns1:deliveryNoteReference>${FILE_REFERENCE_2}</ns1:deliveryNoteReference>
+         <ns1:labelReference>${FILE_REFERENCE_3}</ns1:labelReference>
+</ns1:generateZipPackageRequest>

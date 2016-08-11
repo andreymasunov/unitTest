@@ -1,0 +1,35 @@
+<ns1:sendSalesOrderUpdateToShopRequest xmlns:ns1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1">
+	<ns1:requestHeader xmlns:ns2="http://home24.de/data/common/messageheadertypes/v1">
+		<ns2:CorrelationID>30101002171507</ns2:CorrelationID>
+		<ns2:ActivityID/>
+		<ns2:KeyValueList>
+			<ns2:KeyValuePair>
+				<ns2:Key>SIILOGENTRYNO</ns2:Key>
+				<ns2:Value>123456</ns2:Value>
+			</ns2:KeyValuePair>
+		</ns2:KeyValueList>
+	</ns1:requestHeader>
+	<ns1:updateWrapper xmlns:ns2="NO_NAMESPACE">
+		<ns2:update>
+			<ns2:base_data>
+				<ns2:order order_number="30101002171507" reference-id="1">
+				</ns2:order>
+			</ns2:base_data>
+			<ns2:transaction_data>
+				<ns2:message Created="2015-12-10T11:39:10+01:00" Structure_Version="1.00" type="order.capture"/>
+				<ns2:actions>
+					<ns2:action for="1">
+						<ns2:code>update.order.capture</ns2:code>
+						<ns2:data>
+							<ns2:reference_number>VR13221282</ns2:reference_number>
+							<ns2:capture>
+								<ns2:amount>8997</ns2:amount>
+								<ns2:currency>EUR</ns2:currency>
+							</ns2:capture>
+						</ns2:data>
+					</ns2:action>
+				</ns2:actions>
+			</ns2:transaction_data>
+		</ns2:update>
+	</ns1:updateWrapper>
+</ns1:sendSalesOrderUpdateToShopRequest>

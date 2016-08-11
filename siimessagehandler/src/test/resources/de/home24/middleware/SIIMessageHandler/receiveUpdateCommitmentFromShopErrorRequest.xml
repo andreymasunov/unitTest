@@ -1,0 +1,18 @@
+<v1:receiveUpdateCommitmentFromShopRequest
+	xmlns:v1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1"
+	xmlns:v11="http://home24.de/data/common/messageheadertypes/v1"
+	xmlns:no="NO_NAMESPACE">
+	<v1:requestHeader>
+		<v11:CorrelationID>30101002171507</v11:CorrelationID>
+	</v1:requestHeader>
+	<v1:updateCommitment>
+		<no:queueId>46874002</no:queueId>
+		<no:orderNumber>30101002171507</no:orderNumber>
+		<no:status>ERROR</no:status>
+		<no:resultDetails>Array(
+			[0] => Action execution failed: [Code: update.order.capture, Fail point:
+			1,
+			Message: Capture request failed, [907][Sequence no incorrect]]
+			)</no:resultDetails>
+	</v1:updateCommitment>
+</v1:receiveUpdateCommitmentFromShopRequest>

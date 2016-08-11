@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<receiveUpdatePurchaseOrderStatusCallback xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                          xmlns="http://home24.de/data/navision/purchaseordermessages/v1">
+	<header>
+		<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+			<Type/>
+			<ID/>
+			<Version>v1</Version>
+			<ReferenceID/>
+		</Message>
+		<Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<SourceSystemName/>
+			<Environment/>
+			<User>
+				<UserID/>
+				<UserPassword/>
+				<UserLocation/>
+			</User>
+		</Caller>
+		<Operation xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<OperationName/>
+			<Batch>
+				<BatchNr/>
+				<JobNr/>
+			</Batch>
+		</Operation>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1"/>
+		<KeyValueList xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<KeyValuePair>
+				<Key/>
+				<Value/>
+			</KeyValuePair>
+		</KeyValueList>
+	</header>
+	<body>
+		<updatePurchaseOrderStatusResponse>
+			<purchaseOrderNumber xmlns="http://home24.de/data/navision/purchaseorder/v1">${PURCHASE_ORDER_ID}</purchaseOrderNumber>
+		</updatePurchaseOrderStatusResponse>
+	</body>
+</receiveUpdatePurchaseOrderStatusCallback>

@@ -1,0 +1,37 @@
+<tns:closeShipment xmlns:p="http://home24.de/data/common/messageheadertypes/v1" xmlns:tns="http://home24.de/data/navision/shipmentmessages/v1" xmlns:shipment="http://home24.de/data/navision/shipment/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://home24.de/data/navision/shipmentmessages/v1 ShipmentMessages.xsd ">
+	<tns:header xsi:type="p:MessageInformationType">
+		<p:Message/>
+		<p:Caller/>
+		<p:Operation/>
+		<p:CorrelationID>${CORRELATION_ID}</p:CorrelationID>
+		<p:ActivityID/>
+		<p:KeyValueList>
+			<p:KeyValuePair>
+				<p:Key/>
+				<p:Value/>
+			</p:KeyValuePair>
+		</p:KeyValueList>
+	</tns:header>
+	<tns:body>
+		<tns:ShipmentClosingResponse>
+			<shipment:parcelCollection>
+				<shipment:parcel>
+					<shipment:parcelReferenceNumber>${CORRELATION_ID}.${LINE_1}.01</shipment:parcelReferenceNumber>
+					<shipment:vendorID>${VENDOR_ID_1}</shipment:vendorID>
+				</shipment:parcel>
+				<shipment:parcel>
+					<shipment:parcelReferenceNumber>${CORRELATION_ID}.${LINE_2}.01</shipment:parcelReferenceNumber>
+					<shipment:vendorID>${VENDOR_ID_2}</shipment:vendorID>
+				</shipment:parcel>
+				<shipment:parcel>
+					<shipment:parcelReferenceNumber>${CORRELATION_ID}.${LINE_1}.02</shipment:parcelReferenceNumber>
+					<shipment:vendorID>${VENDOR_ID_1}</shipment:vendorID>
+				</shipment:parcel>
+				<shipment:parcel>
+					<shipment:parcelReferenceNumber>${CORRELATION_ID}.${LINE_2}.02</shipment:parcelReferenceNumber>
+					<shipment:vendorID>${VENDOR_ID_2}</shipment:vendorID>
+				</shipment:parcel>
+			</shipment:parcelCollection>
+		</tns:ShipmentClosingResponse>
+	</tns:body>
+</tns:closeShipment>

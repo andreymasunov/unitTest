@@ -1,0 +1,64 @@
+<tns:sendInboundReclamationToERPRequest
+	xmlns:tns="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" xmlns:header="http://home24.de/data/common/messageheadertypes/v1">
+	<tns:requestHeader>
+		<header:CorrelationID>30101002102560</header:CorrelationID>
+		<header:Caller>
+			<header:SourceSystemName>Webshop</header:SourceSystemName>
+		</header:Caller>
+	</tns:requestHeader>
+	<tns:updateWrapper>
+		<update xmlns="NO_NAMESPACE">
+			<base_data>
+				<order order_number="30101002102560" reference-id="1">
+					<order_items>
+						<order_item item_id="1" reference-id="2" />
+						<order_item item_id="2" reference-id="3" />
+						<order_item item_id="3" reference-id="4" />
+					</order_items>
+				</order>
+			</base_data>
+			<transaction_data>
+				<message Created="2015-11-24 11:47:34" Structure_Version="1.00"
+					type="order.item.reclamation.requested" />
+				<actions>
+					<action for="2">
+						<code>update.order.item.reclamation.requested</code>
+						<data>
+							<reclamation_type>correction</reclamation_type>
+							<reclamation_reason>recla.correction.incomplete_incorrect_delivery.wrong_product
+							</reclamation_reason>
+							<sparepart>&lt;![CDATA[Die h&amp;uuml;bschen kleinen Figuren
+								fehlen]]&gt;</sparepart>
+						</data>
+					</action>
+					<action for="3">
+						<code>update.order.item.reclamation.requested</code>
+						<data>
+							<reclamation_type>correction</reclamation_type>
+							<reclamation_reason>recla.correction.incomplete_incorrect_delivery.wrong_product
+							</reclamation_reason>
+							<sparepart>&lt;![CDATA[Die h&amp;uuml;bschen kleinen Figuren
+								fehlen]]&gt;</sparepart>
+						</data>
+					</action>
+					<action for="4">
+						<code>update.order.item.reclamation.requested</code>
+						<data>
+							<reclamation_type>correction</reclamation_type>
+							<reclamation_reason>recla.correction.incomplete_incorrect_delivery.wrong_product
+							</reclamation_reason>
+							<sparepart>&lt;![CDATA[Die h&amp;uuml;bschen kleinen Figuren
+								fehlen]]&gt;</sparepart>
+						</data>
+					</action>
+					<action for="1">
+						<code>update.order.item.reclamation.requested</code>
+						<data>
+							<comment />
+						</data>
+					</action>
+				</actions>
+			</transaction_data>
+		</update>
+	</tns:updateWrapper>
+</tns:sendInboundReclamationToERPRequest>

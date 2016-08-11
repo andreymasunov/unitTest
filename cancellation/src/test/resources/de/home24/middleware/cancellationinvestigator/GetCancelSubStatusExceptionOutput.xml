@@ -1,0 +1,76 @@
+<ns3:exception xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+	<ns3:context>
+		<ns3:sourceSystemName>Middleware</ns3:sourceSystemName>
+		<ns3:transactionId>1231376876</ns3:transactionId>
+		<ns3:flowId />
+		<ns3:ecid />
+		<ns3:activityId />
+		<ns3:compositeInstanceId />
+		<ns3:processLibraryId />
+		<ns3:payload>
+			<soap-env:Body xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+				<getCancellationSubStatusRequest
+					xmlns="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1">
+					<requestHeader>
+						<common:Message
+							xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+							<common:CreationDate />
+							<common:Type />
+							<common:ID />
+							<common:Version />
+							<common:ReferenceID />
+						</common:Message>
+						<common:Caller
+							xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+							<common:SourceSystemName />
+							<common:Environment />
+							<common:User>
+								<common:UserID />
+								<common:UserPassword />
+								<common:UserLocation />
+							</common:User>
+						</common:Caller>
+						<common:Operation
+							xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+							<common:OperationName />
+							<common:Batch>
+								<common:BatchNr />
+								<common:JobNr />
+							</common:Batch>
+						</common:Operation>
+						<common:CorrelationID
+							xmlns:common="http://home24.de/data/common/messageheadertypes/v1">30115002345288</common:CorrelationID>
+						<common:ActivityID
+							xmlns:common="http://home24.de/data/common/messageheadertypes/v1" />
+						<common:KeyValueList
+							xmlns:common="http://home24.de/data/common/messageheadertypes/v1" />
+					</requestHeader>
+					<salesOrderId>30115002345288</salesOrderId>
+				</getCancellationSubStatusRequest>
+			</soap-env:Body>
+		</ns3:payload>
+		<ns3:additionalInfo/>
+	</ns3:context>
+	<ns3:severity>ERROR</ns3:severity>
+	<ns3:category>TechnicalFault</ns3:category>
+	<ns3:faultInfo>
+		<ns3:faultCode>MOCK_GETCANCELSUBSTATUS_ERROR</ns3:faultCode>
+		<ns3:faultMessage>Mocked business error</ns3:faultMessage>
+		<ns3:faultDetails />
+		<ns3:faultTimestamp>2016-01-18T20:59:37.933+01:00</ns3:faultTimestamp>
+		<ns3:faultUserArea>
+			<fault xmlns:ns1="http://home24.de/data/common/exceptionparameterstypes/v1"
+				xmlns="http://www.bea.com/wli/sb/context">
+				<errorCode>OSB-380000</errorCode>
+				<reason>Internal Server Error</reason>
+				<location>
+					<node>PipelinePairNode1</node>
+					<pipeline>request-7f000001.721a27d2.0.15215dd66f7.N7fff
+					</pipeline>
+					<stage>dummystage</stage>
+					<path>request-pipeline</path>
+				</location>
+			</fault>
+		</ns3:faultUserArea>
+	</ns3:faultInfo>
+</ns3:exception>

@@ -1,0 +1,214 @@
+<updatePurchaseOrderStatusRequest xmlns="http://home24.de/interfaces/bas/purchaseorderservice/purchaseorderservicemessages/v1">
+	<requestHeader>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P1002-ORDER-SENT</ActivityID>
+	</requestHeader>
+	<comboxID>${COMBOX_ID}</comboxID>
+	<purchaseOrder typeCode="" actionCode="Add">
+		<PurchaseOrderHeader xmlns="http://www.openapplications.org/oagis/10">
+			<ID typeCode="B2C PO">${PURCHASE_ORDER_ID}</ID>
+			<VariationID>DE266182271</VariationID>
+			<DocumentIDSet>
+				<ID typeCode="VendorOrderNo" />
+			</DocumentIDSet>
+			<DocumentDateTime>16.10.15</DocumentDateTime>
+			<Description languageCode="" />
+			<Note languageCode="de" typeCode="SparePartReason">auf Rechnung</Note>
+			<Note languageCode="en" typeCode="SparePartReason">on invoice</Note>
+			<Note languageCode="en" typeCode="pathToLabelPDF">labelstestLabel.pdf</Note>
+			<Note languageCode="en" typeCode="Comment"/>
+			<Note languageCode="en" typeCode="ShipmentComment"/>
+			<Note languageCode="en"  typeCode="pathToZIP" entryDateTime="2002-05-30T09:00:00">tmpNote</Note>
+			<Note languageCode="en" typeCode="pathToMergedLabelPDF">pathToMergedLabelPDF.pdf</Note>
+			<Note languageCode="en" typeCode="pathToDeliveryNote">pathToDeliveryNote.pdf</Note>
+			<Note languageCode="en" typeCode="pathToXML">pathToXML.xml</Note>
+			<Status>
+				<Code />
+			</Status>
+			<SupplierParty>
+				<ID>71808</ID>
+				<Name sequenceNumber="1">Rauch Möbelwerke GmbH</Name>
+				<Name sequenceNumber="2" />
+				<Location>
+					<Address>
+						<Name sequenceNumber="2" />
+						<AddressLine sequenceNumber="1">Wendelin-Rauch-Straße
+						</AddressLine>
+						<AddressLine sequenceNumber="2">The new Addres LIne
+						</AddressLine>
+						<CityName>Freudenberg</CityName>
+						<CountrySubDivisionCode>Germany</CountrySubDivisionCode>
+						<CountryCode>DE</CountryCode>
+						<PostalCode>97896</PostalCode>
+					</Address>
+				</Location>
+				<Contact>
+					<TelephoneCommunication>
+						<FormattedNumber>49123456789</FormattedNumber>
+					</TelephoneCommunication>
+					<EMailAddressCommunication>
+						<EMailAddressID>eno.ahmedspahic@home24.de</EMailAddressID>
+					</EMailAddressCommunication>
+				</Contact>
+				<SalesContact typeCode="Herr Müssig" />
+			</SupplierParty>
+			<ShipToParty typeCode="LIEF001">
+				<ID>4260266310008</ID>
+				<Name sequenceNumber="1">Marco Seelbinder</Name>
+				<Name sequenceNumber="2">John Cena</Name>
+				<Location>
+					<Address typeCode="Post Code+City">
+						<AddressLine sequenceNumber="1">Weißenburger Str. 10
+						</AddressLine>
+						<AddressLine sequenceNumber="2">Seitenflügel Links
+						</AddressLine>
+						<CityName>Berlin</CityName>
+						<CountrySubDivisionCode>Germany</CountrySubDivisionCode>
+						<CountryCode>DE</CountryCode>
+						<PostalCode>13595</PostalCode>
+					</Address>
+				</Location>
+				<Contact typeCode="">
+					<JobTitle>M</JobTitle>
+					<TelephoneCommunication>
+						<FormattedNumber>01711231212</FormattedNumber>
+					</TelephoneCommunication>
+				</Contact>
+			</ShipToParty>
+			<TotalAmount currencyCode="">49</TotalAmount>
+			<PaymentMethodCode>ABC</PaymentMethodCode>
+			<Payment>
+				<PaymentTerm>
+					<ID>5-16</ID>
+				</PaymentTerm>
+			</Payment>
+			<ShippingInstructions />
+			<Classification>
+				<Codes>
+					<Code typeCode="GroupID">1</Code>
+					<Code typeCode="AppDomain">1</Code>
+					<Code typeCode="GroupID">1</Code>
+					<Code typeCode="IsEDIOrder">No</Code>
+				</Codes>
+			</Classification>
+			<OrderDateTime>16.10.15</OrderDateTime>
+			<SalesOrderReference>
+				<ID>${CORRELATION_ID}</ID>
+			</SalesOrderReference>
+		</PurchaseOrderHeader>
+		<PurchaseOrderLine typeCode="" actionCode="actionCode24"
+			xmlns="http://www.openapplications.org/oagis/10">
+			<LineNumberID>10000</LineNumberID>
+			<LineIDSet>
+				<ID>0</ID>
+			</LineIDSet>
+			<Description>Wandboard Drake - Kernnuss</Description>
+			<DocumentReference>
+				<DocumentDateTime />
+			</DocumentReference>
+			<DocumentReference>
+				<ID>4038283001588</ID>
+				<Description />
+			</DocumentReference>
+			<Item>
+				<ItemIDSet>
+					<ID typeCode="VendorItemNo">AM9868892</ID>
+				</ItemIDSet>
+				<Packaging>
+					<Note typeCode="NumberOfParcels">0</Note>
+					<Note typeCode="pathToLabelPDF">HL_Labels_DS13650050.pdf</Note>
+				</Packaging>
+				<Dimensions>
+					<VolumeMeasure>0.01</VolumeMeasure>
+					<NetWeightMeasure>0</NetWeightMeasure>
+					<GrossWeightMeasure>6.3</GrossWeightMeasure>
+				</Dimensions>
+			</Item>
+			<TransportationTerm>
+				<Note typeCode="LocationCode">DIREKT</Note>
+				<Note typeCode="PurchasingCode">GER-7</Note>
+			</TransportationTerm>
+			<PromisedDeliveryDateTime />
+			<ShippingInstructions />
+			<SalesOrderReference>
+				<Quantity>10000</Quantity>
+			</SalesOrderReference>
+		</PurchaseOrderLine>
+		<PurchaseOrderLine typeCode="" actionCode="Change"
+			xmlns="http://www.openapplications.org/oagis/10">
+			<LineNumberID>20000</LineNumberID>
+			<LineIDSet>
+				<ID>0</ID>
+			</LineIDSet>
+			<Description>Wandboard Drake - Kernnuss</Description>
+			<DocumentReference>
+				<DocumentDateTime />
+			</DocumentReference>
+			<DocumentReference>
+				<ID>4038283001588</ID>
+				<Description />
+			</DocumentReference>
+			<Item>
+				<ItemIDSet>
+					<ID typeCode="VendorItemNo">AM9868892</ID>
+				</ItemIDSet>
+				<Packaging>
+					<Note typeCode="NumberOfParcels">0</Note>
+					<Note typeCode="pathToLabelPDF">HL_Labels_DS13650050.pdf</Note>
+				</Packaging>
+				<Dimensions>
+					<VolumeMeasure>0.01</VolumeMeasure>
+					<NetWeightMeasure>0</NetWeightMeasure>
+					<GrossWeightMeasure>6.3</GrossWeightMeasure>
+				</Dimensions>
+			</Item>
+			<Quantity>1</Quantity>
+			<TotalAmount>16.65</TotalAmount>
+			<TransportationTerm>
+				<Note typeCode="LocationCode">DIREKT</Note>
+				<Note typeCode="PurchasingCode">GER-7</Note>
+			</TransportationTerm>
+			<PromisedDeliveryDateTime />
+			<ShippingInstructions />
+			<SalesOrderReference>
+				<Quantity>20000</Quantity>
+			</SalesOrderReference>
+		</PurchaseOrderLine>
+		<PurchaseOrderLine typeCode="" actionCode="actionCode25"
+			xmlns="http://www.openapplications.org/oagis/10">
+			<LineNumberID>30000</LineNumberID>
+			<LineIDSet>
+				<ID>0</ID>
+			</LineIDSet>
+			<Description>Wandboard Drake - Kernnuss</Description>
+			<DocumentReference>
+				<ID>4038283001588</ID>
+				<Description />
+			</DocumentReference>
+			<Item>
+				<ItemIDSet>
+					<ID typeCode="VendorItemNo">AM9868892</ID>
+				</ItemIDSet>
+				<Packaging>
+					<Note typeCode="NumberOfParcels">0</Note>
+				</Packaging>
+				<Dimensions>
+					<VolumeMeasure>0.01</VolumeMeasure>
+					<NetWeightMeasure>0</NetWeightMeasure>
+					<GrossWeightMeasure>6.3</GrossWeightMeasure>
+				</Dimensions>
+			</Item>
+			<Quantity>1</Quantity>
+			<TotalAmount>16.65</TotalAmount>
+			<TransportationTerm>
+				<Note typeCode="LocationCode">DIREKT</Note>
+				<Note typeCode="PurchasingCode">GER-7</Note>
+			</TransportationTerm>
+			<PromisedDeliveryDateTime />
+			<ShippingInstructions />
+			<SalesOrderReference>
+				<Quantity>30000</Quantity>
+			</SalesOrderReference>
+		</PurchaseOrderLine>
+	</purchaseOrder>
+</updatePurchaseOrderStatusRequest>

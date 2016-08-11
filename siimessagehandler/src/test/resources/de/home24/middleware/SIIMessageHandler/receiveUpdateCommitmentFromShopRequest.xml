@@ -1,0 +1,21 @@
+<v1:receiveUpdateCommitmentFromShopRequest
+	xmlns:v1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1"
+	xmlns:v11="http://home24.de/data/common/messageheadertypes/v1"
+	xmlns:no="NO_NAMESPACE">
+	<v1:requestHeader xmlns:ns2="http://home24.de/data/common/messageheadertypes/v1">
+		<ns2:CorrelationID>30101002171507</ns2:CorrelationID>
+		<ns2:ActivityID />
+		<ns2:KeyValueList>
+			<ns2:KeyValuePair>
+				<ns2:Key>SIILOGENTRYNO</ns2:Key>
+				<ns2:Value>123456</ns2:Value>
+			</ns2:KeyValuePair>
+		</ns2:KeyValueList>
+	</v1:requestHeader>
+	<v1:updateCommitment>
+		<no:queueId>46874002</no:queueId>
+		<no:orderNumber>30101002171507</no:orderNumber>
+		<no:status>OK</no:status>
+		<no:resultDetails>Details</no:resultDetails>
+	</v1:updateCommitment>
+</v1:receiveUpdateCommitmentFromShopRequest>

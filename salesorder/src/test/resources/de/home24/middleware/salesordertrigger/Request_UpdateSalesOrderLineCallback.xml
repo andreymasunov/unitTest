@@ -1,0 +1,20 @@
+<updateSalesOrderLineCallback xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+								xmlns="http://home24.de/data/navision/salesordermessages/v1">
+	<header>
+		<ns1:ActivityID xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">P1001-UPD-SO-LINE</ns1:ActivityID>
+		<ns1:KeyValueList 	xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+			<ns1:KeyValuePair>
+				<ns1:Key>ReplyTo</ns1:Key>
+				<ns1:Value>https://fmw-testing/dummyurl</ns1:Value>
+			</ns1:KeyValuePair>
+			<ns1:KeyValuePair>
+				<ns1:Key>MessageID</ns1:Key>
+				<ns1:Value>urn:0913476823476283476283476</ns1:Value>
+			</ns1:KeyValuePair>
+			<ns1:KeyValuePair>
+				<ns1:Key>SalesOrderNumber</ns1:Key>
+				<ns1:Value>1231376876</ns1:Value>
+			</ns1:KeyValuePair>
+		</ns1:KeyValueList>
+	</header>
+</updateSalesOrderLineCallback>

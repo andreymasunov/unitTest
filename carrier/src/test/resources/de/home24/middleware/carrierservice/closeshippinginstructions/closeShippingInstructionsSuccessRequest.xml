@@ -1,0 +1,12 @@
+<v1:closeShippingInstructionsRequest
+	xmlns:v1="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1"
+	xmlns:v11="http://home24.de/data/common/messageheadertypes/v1">
+	<v1:requestHeader>
+		<v11:Caller>
+			<v11:User>
+				<v11:UserID>70195</v11:UserID>
+			</v11:User>
+		</v11:Caller>
+	</v1:requestHeader>
+	<v1:parcelReferenceNumber>999990222204928</v1:parcelReferenceNumber>
+</v1:closeShippingInstructionsRequest>

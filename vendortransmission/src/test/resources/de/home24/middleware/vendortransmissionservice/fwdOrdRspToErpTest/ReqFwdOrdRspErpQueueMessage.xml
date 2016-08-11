@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:forwardOrdRspToERP xmlns:ns2="http://home24.de/data/navision/edifactmessages/v1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<ns2:header>
+		<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</ns3:CorrelationID>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P1002-ORDRSP-2ERP</ns3:ActivityID>
+		<ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:KeyValuePair>
+				<ns3:Key>ReplyTo</ns3:Key>
+				<ns3:Value>${REPLY_TO}</ns3:Value>
+			</ns3:KeyValuePair>
+			<ns3:KeyValuePair>
+				<ns3:Key>MessageID</ns3:Key>
+				<ns3:Value>${MESSAGE_ID}</ns3:Value>
+			</ns3:KeyValuePair>
+		</ns3:KeyValueList>
+	</ns2:header>
+	<ns2:body>
+		<ns4:OrdrspMessage xmlns:ns4="http://home24.de/data/thirdparty/iwofurn/v1">
+			<ns4:ORDRSP>
+				<ns4:HEAD>
+					<ns4:VersionNumber>
+						<ns4:VersionName>XML.Einrichten</ns4:VersionName>
+						<ns4:VersionNo>1.0</ns4:VersionNo>
+					</ns4:VersionNumber>
+					<ns4:DocumentType>231</ns4:DocumentType>
+					<ns4:DocumentFunctionSymbol>9</ns4:DocumentFunctionSymbol>
+					<ns4:DocumentNumber>27210</ns4:DocumentNumber>
+					<ns4:DocumentDate FormatCode="102"/>
+					<ns4:TechnicalReceiver>4260266310008</ns4:TechnicalReceiver>
+					<ns4:TechnicalSender>4399902210430</ns4:TechnicalSender>
+					<ns4:RequestedDeliveryDate/>
+					<ns4:PartialDelivery>X1</ns4:PartialDelivery>
+					<ns4:OrderNumberRef>
+						<ns4:DocRefNumber>${PURCHASE_ORDER_NUM}</ns4:DocRefNumber>
+						<ns4:DocDate FormatCode="102"/>
+					</ns4:OrderNumberRef>
+					<ns4:NAD>
+						<ns4:FlagOfParty>BY</ns4:FlagOfParty>
+						<ns4:AdressGLN>4260266310008</ns4:AdressGLN>
+					</ns4:NAD>
+					<ns4:NAD>
+						<ns4:FlagOfParty>SU</ns4:FlagOfParty>
+						<ns4:AdressGLN>4399902210430</ns4:AdressGLN>
+					</ns4:NAD>
+					<ns4:NAD>
+						<ns4:FlagOfParty>DP</ns4:FlagOfParty>
+						<ns4:AdressGLN>4260266310077</ns4:AdressGLN>
+						<ns4:Name1>Till SchÃÂ¤fer</ns4:Name1>
+						<ns4:Street1>Rhode-Island-Allee 59</ns4:Street1>
+						<ns4:PostalCode>76149</ns4:PostalCode>
+						<ns4:City>Karlsruhe</ns4:City>
+						<ns4:ISOCountryCode>DE</ns4:ISOCountryCode>
+					</ns4:NAD>
+					<ns4:NAD>
+						<ns4:FlagOfParty>IV</ns4:FlagOfParty>
+						<ns4:AdressGLN>4260266310008</ns4:AdressGLN>
+					</ns4:NAD>
+					<ns4:CONH>
+						<ns4:Consumer>
+							<ns4:QualifierType>DP</ns4:QualifierType>
+							<ns4:CustomerID>4260266310077</ns4:CustomerID>
+							<ns4:CompanyName>Till SchÃÂ¤fer</ns4:CompanyName>
+							<ns4:Street1>Rhode-Island-Allee 59</ns4:Street1>
+							<ns4:PostalCode>76149</ns4:PostalCode>
+							<ns4:ISOCountryCode>DE</ns4:ISOCountryCode>
+							<ns4:CustomerPhone>+4915114421105</ns4:CustomerPhone>
+						</ns4:Consumer>
+					</ns4:CONH>
+				</ns4:HEAD>
+				<ns4:LINE>
+					<ns4:LineItemNumber>46730</ns4:LineItemNumber>
+					<ns4:ProductID>
+						<ns4:GTIN>4016432408983</ns4:GTIN>
+						<ns4:Number>25d0669ed12afbb12cb7b5cfbc8442f2</ns4:Number>
+						<ns4:CustomerNumber>P-SL-4888</ns4:CustomerNumber>
+					</ns4:ProductID>
+					<ns4:RequestedDeliveryDate/>
+					<ns4:OrderLineRef>
+						<ns4:DocRefNumber>${PURCHASE_ORDER_NUM}</ns4:DocRefNumber>
+						<ns4:DocRefLineNumber>0</ns4:DocRefLineNumber>
+					</ns4:OrderLineRef>
+					<ns4:AdditionalLineRef>
+						<ns4:DocRefNumber>10000</ns4:DocRefNumber>
+						<ns4:DocRefLineNumber>123456</ns4:DocRefLineNumber>
+					</ns4:AdditionalLineRef>
+					<ns4:OrderResponseQuantity Unit="PCE"/>
+					<ns4:AdditionalQuantity Unit="PCE"/>
+					<ns4:AdditionalDate FormatCode="102"/>
+				</ns4:LINE>
+				<ns4:FOOT>
+					<ns4:SendingDate FormatCode="102"/>
+				</ns4:FOOT>
+			</ns4:ORDRSP>
+		</ns4:OrdrspMessage>
+	</ns2:body>
+</ns2:forwardOrdRspToERP>

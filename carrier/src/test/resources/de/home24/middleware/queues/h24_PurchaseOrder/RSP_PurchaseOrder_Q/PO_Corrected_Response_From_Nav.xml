@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<ProcessRequest xmlns="http://home24.de/data/navision/purchaseordermessages/v1">
+	<header>
+		<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+			<Type/>
+			<ID/>
+			<Version>v1</Version>
+			<ReferenceID/>
+		</Message>
+		<Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<SourceSystemName/>
+			<Environment/>
+			<User>
+				<UserID/>
+				<UserPassword/>
+				<UserLocation/>
+			</User>
+		</Caller>
+		<Operation xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<OperationName/>
+			<Batch>
+				<BatchNr/>
+				<JobNr/>
+			</Batch>
+		</Operation>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">30101002023905</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1"/>
+		<KeyValueList xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<KeyValuePair>
+				<Key/>
+				<Value/>
+			</KeyValuePair>
+		</KeyValueList>
+	</header>
+	<responseText>
+		<PurchaseOrderResponse>
+			<SalesOrderNo xmlns="http://home24.de/data/navision/purchaseorder/v1">30101002023905</SalesOrderNo>
+			<PurchaseOrders xmlns="http://home24.de/data/navision/purchaseorder/v1">
+				<PurchaseOrder>
+					<PurchaseHeader>
+						<No>DS13690541</No>
+						<AppDomain>1</AppDomain>
+						<GroupID>1</GroupID>
+						<OrderDate>16.10.15</OrderDate>
+						<ExpectedReceiptDate>16.10.15</ExpectedReceiptDate>
+						<PromisedReceiptDate/>
+						<PaymentTermsCode>5-16</PaymentTermsCode>
+						<PaymentMethodCode>ABC</PaymentMethodCode>
+						<CurrencyCode/>
+						<LanguageCode/>
+						<Comment/>
+						<Amount>49,95</Amount>
+						<H24VATRegistrationNo>DE266182271</H24VATRegistrationNo>
+						<OrderStatusCode/>
+						<EDIOrder>No</EDIOrder>
+						<CreatedOn>16.10.15</CreatedOn>
+						<VendorOrderNo/>
+						<ShipmentMethodCode/>
+						<ShipmentComment/>
+						<ShipTo>
+							<Code>LIEF001</Code>
+							<Contact/>
+							<FirstName>Marco</FirstName>
+							<LastName>Seelbinder</LastName>
+							<Name>Marco Seelbinder</Name>
+							<Name2/>
+							<StreetName>Weißenburger Str.</StreetName>
+							<StreetNumber>10</StreetNumber>
+							<Address>Weißenburger Str. 10</Address>
+							<Address2>Seitenflügel Links</Address2>
+							<City>Berlin</City>
+							<PostCode>13595</PostCode>
+							<County/>
+							<CountryRegion>DE</CountryRegion>
+							<H24GLNNo>4260266310008</H24GLNNo>
+							<AddressFormat>Post Code+City</AddressFormat>
+							<JobTitle>M</JobTitle>
+							<PhoneNo>01711231212</PhoneNo>
+							<E-Mail/>
+						</ShipTo>
+						<BuyFrom>
+							<VendorNo>71808</VendorNo>
+							<Contact>Herr Müssig</Contact>
+							<Name>Rauch Möbelwerke GmbH</Name>
+							<Name2/>
+							<Address>Wendelin-Rauch-Straße</Address>
+							<Address2/>
+							<City>Freudenberg</City>
+							<PostCode>97896</PostCode>
+							<County/>
+							<CountryRegion>DE</CountryRegion>
+							<E-Mail/>
+						</BuyFrom>
+					</PurchaseHeader>
+					<PurchaseLines>
+						<PurchaseLine>
+							<LineNo>10000</LineNo>
+							<ItemNo>M-RA-000003</ItemNo>
+							<CrossReferenceNo>4038283001588</CrossReferenceNo>
+							<CreatedAt/>
+							<ID>0</ID>
+							<Description>Wandboard Drake - Kernnuss</Description>
+							<Description2/>
+							<Quantity>1</Quantity>
+							<DirectUnitCost>16,65</DirectUnitCost>
+							<LocationCode>DIREKT</LocationCode>
+							<GrossWeight>6,3</GrossWeight>
+							<NetWeight>0</NetWeight>
+							<UnitVolume>0,01</UnitVolume>
+							<ParcelsNumber>0</ParcelsNumber>
+							<MarketPlace>No</MarketPlace>
+							<LineAmount>16,65</LineAmount>
+							<VendorItemNo>AM9868892</VendorItemNo>
+							<ShippingType/>
+							<PurchasingCode>GER-7</PurchasingCode>
+							<PromisedReceiptDate/>
+							<SalesOrderLineNo>10000</SalesOrderLineNo>
+						</PurchaseLine>
+						<PurchaseLine>
+							<LineNo>20000</LineNo>
+							<ItemNo>M-RA-000003</ItemNo>
+							<CrossReferenceNo>4038283001588</CrossReferenceNo>
+							<CreatedAt/>
+							<ID>0</ID>
+							<Description>Wandboard Drake - Kernnuss</Description>
+							<Description2/>
+							<Quantity>1</Quantity>
+							<DirectUnitCost>16,65</DirectUnitCost>
+							<LocationCode>DIREKT</LocationCode>
+							<GrossWeight>6,3</GrossWeight>
+							<NetWeight>0</NetWeight>
+							<UnitVolume>0,01</UnitVolume>
+							<ParcelsNumber>0</ParcelsNumber>
+							<MarketPlace>No</MarketPlace>
+							<LineAmount>16,65</LineAmount>
+							<VendorItemNo>AM9868892</VendorItemNo>
+							<ShippingType/>
+							<PurchasingCode>GER-7</PurchasingCode>
+							<PromisedReceiptDate/>
+							<SalesOrderLineNo>20000</SalesOrderLineNo>
+						</PurchaseLine>
+						<PurchaseLine>
+							<LineNo>30000</LineNo>
+							<ItemNo>M-RA-000003</ItemNo>
+							<CrossReferenceNo>4038283001588</CrossReferenceNo>
+							<CreatedAt/>
+							<ID>0</ID>
+							<Description>Wandboard Drake - Kernnuss</Description>
+							<Description2/>
+							<Quantity>1</Quantity>
+							<DirectUnitCost>16,65</DirectUnitCost>
+							<LocationCode>DIREKT</LocationCode>
+							<GrossWeight>6,3</GrossWeight>
+							<NetWeight>0</NetWeight>
+							<UnitVolume>0,01</UnitVolume>
+							<ParcelsNumber>0</ParcelsNumber>
+							<MarketPlace>No</MarketPlace>
+							<LineAmount>16,65</LineAmount>
+							<VendorItemNo>AM9868892</VendorItemNo>
+							<ShippingType/>
+							<PurchasingCode>GER-7</PurchasingCode>
+							<PromisedReceiptDate/>
+							<SalesOrderLineNo>30000</SalesOrderLineNo>
+						</PurchaseLine>
+					</PurchaseLines>
+				</PurchaseOrder>
+			</PurchaseOrders>
+		</PurchaseOrderResponse>
+	</responseText>
+</ProcessRequest>

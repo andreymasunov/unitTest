@@ -1,0 +1,3 @@
+<v1:createPurchaseOrderInERPResponse xmlns:v1="http://home24.de/interfaces/bas/purchaseorderservice/purchaseorderservicemessages/v1" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<v1:responseHeader/>
+</v1:createPurchaseOrderInERPResponse>

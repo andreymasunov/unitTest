@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	</soap:Header>
+	<soapenv:Body>
+		<v1:enqueueMessageRequest
+			xmlns:v1="http://home24.de/interfaces/bes/queueingservice/queueingservicemessages/v1"
+			xmlns:v11="http://home24.de/data/common/messageheadertypes/v1">
+			<v1:requestHeader />
+			<v1:jmsFactory>dummyFactory</v1:jmsFactory>
+			<v1:jmsDestination>dummyDestination</v1:jmsDestination>
+			<v1:message>
+				<desc:description xmlns:desc="http://home24.de/data/common/desctypes/v1">Write me to the queue</desc:description>
+			</v1:message>
+		</v1:enqueueMessageRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

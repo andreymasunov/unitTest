@@ -1,0 +1,9 @@
+<getReferenceValueRequest
+	xmlns="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1">
+	<requestHeader />
+	<referenceSearchCriteria>
+		<SearchContext xmlns="http://home24.de/data/custom/ordertransaction/v1" />
+		<SearchValue xmlns="http://home24.de/data/custom/ordertransaction/v1">46874002</SearchValue>
+		<TableName xmlns="http://home24.de/data/custom/ordertransaction/v1">OSM_CUST_COMM</TableName>
+	</referenceSearchCriteria>
+</getReferenceValueRequest>

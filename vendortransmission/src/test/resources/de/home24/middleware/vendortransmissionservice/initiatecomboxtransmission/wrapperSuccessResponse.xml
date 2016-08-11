@@ -1,0 +1,11 @@
+<processNonLegacyResponseElement
+	xmlns="http://bpeltonavision.soa.opitzconsulting.com/types/">
+	<result>
+		<payload>
+			<SendFileToComBoxResponse xmlns="http://home24.de/ComboxAPIWS/v1.0">
+				<SendFileToComBoxResult>${COMBOX_ID}</SendFileToComBoxResult>
+			</SendFileToComBoxResponse>
+		</payload>
+		<httpResponseCode>200</httpResponseCode>
+	</result>
+</processNonLegacyResponseElement>

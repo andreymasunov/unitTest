@@ -1,0 +1,11 @@
+<toggleCarrierStatusUpdatePollingRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                         xmlns="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+  <requestHeader>
+    <Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <SourceSystemName>Middleware</SourceSystemName>
+    </Caller>
+    <CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">1234567890</CorrelationID>
+    <ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P202-INIT</ActivityID>
+  </requestHeader>
+  <isActive>${IS_ACTIVE}</isActive>
+</toggleCarrierStatusUpdatePollingRequest>

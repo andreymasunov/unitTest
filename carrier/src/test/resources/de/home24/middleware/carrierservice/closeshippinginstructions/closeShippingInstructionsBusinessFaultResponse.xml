@@ -1,0 +1,63 @@
+<soap-env:Fault xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+	<faultcode>1</faultcode>
+	<faultstring>Authorization error: User is assigned to more than one Business Unit. Each user can be assigned to one Business Unit only.</faultstring>
+	<faultactor />
+	<detail>
+		<exc:exception xmlns:exc="http://home24.de/data/common/exceptiontypes/v1">
+			<exc:context>
+				<exc:sourceSystemName />
+				<exc:transactionId />
+				<exc:flowId />
+				<exc:ecid />
+				<exc:compositeInstanceId />
+				<exc:processLibraryId />
+				<exc:payload>
+					<v1:closeShippingInstructionsRequest
+						xmlns:v1="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+						<v1:requestHeader></v1:requestHeader>
+						<v1:parcelReferenceNumber>999990222204928
+						</v1:parcelReferenceNumber>
+					</v1:closeShippingInstructionsRequest>
+				</exc:payload>
+				<exc:additionalInfo>
+					<exc:keyValuePair>
+						<exc:key>StatusObject</exc:key>
+						<exc:value>CostumerCommunication</exc:value>
+					</exc:keyValuePair>
+					<exc:keyValuePair>
+						<exc:key>StatusType</exc:key>
+						<exc:value>Error</exc:value>
+					</exc:keyValuePair>
+					<exc:keyValuePair>
+						<exc:key>StatusText</exc:key>
+						<exc:value>Errors</exc:value>
+					</exc:keyValuePair>
+					<exc:keyValuePair>
+						<exc:key>TimestampInterface</exc:key>
+						<exc:value>2015-12-15T18:55:24.91+01:00</exc:value>
+					</exc:keyValuePair>
+				</exc:additionalInfo>
+			</exc:context>
+			<exc:severity>ERROR</exc:severity>
+			<exc:category>BusinessFault</exc:category>
+			<exc:faultInfo>
+				<exc:faultCode>1</exc:faultCode>
+				<exc:faultMessage>Authorization error: User is assigned to more than
+					one Business Unit. Each user can be assigned to one Business Unit
+					only.</exc:faultMessage>
+				<exc:faultDetails>XLogics.XPack.Logic.LoginUserException:
+					Authorization error: User is assigned to more than one Business
+					Unit. Each user can be assigned to one Business Unit only.
+					at XLogics.XPack.Environment.AuthenticationManager.Login()
+					at XLogics.BlackBox.WCFSecurity.Authorization..ctor(Boolean login)
+					at XLogics.BlackBox.WCFSecurity.Authentication.get_Authorization()
+					at
+					XLogics.BlackBox.ServiceImplementation.BlackBoxService.MarkShipments(MarkShipmentsRequest
+					request)
+				</exc:faultDetails>
+				<exc:faultTimestamp>2015-12-15T18:55:24.91+01:00
+				</exc:faultTimestamp>
+			</exc:faultInfo>
+		</exc:exception>
+	</detail>
+</soap-env:Fault>

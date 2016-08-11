@@ -1,0 +1,92 @@
+<ns2:updateTransactionMonitoringWithExceptionRequest xmlns:ns2="http://home24.de/interfaces/bts/ordertransactiontrigger/ordertransactiontriggermessages/v1" xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+	<ns2:requestHeader/>
+	<ns2:businessException>
+		<ns3:context>
+			<ns3:sourceSystemName>Middleware</ns3:sourceSystemName>
+			<ns3:environment/>
+			<ns3:transactionId>123456789</ns3:transactionId>
+			<ns3:flowId>2134</ns3:flowId>
+			<ns3:ecid>123</ns3:ecid>
+			<ns3:activityId>${ACTIVITY_ID}</ns3:activityId>
+			<ns3:compositeInstanceId>456456456</ns3:compositeInstanceId>
+			<ns3:processLibraryId>P1001</ns3:processLibraryId>
+			<ns3:payload>
+				<ns1:receiveUpdateCommitmentFromShopRequest xmlns:ns1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1">
+					<ns1:requestHeader>
+						<ns4:Message xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+						<ns4:Caller xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+						<ns4:Operation xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+						<ns4:CorrelationID xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1">10101000385761</ns4:CorrelationID>
+						<ns4:ActivityID xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+						<ns4:KeyValueList xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+					</ns1:requestHeader>
+					<ns1:updateCommitment>
+						<o_n:queueId xmlns:o_n="NO_NAMESPACE">38081912</o_n:queueId>
+						<o_n:orderNumber xmlns:o_n="NO_NAMESPACE">10101000385761</o_n:orderNumber>
+						<o_n:status xmlns:o_n="NO_NAMESPACE">ERROR</o_n:status>
+						<o_n:resultDetails xmlns:o_n="NO_NAMESPACE">Array ( [invalid] =&gt; Provided object is not an Item object
+                                                          reference-id: 2 )</o_n:resultDetails>
+					</ns1:updateCommitment>
+				</ns1:receiveUpdateCommitmentFromShopRequest>
+			</ns3:payload>
+			<ns3:additionalInfo>
+				<ns3:keyValuePair>
+					<ns3:key>StatusObject</ns3:key>
+					<ns3:value>CustomerCommunication</ns3:value>
+				</ns3:keyValuePair>
+				<ns3:keyValuePair>
+					<ns3:key>StatusType</ns3:key>
+					<ns3:value>Error</ns3:value>
+				</ns3:keyValuePair>
+				<ns3:keyValuePair>
+					<ns3:key>StatusCode</ns3:key>
+					<ns3:value>Errors</ns3:value>
+				</ns3:keyValuePair>
+				<ns3:keyValuePair>
+					<ns3:key>StatusText</ns3:key>
+					<ns3:value>Bla</ns3:value>
+				</ns3:keyValuePair>
+				<ns3:keyValuePair>
+					<ns3:key>GenericAttribute_SII_LOGENTRY_ID</ns3:key>
+					<ns3:value>123456789</ns3:value>
+				</ns3:keyValuePair>
+				<ns3:keyValuePair>
+					<ns3:key>GenericAttribute_QUEUE_ID</ns3:key>
+					<ns3:value>123456789</ns3:value>
+				</ns3:keyValuePair>
+				<ns3:keyValuePair>
+					<ns3:key>SalesOrderItems</ns3:key>
+					<ns3:value>1</ns3:value>
+				</ns3:keyValuePair>
+			</ns3:additionalInfo>
+		</ns3:context>
+		<ns3:severity>ERROR</ns3:severity>
+		<ns3:category>TechnicalFault</ns3:category>
+		<ns3:faultInfo>
+			<ns3:faultCode>The fault code</ns3:faultCode>
+			<ns3:faultMessage>Provide the fault message and describe what happened</ns3:faultMessage>
+			<ns3:faultDetails>Provide further fault details</ns3:faultDetails>
+			<ns3:faultTimestamp>2015-09-28T09:00:00</ns3:faultTimestamp>
+			<ns3:faultUserArea>
+				<salesOrderLineCollection xmlns="http://home24.de/data/navision/salesordermessages/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<salesOrderLine>
+						<salesOrderLineNumber>20000</salesOrderLineNumber>
+						<trackingCodeCollection>
+							<trackingCode>567</trackingCode>
+							<trackingCode>678</trackingCode>
+							<trackingCode>789</trackingCode>
+						</trackingCodeCollection>
+					</salesOrderLine>
+					<salesOrderLine>
+						<salesOrderLineNumber>30000</salesOrderLineNumber>
+						<trackingCodeCollection>
+							<trackingCode>890</trackingCode>
+							<trackingCode>900</trackingCode>
+							<trackingCode>190</trackingCode>
+						</trackingCodeCollection>
+					</salesOrderLine>
+				</salesOrderLineCollection>
+			</ns3:faultUserArea>
+		</ns3:faultInfo>
+	</ns2:businessException>
+</ns2:updateTransactionMonitoringWithExceptionRequest>

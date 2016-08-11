@@ -1,0 +1,81 @@
+<nuso:udpateSalesOrderLine 	xmlns:nuso="http://home24.de/data/navision/salesordermessages/v1">
+	<nuso:header>
+		<ns1:Operation 	xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+			<ns1:OperationName/>
+			<ns1:Batch>
+				<ns1:BatchNr/>
+				<ns1:JobNr/>
+			</ns1:Batch>
+		</ns1:Operation>
+		<ns1:ActivityID xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">P1001-UPD-SO-LINE</ns1:ActivityID>
+		<ns1:KeyValueList 	xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+			<ns1:KeyValuePair>
+				<ns1:Key>ReplyTo</ns1:Key>
+				<ns1:Value>https://fmw-testing/dummyurl</ns1:Value>
+			</ns1:KeyValuePair>
+			<ns1:KeyValuePair>
+				<ns1:Key>MessageID</ns1:Key>
+				<ns1:Value>urn:0913476823476283476283476</ns1:Value>
+			</ns1:KeyValuePair>
+			<ns1:KeyValuePair>
+				<ns1:Key>SalesOrderNumber</ns1:Key>
+				<ns1:Value>1231376876</ns1:Value>
+			</ns1:KeyValuePair>
+		</ns1:KeyValueList>
+	</nuso:header>
+	<nuso:body>
+		<nuso:salesOrderCollection>
+			<ns3:salesOrder 	xmlns:ns3="http://home24.de/data/navision/salesorder/v1">
+				<ns3:salesOrderNumber>1231376876</ns3:salesOrderNumber>
+				<ns3:salesOrderLineCollection>
+					<ns3:salesOrderLine>
+						<ns3:salesOrderLineNumber>10000</ns3:salesOrderLineNumber>
+						<ns3:trackingStatusCollection>
+							<ns3:trackingStatus>
+								<ns3:trackingNo/>
+								<ns3:date>15.12.2015</ns3:date>
+								<ns3:time>17:48</ns3:time>
+								<ns3:statusCode>SC_Code</ns3:statusCode>
+								<ns3:statusCodeDescription>Shipment closed</ns3:statusCodeDescription>
+								<ns3:subStatusCode/>
+								<ns3:subStatusCodeDescription/>
+							</ns3:trackingStatus>
+							<ns3:trackingStatus>
+								<ns3:trackingNo/>
+								<ns3:date>15.12.2015</ns3:date>
+								<ns3:time>17:48</ns3:time>
+								<ns3:statusCode>SC_Code</ns3:statusCode>
+								<ns3:statusCodeDescription>Shipment closed</ns3:statusCodeDescription>
+								<ns3:subStatusCode/>
+								<ns3:subStatusCodeDescription/>
+							</ns3:trackingStatus>
+						</ns3:trackingStatusCollection>
+					</ns3:salesOrderLine>
+					<ns3:salesOrderLine>
+						<ns3:salesOrderLineNumber>20000</ns3:salesOrderLineNumber>
+						<ns3:trackingStatusCollection>
+							<ns3:trackingStatus>
+								<ns3:trackingNo/>
+								<ns3:date>15.12.2015</ns3:date>
+								<ns3:time>17:48</ns3:time>
+								<ns3:statusCode>SC_Code</ns3:statusCode>
+								<ns3:statusCodeDescription>Shipment closed</ns3:statusCodeDescription>
+								<ns3:subStatusCode/>
+								<ns3:subStatusCodeDescription/>
+							</ns3:trackingStatus>
+							<ns3:trackingStatus>
+								<ns3:trackingNo/>
+								<ns3:date>15.12.2015</ns3:date>
+								<ns3:time>17:48</ns3:time>
+								<ns3:statusCode>SC_Code</ns3:statusCode>
+								<ns3:statusCodeDescription>Shipment closed</ns3:statusCodeDescription>
+								<ns3:subStatusCode/>
+								<ns3:subStatusCodeDescription/>
+							</ns3:trackingStatus>
+						</ns3:trackingStatusCollection>
+					</ns3:salesOrderLine>
+				</ns3:salesOrderLineCollection>
+			</ns3:salesOrder>
+		</nuso:salesOrderCollection>
+	</nuso:body>
+</nuso:udpateSalesOrderLine>

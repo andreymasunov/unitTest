@@ -1,0 +1,12 @@
+<ots:getReferenceValueResponse xmlns:ots="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<ots:responseHeader/>
+	<ots:referenceValue>
+		<ot:ReturnValue xmlns:ot="http://home24.de/data/custom/ordertransaction/v1">QueueIDNotFound</ot:ReturnValue>
+		<ot:ReturnAttributes xmlns:ot="http://home24.de/data/custom/ordertransaction/v1">
+			<ot:GenericAttribute>
+				<ot:Key>StatusText</ot:Key>
+				<ot:Value/>
+			</ot:GenericAttribute>
+		</ot:ReturnAttributes>
+	</ots:referenceValue>
+</ots:getReferenceValueResponse>

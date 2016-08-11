@@ -1,0 +1,37 @@
+<ns2:receivePaymentNotificationRequest xmlns:ns2="http://home24.de/interfaces/bps/salesordercreationprocess/salesordercreationprocessmessages/v1">
+	<ns2:requestHeader>
+		<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:CreationDate>2016-01-29T14:33:07.892+01:00</ns3:CreationDate>
+			<ns3:Type/>
+			<ns3:ID/>
+			<ns3:Version>v1</ns3:Version>
+			<ns3:ReferenceID/>
+		</ns3:Message>
+		<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:SourceSystemName/>
+			<ns3:Environment/>
+			<ns3:User>
+				<ns3:UserID/>
+				<ns3:UserPassword/>
+				<ns3:UserLocation/>
+			</ns3:User>
+		</ns3:Caller>
+		<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:OperationName/>
+			<ns3:Batch>
+				<ns3:BatchNr/>
+				<ns3:JobNr/>
+			</ns3:Batch>
+		</ns3:Operation>
+		<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">30201002346654</ns3:CorrelationID>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:KeyValuePair>
+				<ns3:Key>SomeKey</ns3:Key>
+				<ns3:Value>someValue</ns3:Value>
+			</ns3:KeyValuePair>
+		</ns3:KeyValueList>
+	</ns2:requestHeader>
+	<ns2:paymentID>181888620</ns2:paymentID>
+	<ns2:salesOrderNumber>30201002346654</ns2:salesOrderNumber>
+</ns2:receivePaymentNotificationRequest>

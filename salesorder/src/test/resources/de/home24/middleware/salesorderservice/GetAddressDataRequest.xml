@@ -1,0 +1,10 @@
+<v1:getAddressDataRequest xmlns:v1="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1">
+    <v1:requestHeader>
+        <v11:Caller>
+            <v11:SourceSystemName>Middleware</v11:SourceSystemName>
+        </v11:Caller>
+        <v11:CorrelationID>30101002102560</v11:CorrelationID>
+        <v11:ActivityID>P1001-GET-ADDR</v11:ActivityID>
+    </v1:requestHeader>
+    <v1:salesOrderNumber>30101002102560</v1:salesOrderNumber>
+</v1:getAddressDataRequest>

@@ -1,0 +1,15 @@
+<ns2:getReferenceValueResponse
+	xmlns:ns2="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing" 
+	xmlns:ns4="http://home24.de/data/custom/ordertransaction/v1">
+	<ns2:responseHeader />
+	<ns2:referenceValue>
+		<ns4:ReturnValue>46874002</ns4:ReturnValue>
+		<ns4:ReturnAttributes>
+			<ns4:GenericAttribute>
+				<ns4:Key>StatusText</ns4:Key>
+				<ns4:Value>Credit Card Captured</ns4:Value>
+			</ns4:GenericAttribute>
+		</ns4:ReturnAttributes>
+	</ns2:referenceValue>
+</ns2:getReferenceValueResponse>

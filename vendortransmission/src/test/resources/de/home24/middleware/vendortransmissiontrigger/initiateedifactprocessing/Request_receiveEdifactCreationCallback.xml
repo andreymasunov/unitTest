@@ -1,0 +1,21 @@
+<v1:receiveEdifactCreationCallback xmlns:v1="http://home24.de/data/navision/edifactmessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1" xmlns:v12="http://home24.de/data/navision/edifact/v1">
+	<v1:header>
+		<v11:CorrelationID>${CORRELATION_ID}</v11:CorrelationID>
+		<v11:ActivityID>P1002-EDIFACT-ACK</v11:ActivityID>
+		<v11:KeyValueList>
+			<v11:KeyValuePair>
+				<v11:Key>ReplyTo</v11:Key>
+				<v11:Value>https://localhost:7102/soa-infra/services/dropship/EDIVendorTransmissionProcess!1.0*soa_622dcd65-31bb-46f5-85b8-e9396be2dc68/VendorTransmissionService%23InitiateEDIFACTProcessinginERP/VendorTransmissionService</v11:Value>
+			</v11:KeyValuePair>
+			<v11:KeyValuePair>
+				<v11:Key>MessageID</v11:Key>
+				<v11:Value>urn:0913476823476283476283476</v11:Value>
+			</v11:KeyValuePair>
+		</v11:KeyValueList>
+	</v1:header>
+	<v1:body>
+		<v1:edifactCreationResponse>
+			<v12:purchaseOrderNumber>${PURCHASE_ORDER_NUM}</v12:purchaseOrderNumber>
+		</v1:edifactCreationResponse>
+	</v1:body>
+</v1:receiveEdifactCreationCallback>

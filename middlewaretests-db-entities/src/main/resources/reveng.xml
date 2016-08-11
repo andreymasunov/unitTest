@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC
+  "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<schema-selection match-schema="H24" match-table="BAL_ACTIVITIES" />
+	<schema-selection match-schema="H24" match-table="BAL_ACTIVITY_PAYLOAD" />
+	<schema-selection match-schema="H24" match-table="OSM_SO" />
+	<schema-selection match-schema="H24" match-table="OSM_CUST" />
+	<schema-selection match-schema="H24" match-table="OSM_PO" />
+	<schema-selection match-schema="H24" match-table="OSM_SO_ITEM" />
+	<schema-selection match-schema="H24" match-table="OSM_PARCEL" />
+	<schema-selection match-schema="H24" match-table="OSM_CUST_COMM" />
+	<schema-selection match-schema="H24" match-table="OSM_PARCEL_CONTENT" />
+	
+	<type-mapping>
+		<sql-type jdbc-type="OTHER" hibernate-type="java.util.Date" />
+	</type-mapping>
+</hibernate-reverse-engineering>

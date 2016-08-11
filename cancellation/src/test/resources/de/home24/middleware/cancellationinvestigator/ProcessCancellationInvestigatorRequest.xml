@@ -1,0 +1,31 @@
+<processCancellationInvestigationRequest xmlns="http://home24.de/interfaces/bps/cancellationinvestigatorprocess/cancellationinvestigatorprocessmessages/v1">
+   <requestHeader>
+      <common:Message xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+         <common:CreationDate/>
+         <common:Type/>
+         <common:ID/>
+         <common:Version/>
+         <common:ReferenceID/>
+      </common:Message>
+      <common:Caller xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+         <common:SourceSystemName/>
+         <common:Environment/>
+         <common:User>
+            <common:UserID/>
+            <common:UserPassword/>
+            <common:UserLocation/>
+         </common:User>
+      </common:Caller>
+      <common:Operation xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+         <common:OperationName/>
+         <common:Batch>
+            <common:BatchNr/>
+            <common:JobNr/>
+         </common:Batch>
+      </common:Operation>
+      <common:CorrelationID xmlns:common="http://home24.de/data/common/messageheadertypes/v1">30115002345288</common:CorrelationID>
+      <common:ActivityID xmlns:common="http://home24.de/data/common/messageheadertypes/v1"/>
+      <common:KeyValueList xmlns:common="http://home24.de/data/common/messageheadertypes/v1"/>
+   </requestHeader>
+   <salesOrderId>30115002345288</salesOrderId>
+</processCancellationInvestigationRequest>

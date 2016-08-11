@@ -1,0 +1,12 @@
+<toggleCarrierStatusUpdatePollingRequest
+	xmlns="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+	<requestHeader>
+		<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:SourceSystemName>Middleware</ns3:SourceSystemName>
+		</ns3:Caller>
+		<ns3:CorrelationID
+			xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">71808_ExportFile_201601181741597347.csv</ns3:CorrelationID>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P202-INIT</ns3:ActivityID>
+	</requestHeader>
+	<isActive>true</isActive>
+</toggleCarrierStatusUpdatePollingRequest>

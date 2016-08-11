@@ -1,0 +1,16 @@
+<blac:MarkShipmentsRequest xmlns:blac="http://xlogics.eu/blackbox">
+  <blac:InputParameters>
+    <blac:ShippingParameter>
+      <blac:Name>Closer.Selection</blac:Name>
+      <blac:Value>ParcelReferenceNo</blac:Value>
+    </blac:ShippingParameter>
+    <blac:ShippingParameter>
+      <blac:Name>Closer.Identifier</blac:Name>
+      <blac:Value>999990222204928</blac:Value>
+    </blac:ShippingParameter>
+    <blac:ShippingParameter>
+      <blac:Name>Closer.MarkedState</blac:Name>
+      <blac:Value>True</blac:Value>
+    </blac:ShippingParameter>
+  </blac:InputParameters>
+</blac:MarkShipmentsRequest>

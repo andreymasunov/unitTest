@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="46a22200-671c-4f5f-a431-c8a6718d7f58" activeEnvironment="Default" name="SIIMessageHandler" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="70fe621b-92e9-4cdb-8fad-d827778e889a" wsaVersion="NONE" name="SIIMessageHandlerProcessBinding" type="wsdl" bindingName="{http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocess/v1}SIIMessageHandlerProcessBinding" soapVersion="1_1" anonymous="optional" definition="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess?WSDL"><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="SIIMessageHandlerProcess" targetNamespace="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocess/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:exception="http://home24.de/interfaces/common/exceptions/v1" xmlns:tns="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocess/v1" xmlns:message="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1">
+  <wsdl:documentation>
+    <abstractWSDL>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler!1.2/apps/home24/interfaces/bps/siimessagehandler/v1/SIIMessageHandlerProcess.wsdl</abstractWSDL>
+  </wsdl:documentation>
+  <wsdl:import namespace="http://home24.de/interfaces/common/exceptions/v1" location="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/interfaces/common/v1/Exceptions.wsdl"/>
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import namespace="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" schemaLocation="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess?XSD=./SIIMessageHandlerProcessMessages.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getServiceInfoInputMessage">
+    <wsdl:part name="request" element="message:getServiceInfoRequest"/>
+  </wsdl:message>
+  <wsdl:message name="getServiceInfoOutputMessage">
+    <wsdl:part name="response" element="message:getServiceInfoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="receiveUpdateCommitmentFromShopInputMessage">
+    <wsdl:part name="payload" element="message:receiveUpdateCommitmentFromShopRequest"/>
+  </wsdl:message>
+  <wsdl:message name="receiveUpdateCommitmentFromShopOutputMessage">
+    <wsdl:part name="payload" element="message:receiveUpdateCommitmentFromShopResponse"/>
+  </wsdl:message>
+  <wsdl:message name="sendInboundReclamationToERPInputMessage">
+    <wsdl:part name="payload" element="message:sendInboundReclamationToERPRequest"/>
+  </wsdl:message>
+  <wsdl:message name="sendInboundReclamationToERPOutputMessage">
+    <wsdl:part name="payload" element="message:sendInboundReclamationToERPResponse"/>
+  </wsdl:message>
+  <wsdl:message name="sendSalesOrderUpdateToShopInputMessage">
+    <wsdl:part name="payload" element="message:sendSalesOrderUpdateToShopRequest"/>
+  </wsdl:message>
+  <wsdl:message name="sendSalesOrderUpdateToShopOutputMessage">
+    <wsdl:part name="payload" element="message:sendSalesOrderUpdateToShopResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="SIIMessageHandlerProcessPortType">
+    <wsdl:operation name="getServiceInfo">
+      <wsdl:input message="tns:getServiceInfoInputMessage"/>
+      <wsdl:output message="tns:getServiceInfoOutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="receiveUpdateCommitmentFromShop">
+      <wsdl:input message="tns:receiveUpdateCommitmentFromShopInputMessage"/>
+      <wsdl:output message="tns:receiveUpdateCommitmentFromShopOutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendInboundReclamationToERP">
+      <wsdl:input message="tns:sendInboundReclamationToERPInputMessage"/>
+      <wsdl:output message="tns:sendInboundReclamationToERPOutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendSalesOrderUpdateToShop">
+      <wsdl:input message="tns:sendSalesOrderUpdateToShopInputMessage"/>
+      <wsdl:output message="tns:sendSalesOrderUpdateToShopOutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SIIMessageHandlerProcessBinding" type="tns:SIIMessageHandlerProcessPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getServiceInfo">
+      <soap:operation style="document" soapAction="getServiceInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveUpdateCommitmentFromShop">
+      <soap:operation style="document" soapAction="receiveUpdateCommitmentFromShop"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendInboundReclamationToERP">
+      <soap:operation style="document" soapAction="sendInboundReclamationToERP"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendSalesOrderUpdateToShop">
+      <soap:operation style="document" soapAction="sendSalesOrderUpdateToShop"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SIIMessageHandlerProcess">
+    <wsdl:port name="SIIMessageHandlerProcessPort" binding="tns:SIIMessageHandlerProcessBinding">
+      <soap:address location="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/interfaces/common/v1/Exceptions.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://home24.de/interfaces/common/exceptions/v1" name="BusinessExceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://home24.de/interfaces/common/exceptions/v1" xmlns:err="http://home24.de/data/common/exceptiontypes/v1">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import namespace="http://home24.de/data/common/exceptiontypes/v1" schemaLocation="ExceptionTypes.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="BusinessFaultMessage">
+    <wsdl:part name="fault" element="err:exception"/>
+  </wsdl:message>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/interfaces/common/v1/ExceptionTypes.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://home24.de/data/common/exceptiontypes/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://home24.de/data/common/exceptiontypes/v1" xmlns:oms="http://home24.de/data/custom/ordertransaction/v1">
+  <xsd:element name="exception" type="ExceptionType"/>
+  <xsd:complexType name="ExceptionType">
+    <xsd:sequence>
+      <xsd:element name="context" type="FaultContextType"/>
+      <xsd:element name="severity" type="MessageLevelEnum" minOccurs="0"/>
+      <xsd:element name="category" type="FaultCategoryEnum"/>
+      <xsd:element name="faultInfo" type="FaultInfoType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FaultContextType">
+    <xsd:sequence>
+      <xsd:element name="sourceSystemName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Name of the source system where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="environment" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Name of the environment where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="transactionId" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Identifier of the business transaction where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="flowId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Flow Identifier (Oracle)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ecid" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Execution Context Identifier (Oracle)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="activityId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>ID of the activity where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="compositeInstanceId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>ID of the composite instance where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="processLibraryId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>ID of the current business process where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="payload" type="xsd:anyType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Name of the payload where the error occurred</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="additionalInfo" type="KeyValueCollectionType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Additional information as a key value list</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FaultInfoType">
+    <xsd:sequence>
+      <xsd:element name="faultCode" type="xsd:string"/>
+      <xsd:element name="faultMessage" type="xsd:string"/>
+      <xsd:element name="faultDetails" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="faultTimestamp" type="xsd:dateTime"/>
+      <xsd:element name="faultUserArea" type="xsd:anyType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="KeyValueCollectionType">
+    <xsd:sequence>
+      <xsd:element name="keyValuePair" type="KeyValueType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="KeyValueType">
+    <xsd:sequence>
+      <xsd:element name="key" type="xsd:string"/>
+      <xsd:element name="value" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="FaultCategoryEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="TechnicalFault"/>
+      <xsd:enumeration value="DataFault"/>
+      <xsd:enumeration value="BusinessFault"/>
+      <xsd:enumeration value="LoggingFault"/>
+      <xsd:enumeration value="ErrorListenerFault"/>
+      <xsd:enumeration value="DeadLetterFault"/>
+      <xsd:enumeration value="TriggerFault"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MessageLevelEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="FATAL"/>
+      <xsd:enumeration value="ERROR"/>
+      <xsd:enumeration value="WARNING"/>
+      <xsd:enumeration value="INFO"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess?XSD=./SIIMessageHandlerProcessMessages.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:message="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" xmlns:nn="NO_NAMESPACE" xmlns:common="http://home24.de/data/common/messageheadertypes/v1" xmlns:serviceInfo="http://home24.de/data/common/serviceinformationtypes/v1">
+  <xsd:import namespace="http://home24.de/data/common/serviceinformationtypes/v1" schemaLocation="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/data/common/v1/ServiceInformationTypes.xsd"/>
+  <xsd:import namespace="http://home24.de/data/common/messageheadertypes/v1" schemaLocation="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/data/common/v1/MessageHeaderTypes.xsd"/>
+  <xsd:import namespace="NO_NAMESPACE" schemaLocation="http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/legacy/navision/siimessagehandler/SIIMessageHandlerProcessTypes.xsd"/>
+  <xsd:element name="getServiceInfoRequest">
+    <xsd:complexType>
+      <xsd:sequence/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="getServiceInfoResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element minOccurs="1" maxOccurs="1" name="response" type="serviceInfo:ServiceInfoType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="receiveUpdateCommitmentFromShopRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="requestHeader" type="common:MessageHeaderType"/>
+        <xsd:element name="updateCommitment" type="nn:UpdateCommitmentType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="receiveUpdateCommitmentFromShopResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="responseHeader" type="common:MessageHeaderType"/>
+        <xsd:element name="updateAcknowledgement" type="nn:UpdateAcknowledgementType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="sendInboundReclamationToERPRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="requestHeader" type="common:MessageHeaderType"/>
+        <xsd:element name="updateWrapper" type="nn:UpdateWrapperType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="sendInboundReclamationToERPResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="responseHeader" type="common:MessageHeaderType"/>
+        <xsd:element name="updateAcknowledgement" type="nn:UpdateAcknowledgementType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="sendSalesOrderUpdateToShopRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="requestHeader" type="common:MessageHeaderType"/>
+        <xsd:element name="updateWrapper" type="nn:UpdateWrapperType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="sendSalesOrderUpdateToShopResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="responseHeader" type="common:MessageHeaderType"/>
+        <xsd:element name="updateAcknowledgement" type="nn:UpdateAcknowledgementType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/data/common/v1/ServiceInformationTypes.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://home24.de/data/common/serviceinformationtypes/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://home24.de/data/common/serviceinformationtypes/v1">
+  <xsd:complexType name="ServiceInfoType">
+    <xsd:sequence>
+      <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Version" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="ExecutionEnvironment" type="tns:ExecutionEnvironmentType" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ExecutionEnvironmentType">
+    <xsd:sequence>
+      <xsd:element name="Environment" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="ServerName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/data/common/v1/MessageHeaderTypes.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://home24.de/data/common/messageheadertypes/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://home24.de/data/common/messageheadertypes/v1">
+  <xsd:complexType name="MessageHeaderType">
+    <xsd:complexContent>
+      <xsd:extension base="MessageInformationType"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="MessageInformationType">
+    <xsd:sequence>
+      <xsd:element name="Message" type="MessageType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="Caller" type="CallerType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="Operation" type="OperationType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="CorrelationID" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="ActivityID" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="KeyValueList" type="KeyValueListType" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MessageType">
+    <xsd:sequence>
+      <xsd:element name="CreationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="Type" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="ID" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="Version" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="ReferenceID" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CallerType">
+    <xsd:sequence>
+      <xsd:element name="SourceSystemName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="Environment" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="User" type="UserType" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="OperationType">
+    <xsd:sequence>
+      <xsd:element name="OperationName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="Batch" type="BatchFieldsType" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="UserType">
+    <xsd:sequence>
+      <xsd:element name="UserID" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="UserPassword" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="UserLocation" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BatchFieldsType">
+    <xsd:sequence>
+      <xsd:element name="BatchNr" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="JobNr" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="KeyValueListType">
+    <xsd:sequence>
+      <xsd:element name="KeyValuePair" type="KeyValueType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="KeyValueType">
+    <xsd:sequence>
+      <xsd:element name="Key" type="xsd:string"/>
+      <xsd:element name="Value" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="MessageHeader" type="MessageHeaderType"/>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/apps/home24/legacy/navision/siimessagehandler/SIIMessageHandlerProcessTypes.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="NO_NAMESPACE" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:nn="NO_NAMESPACE" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="update" type="nn:UpdateType"/>
+  <xs:element name="updateWrapper" type="nn:UpdateWrapperType"/>
+  <xs:element name="updateAcknowledgement" type="nn:UpdateAcknowledgementType"/>
+  <xs:element name="updateAcknowledgementFromShop" type="nn:UpdateAcknowledgementFromShopType"/>
+  <xs:element name="updateCommitment" type="nn:UpdateCommitmentType"/>
+  <xs:complexType name="UpdateWrapperType">
+    <xs:sequence>
+      <xs:element ref="nn:update"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UpdateAcknowledgementType">
+    <xs:sequence>
+      <xs:element name="acknowledgement" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UpdateAcknowledgementFromShopType">
+    <xs:sequence>
+      <xs:element name="queueId" type="xs:string"/>
+      <xs:element name="error" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UpdateCommitmentType">
+    <xs:sequence>
+      <xs:element name="queueId" type="xs:string"/>
+      <xs:element name="orderNumber" type="xs:string"/>
+      <xs:element name="status" type="xs:string"/>
+      <xs:element name="resultDetails" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UpdateType">
+    <xs:sequence>
+      <xs:element name="base_data" minOccurs="1" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="order" minOccurs="1" maxOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="order_items" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element minOccurs="1" maxOccurs="unbounded" name="order_item">
+                          <xs:complexType>
+                            <xs:attribute name="item_id" type="xs:positiveInteger" use="required"/>
+                            <xs:attribute name="reference-id" type="xs:positiveInteger" use="required"/>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:attribute name="order_number" use="required">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:minLength value="1"/>
+                      <xs:maxLength value="20"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="reference-id" type="xs:positiveInteger" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="transaction_data" minOccurs="1" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="message" minOccurs="1" maxOccurs="1">
+              <xs:complexType>
+                <xs:attribute name="Created" use="required">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:minLength value="0"/>
+                      <xs:maxLength value="25"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="Structure_Version" type="xs:decimal" use="required"/>
+                <xs:attribute name="type" use="required">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:minLength value="1"/>
+                      <xs:maxLength value="50"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:attribute>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="actions" minOccurs="1" maxOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="1" maxOccurs="unbounded" name="action">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="code" minOccurs="1" maxOccurs="1">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:minLength value="1"/>
+                              <xs:maxLength value="50"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="data" minOccurs="1" maxOccurs="1">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element type="xs:dateTime" name="date" minOccurs="0"/>
+                              <xs:element type="xs:string" name="in_time" minOccurs="0"/>
+                              <xs:element type="xs:long" name="tracking_number" minOccurs="0"/>
+                              <xs:element type="xs:string" name="carrier" minOccurs="0"/>
+                              <xs:element type="xs:string" name="reference_number" minOccurs="0"/>
+                              <xs:element type="xs:byte" name="dunning_level" minOccurs="0"/>
+                              <xs:element name="comment" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                              <xs:element name="image_folder_link" minOccurs="0" maxOccurs="1">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:minLength value="0"/>
+                                    <xs:maxLength value="140"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:element>
+                              <xs:element name="reclamation_type" minOccurs="0" maxOccurs="1">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:minLength value="0"/>
+                                    <xs:maxLength value="30"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:element>
+                              <xs:element name="reclamation_reason" minOccurs="0" maxOccurs="1">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:minLength value="0"/>
+                                    <xs:maxLength value="100"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:element>
+                              <xs:element name="capture" minOccurs="0">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element type="xs:string" name="amount"/>
+                                    <xs:element type="xs:string" name="currency"/>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element name="attachments" minOccurs="0" maxOccurs="1">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="attachment" minOccurs="1" maxOccurs="unbounded">
+                                      <xs:complexType>
+                                        <xs:sequence>
+                                          <xs:element name="type">
+                                            <xs:simpleType>
+                                              <xs:restriction base="xs:string">
+                                                <xs:minLength value="0"/>
+                                                <xs:maxLength value="10"/>
+                                              </xs:restriction>
+                                            </xs:simpleType>
+                                          </xs:element>
+                                          <xs:element name="link">
+                                            <xs:simpleType>
+                                              <xs:restriction base="xs:string">
+                                                <xs:minLength value="0"/>
+                                                <xs:maxLength value="130"/>
+                                              </xs:restriction>
+                                            </xs:simpleType>
+                                          </xs:element>
+                                          <xs:element type="xs:string" name="content"/>
+                                        </xs:sequence>
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element minOccurs="0" maxOccurs="1" name="sparepart" type="xs:string"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                      <xs:attribute name="for" type="xs:positiveInteger" use="required"/>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess</con:endpoint></con:endpoints><con:operation id="17e99561-b7c9-4f64-b3cf-28a445baed52" isOneWay="false" action="getServiceInfo" name="getServiceInfo" bindingOperationName="getServiceInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c50d8409-f875-4769-a450-440839e1b950" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:getServiceInfoRequest/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getServiceInfo"/></con:call></con:operation><con:operation id="06e40c73-0354-4120-ac5f-5a962bd1c58c" isOneWay="false" action="receiveUpdateCommitmentFromShop" name="receiveUpdateCommitmentFromShop" bindingOperationName="receiveUpdateCommitmentFromShop" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="70c8977b-1ab2-44e7-804f-f5e4712619f4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1" xmlns:no="NO_NAMESPACE">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:receiveUpdateCommitmentFromShopRequest>\r
+         <v1:requestHeader>\r
+            <!--Optional:-->\r
+            <v11:Message>\r
+               <!--Optional:-->\r
+               <v11:CreationDate>?</v11:CreationDate>\r
+               <!--Optional:-->\r
+               <v11:Type>?</v11:Type>\r
+               <!--Optional:-->\r
+               <v11:ID>?</v11:ID>\r
+               <!--Optional:-->\r
+               <v11:Version>?</v11:Version>\r
+               <!--Optional:-->\r
+               <v11:ReferenceID>?</v11:ReferenceID>\r
+            </v11:Message>\r
+            <!--Optional:-->\r
+            <v11:Caller>\r
+               <!--Optional:-->\r
+               <v11:SourceSystemName>?</v11:SourceSystemName>\r
+               <!--Optional:-->\r
+               <v11:Environment>?</v11:Environment>\r
+               <!--Optional:-->\r
+               <v11:User>\r
+                  <!--Optional:-->\r
+                  <v11:UserID>?</v11:UserID>\r
+                  <!--Optional:-->\r
+                  <v11:UserPassword>?</v11:UserPassword>\r
+                  <!--Optional:-->\r
+                  <v11:UserLocation>?</v11:UserLocation>\r
+               </v11:User>\r
+            </v11:Caller>\r
+            <!--Optional:-->\r
+            <v11:Operation>\r
+               <!--Optional:-->\r
+               <v11:OperationName>?</v11:OperationName>\r
+               <!--Optional:-->\r
+               <v11:Batch>\r
+                  <!--Optional:-->\r
+                  <v11:BatchNr>?</v11:BatchNr>\r
+                  <!--Optional:-->\r
+                  <v11:JobNr>?</v11:JobNr>\r
+               </v11:Batch>\r
+            </v11:Operation>\r
+            <!--Optional:-->\r
+            <v11:CorrelationID>?</v11:CorrelationID>\r
+            <!--Optional:-->\r
+            <v11:ActivityID>?</v11:ActivityID>\r
+            <!--Optional:-->\r
+            <v11:KeyValueList>\r
+               <!--1 or more repetitions:-->\r
+               <v11:KeyValuePair>\r
+                  <v11:Key>?</v11:Key>\r
+                  <v11:Value>?</v11:Value>\r
+               </v11:KeyValuePair>\r
+            </v11:KeyValueList>\r
+         </v1:requestHeader>\r
+         <v1:updateCommitment>\r
+            <no:queueId>?</no:queueId>\r
+            <no:orderNumber>?</no:orderNumber>\r
+            <no:status>?</no:status>\r
+            <no:resultDetails>?</no:resultDetails>\r
+         </v1:updateCommitment>\r
+      </v1:receiveUpdateCommitmentFromShopRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="receiveUpdateCommitmentFromShop"/></con:call></con:operation><con:operation id="517422a6-7ca6-4228-b7f9-9a2d7389c016" isOneWay="false" action="sendInboundReclamationToERP" name="sendInboundReclamationToERP" bindingOperationName="sendInboundReclamationToERP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="74a75112-e5e0-4d75-9892-44f017afd52a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://PWDDIAS02.aitec.pt:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1" xmlns:no="NO_NAMESPACE">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:sendInboundReclamationToERPRequest>\r
+         <v1:requestHeader>\r
+            <!--Optional:-->\r
+            <v11:Message>\r
+               <!--Optional:-->\r
+               <v11:CreationDate>?</v11:CreationDate>\r
+               <!--Optional:-->\r
+               <v11:Type>?</v11:Type>\r
+               <!--Optional:-->\r
+               <v11:ID>?</v11:ID>\r
+               <!--Optional:-->\r
+               <v11:Version>?</v11:Version>\r
+               <!--Optional:-->\r
+               <v11:ReferenceID>?</v11:ReferenceID>\r
+            </v11:Message>\r
+            <!--Optional:-->\r
+            <v11:Caller>\r
+               <!--Optional:-->\r
+               <v11:SourceSystemName>?</v11:SourceSystemName>\r
+               <!--Optional:-->\r
+               <v11:Environment>?</v11:Environment>\r
+               <!--Optional:-->\r
+               <v11:User>\r
+                  <!--Optional:-->\r
+                  <v11:UserID>?</v11:UserID>\r
+                  <!--Optional:-->\r
+                  <v11:UserPassword>?</v11:UserPassword>\r
+                  <!--Optional:-->\r
+                  <v11:UserLocation>?</v11:UserLocation>\r
+               </v11:User>\r
+            </v11:Caller>\r
+            <!--Optional:-->\r
+            <v11:Operation>\r
+               <!--Optional:-->\r
+               <v11:OperationName>?</v11:OperationName>\r
+               <!--Optional:-->\r
+               <v11:Batch>\r
+                  <!--Optional:-->\r
+                  <v11:BatchNr>?</v11:BatchNr>\r
+                  <!--Optional:-->\r
+                  <v11:JobNr>?</v11:JobNr>\r
+               </v11:Batch>\r
+            </v11:Operation>\r
+            <!--Optional:-->\r
+            <v11:CorrelationID>?</v11:CorrelationID>\r
+            <!--Optional:-->\r
+            <v11:ActivityID>?</v11:ActivityID>\r
+            <!--Optional:-->\r
+            <v11:KeyValueList>\r
+               <!--1 or more repetitions:-->\r
+               <v11:KeyValuePair>\r
+                  <v11:Key>?</v11:Key>\r
+                  <v11:Value>?</v11:Value>\r
+               </v11:KeyValuePair>\r
+            </v11:KeyValueList>\r
+         </v1:requestHeader>\r
+         <v1:updateWrapper>\r
+            <no:update>\r
+               <no:base_data>\r
+                  <no:order order_number="?" reference-id="?">\r
+                     <no:order_items>\r
+                        <!--1 or more repetitions:-->\r
+                        <no:order_item item_id="?" reference-id="?"/>\r
+                     </no:order_items>\r
+                  </no:order>\r
+               </no:base_data>\r
+               <no:transaction_data>\r
+                  <no:message Created="?" Structure_Version="?" type="?"/>\r
+                  <no:actions>\r
+                     <!--1 or more repetitions:-->\r
+                     <no:action for="?">\r
+                        <no:code>?</no:code>\r
+                        <no:data>\r
+                           <!--Optional:-->\r
+                           <no:date>?</no:date>\r
+                           <!--Optional:-->\r
+                           <no:in_time>?</no:in_time>\r
+                           <!--Optional:-->\r
+                           <no:tracking_number>?</no:tracking_number>\r
+                           <!--Optional:-->\r
+                           <no:carrier>?</no:carrier>\r
+                           <!--Optional:-->\r
+                           <no:reference_number>?</no:reference_number>\r
+                           <!--Optional:-->\r
+                           <no:dunning_level>?</no:dunning_level>\r
+                           <!--Optional:-->\r
+                           <no:comment>?</no:comment>\r
+                           <!--Optional:-->\r
+                           <no:image_folder_link>?</no:image_folder_link>\r
+                           <!--Optional:-->\r
+                           <no:reclamation_type>?</no:reclamation_type>\r
+                           <!--Optional:-->\r
+                           <no:reclamation_reason>?</no:reclamation_reason>\r
+                           <!--Optional:-->\r
+                           <no:capture>\r
+                              <no:amount>?</no:amount>\r
+                              <no:currency>?</no:currency>\r
+                           </no:capture>\r
+                           <!--Optional:-->\r
+                           <no:attachments>\r
+                              <!--1 or more repetitions:-->\r
+                              <no:attachment>\r
+                                 <no:type>?</no:type>\r
+                                 <no:link>?</no:link>\r
+                                 <no:content>?</no:content>\r
+                              </no:attachment>\r
+                           </no:attachments>\r
+                           <!--Optional:-->\r
+                           <no:sparepart>?</no:sparepart>\r
+                        </no:data>\r
+                     </no:action>\r
+                  </no:actions>\r
+               </no:transaction_data>\r
+            </no:update>\r
+         </v1:updateWrapper>\r
+      </v1:sendInboundReclamationToERPRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="sendInboundReclamationToERP"/></con:call></con:operation><con:operation id="312a5979-9c8d-4b0f-8813-90b8f92c6623" isOneWay="false" action="sendSalesOrderUpdateToShop" name="sendSalesOrderUpdateToShop" bindingOperationName="sendSalesOrderUpdateToShop" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="219f6d0c-ab7d-459f-8c1e-e7b221bc184b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7101/soa-infra/services/generic/SIIMessageHandler/SIIMessageHandlerProcess</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1" xmlns:no="NO_NAMESPACE">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r<ns1:sendSalesOrderUpdateToShopRequest xmlns:ns1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1">
+	<ns1:requestHeader xmlns:ns2="http://home24.de/data/common/messageheadertypes/v1">
+		<ns2:CorrelationID>30101002171507</ns2:CorrelationID>
+		<ns2:ActivityID/>
+		<ns2:KeyValueList>
+			<ns2:KeyValuePair>
+				<ns2:Key>SIILOGENTRYNO</ns2:Key>
+				<ns2:Value>123456</ns2:Value>
+			</ns2:KeyValuePair>
+		</ns2:KeyValueList>
+	</ns1:requestHeader>
+	<ns1:updateWrapper xmlns:ns2="NO_NAMESPACE">
+		<ns2:update>
+			<ns2:base_data>
+				<ns2:order order_number="30101002171507" reference-id="1">
+				</ns2:order>
+			</ns2:base_data>
+			<ns2:transaction_data>
+				<ns2:message Created="2015-12-10T11:39:10+01:00" Structure_Version="1.00" type="order.capture"/>
+				<ns2:actions>
+					<ns2:action for="1">
+						<ns2:code>update.order.capture</ns2:code>
+						<ns2:data>
+							<ns2:reference_number>VR13221282</ns2:reference_number>
+							<ns2:capture>
+								<ns2:amount>8997</ns2:amount>
+								<ns2:currency>EUR</ns2:currency>
+							</ns2:capture>
+						</ns2:data>
+					</ns2:action>
+				</ns2:actions>
+			</ns2:transaction_data>
+		</ns2:update>
+	</ns1:updateWrapper>
+</ns1:sendSalesOrderUpdateToShopRequest>
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="sendSalesOrderUpdateToShop"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

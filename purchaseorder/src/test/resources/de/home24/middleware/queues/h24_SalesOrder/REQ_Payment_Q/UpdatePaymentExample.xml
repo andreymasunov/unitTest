@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:ProcessRequest xmlns:ns2="urn:microsoft-dynamics-schemas/codeunit/NavConnectorWS" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<ns2:header>
+		<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:CreationDate>2015-10-16T16:47:03.199+02:00</ns3:CreationDate>
+			<ns3:Type/>
+			<ns3:ID/>
+			<ns3:Version>v1</ns3:Version>
+			<ns3:ReferenceID/>
+		</ns3:Message>
+		<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:SourceSystemName/>
+			<ns3:Environment/>
+			<ns3:User>
+				<ns3:UserID/>
+				<ns3:UserPassword/>
+				<ns3:UserLocation/>
+			</ns3:User>
+		</ns3:Caller>
+		<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:OperationName/>
+			<ns3:Batch>
+				<ns3:BatchNr/>
+				<ns3:JobNr/>
+			</ns3:Batch>
+		</ns3:Operation>
+		<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:KeyValuePair>
+				<ns3:Key/>
+				<ns3:Value/>
+			</ns3:KeyValuePair>
+		</ns3:KeyValueList>
+	</ns2:header>
+	<ns2:requestText>
+		<Transfer xmls="http://schema.mp-gruppe.de/NAVconnect/Webshop/">
+			<Header AppDom="1" object="RemoteProcedureCall" action="Request"/>
+			<Body>
+				<PaymentUpdateRequest>
+					<Payment>
+						<OrderNo>30101001869073</OrderNo>
+						<PaymentStatus>pre-authorized</PaymentStatus>
+						<TransactionNo>2336848923</TransactionNo>
+						<UpdateDate>2015-03-16 12:00:26</UpdateDate>
+					</Payment>
+				</PaymentUpdateRequest>
+			</Body>
+		</Transfer>
+	</ns2:requestText>
+	<ns2:responseText/>
+</ns2:ProcessRequest>

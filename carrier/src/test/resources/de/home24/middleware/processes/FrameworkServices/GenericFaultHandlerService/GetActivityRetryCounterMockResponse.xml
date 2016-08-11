@@ -1,0 +1,7 @@
+<ns2:getActivityRetryCounterResponse
+	xmlns:ns2="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1">
+	<ns2:responseHeader />
+	<ns2:getActivityRetryCounterResponse>
+		<ns3:RetryCount xmlns:ns3="http://home24.de/data/custom/ordertransaction/v1">${NUM_RETRIES}</ns3:RetryCount>
+	</ns2:getActivityRetryCounterResponse>
+</ns2:getActivityRetryCounterResponse>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+	<context:component-scan base-package="de.home24.middleware.octestframework" />
+
+	<context:annotation-config />
+
+	<context:property-placeholder
+		location="classpath:de/home24/middleware/config/soaconfig.local.properties"
+		system-properties-mode="OVERRIDE" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:soadb" />
+		<property name="username" value="h24" />
+		<property name="password" value="h24" />
+	</bean>
+
+	<!-- similarly, don't forget the PlatformTransactionManager -->
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+		<property name="environment">
+			<props>
+				<prop key="java.naming.factory.initial">weblogic.jndi.WLInitialContextFactory</prop>
+				<prop key="java.naming.factory.url.pkgs">weblogic.jndi.factories</prop>
+				<prop key="java.naming.provider.url">t3://${soa.osbHost}:${soa.osbPort}</prop>
+				<prop key="java.naming.security.principal">${soa.adminUser}</prop>
+				<prop key="java.naming.security.credentials">${soa.adminPass}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- JMS configuration -->
+
+	<bean id="jmsDestinationResolver"
+		class="org.springframework.jms.support.destination.JndiDestinationResolver">
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate" />
+		</property>
+		<property name="cache">
+			<value>true</value>
+		</property>
+	</bean>
+
+	<bean id="salesOrderConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="h24jms.SalesOrder" />
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate" />
+		</property>
+	</bean>
+
+	<bean id="siiConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="h24jms.SIIMessages" />
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate" />
+		</property>
+	</bean>
+
+	<bean id="purchaseOrderConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="h24jms.PurchaseOrder" />
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate" />
+		</property>
+	</bean>
+
+	<bean id="loggingConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="h24jms.ActivityProcessstatusLogging" />
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate" />
+		</property>
+	</bean>
+
+	<bean id="edifactConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="h24jms.Edifact" />
+		<property name="jndiTemplate">
+			<ref bean="jndiTemplate" />
+		</property>
+	</bean>
+
+	<bean id="salesOrderQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="salesOrderConnectionFactory" />
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver" />
+		</property>
+	</bean>
+
+	<bean id="siiQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="siiConnectionFactory" />
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver" />
+		</property>
+	</bean>
+
+	<bean id="purchaseOrderQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="purchaseOrderConnectionFactory" />
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver" />
+		</property>
+	</bean>
+
+	<bean id="loggingQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="loggingConnectionFactory" />
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver" />
+		</property>
+	</bean>
+
+	<bean id="edifactQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory">
+			<ref bean="edifactConnectionFactory" />
+		</property>
+		<property name="destinationResolver">
+			<ref bean="jmsDestinationResolver" />
+		</property>
+	</bean>
+
+	<!-- context:load-time-weaver
+		weaver-class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver"
+		aspectj-weaving="on" /-->
+
+	<!-- aop:aspectj-autoproxy /-->
+
+	<!--bean name="executionTimeAspect"
+		class="de.home24.middleware.octestframework.aspect.ExecutionTimeAspect" /-->
+</beans>

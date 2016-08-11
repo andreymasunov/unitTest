@@ -1,0 +1,32 @@
+<v1:handleFaultResponse
+	xmlns:v1="http://home24.de/interfaces/bas/genericfaulthandler/genericfaulthandlerservicemessages/v1"
+	xmlns:v11="http://home24.de/data/custom/genericfaulthandler/v1">
+	<v1:responseHeader />
+	<v1:faultHandlingStrategy>
+		<v11:transactionId>DS188512</v11:transactionId>
+		<v11:faultStrategy>Abort</v11:faultStrategy>
+		<v11:payload>
+			<closeShippingInstructionsRequest
+				xmlns="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+				<requestHeader>
+					<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:CorrelationID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:ActivityID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:KeyValueList
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+						<ns3:KeyValuePair>
+							<ns3:Key>UnitName</ns3:Key>
+							<ns3:Value>70195</ns3:Value>
+						</ns3:KeyValuePair>
+					</ns3:KeyValueList>
+				</requestHeader>
+				<parcelReferenceNumber typeCode="MetapackParcelRefNumber">DS188512.353764.01
+				</parcelReferenceNumber>
+			</closeShippingInstructionsRequest>
+		</v11:payload>
+	</v1:faultHandlingStrategy>
+</v1:handleFaultResponse>

@@ -1,0 +1,18 @@
+<MarkShipmentsResponse xmlns="http://xlogics.eu/blackbox" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <ExitStatus xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <Status>Error</Status>
+    <StatusDetails>
+      <StatusDetail>
+        <Status>Error</Status>
+        <Code>1</Code>
+        <Message>Authorization error: The specified unit can not be found or is not active.</Message>
+        <Details>XLogics.XPack.Logic.LoginUserException: Authorization error: The specified unit can not be found or is not active.
+   at XLogics.XPack.Environment.AuthenticationManager.Login()
+   at XLogics.BlackBox.WCFSecurity.Authorization..ctor(Boolean login)
+   at XLogics.BlackBox.WCFSecurity.Authentication.get_Authorization()
+   at XLogics.BlackBox.ServiceImplementation.BlackBoxService.MarkShipments(MarkShipmentsRequest request)</Details>
+      </StatusDetail>
+    </StatusDetails>
+  </ExitStatus>
+  <OutputParameters i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+</MarkShipmentsResponse>

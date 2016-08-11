@@ -1,0 +1,9 @@
+<csi:closeShippingInstructionsResponse xmlns:csi="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+	<csi:responseHeader>
+		<ns1:Caller xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+			<ns1:User>
+				<ns1:UserID>70195</ns1:UserID>
+			</ns1:User>
+		</ns1:Caller>
+	</csi:responseHeader>
+</csi:closeShippingInstructionsResponse>

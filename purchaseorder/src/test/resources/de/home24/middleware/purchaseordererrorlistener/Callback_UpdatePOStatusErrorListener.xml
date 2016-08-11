@@ -1,0 +1,102 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap-env:Header xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+		<wsa05:RelatesTo xmlns:wsa05="http://www.w3.org/2005/08/addressing">${MESSAGE_ID}</wsa05:RelatesTo>
+	</soap-env:Header>
+	<soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+		<exc:exception xmlns:exc="http://home24.de/data/common/exceptiontypes/v1">
+			<exc:context>
+				<exc:sourceSystemName>sourceSystemName</exc:sourceSystemName>
+				<exc:environment>environment</exc:environment>
+				<exc:transactionId>transactionId</exc:transactionId>
+				<exc:ecid>ecid</exc:ecid>
+				<exc:activityId>activityId</exc:activityId>
+				<exc:payload>
+					<ns2:updatePurchaseOrderStatus
+						xmlns:ns2="http://home24.de/data/navision/purchaseordermessages/v1">
+						<ns2:header>
+							<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+								<ns3:CreationDate>2016-01-28T16:10:22.497+01:00
+								</ns3:CreationDate>
+								<ns3:Type>Type51</ns3:Type>
+								<ns3:ID>ID52</ns3:ID>
+								<ns3:Version>Version53</ns3:Version>
+								<ns3:ReferenceID>ReferenceID54</ns3:ReferenceID>
+							</ns3:Message>
+							<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+								<ns3:SourceSystemName>Middleware</ns3:SourceSystemName>
+								<ns3:Environment>Environment56</ns3:Environment>
+								<ns3:User />
+							</ns3:Caller>
+							<ns3:Operation
+								xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+								<ns3:OperationName>OperationName57</ns3:OperationName>
+								<ns3:Batch />
+							</ns3:Operation>
+							<ns3:CorrelationID
+								xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</ns3:CorrelationID>
+							<ns3:ActivityID
+								xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P1002-ORDER-SENT</ns3:ActivityID>
+							<ns3:KeyValueList
+								xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+								<ns3:KeyValuePair>
+									<ns3:Key>ReplyTo</ns3:Key>
+									<ns3:Value>${REPLY_TO}</ns3:Value>
+								</ns3:KeyValuePair>
+								<ns3:KeyValuePair>
+									<ns3:Key>MessageID</ns3:Key>
+									<ns3:Value>${MESSAGE_ID}</ns3:Value>
+								</ns3:KeyValuePair>
+								<ns3:KeyValuePair>
+									<ns3:Key>Key60</ns3:Key>
+									<ns3:Value>Value61</ns3:Value>
+								</ns3:KeyValuePair>
+							</ns3:KeyValueList>
+						</ns2:header>
+						<ns2:body>
+							<ns2:updatePurchaseOrderStatusRequest>
+								<ns4:ediDocumentType
+									xmlns:ns4="http://home24.de/data/navision/purchaseorder/v1">ORDERS</ns4:ediDocumentType>
+								<ns4:purchaseOrder
+									xmlns:ns4="http://home24.de/data/navision/purchaseorder/v1">
+									<ns4:purchaseOrderNumber>${PURCHASE_ORDER_NUMBER}
+									</ns4:purchaseOrderNumber>
+									<ns4:dateSent>2002-05-30</ns4:dateSent>
+									<ns4:timeSent>09:00:00</ns4:timeSent>
+									<ns4:dateDelivered />
+									<ns4:timeDelivered />
+									<ns4:fileNameLabel>pathToMergedLabelPDF.pdf</ns4:fileNameLabel>
+									<ns4:fileNameDeliveryNote>pathToDeliveryNote.pdf
+									</ns4:fileNameDeliveryNote>
+									<ns4:fileNameOrderCSV />
+									<ns4:fileNameOrderXML>pathToXML.xml</ns4:fileNameOrderXML>
+									<ns4:fileNameZIP>tmpNote</ns4:fileNameZIP>
+									<ns4:comboxID>${COMBOX_ID}</ns4:comboxID>
+								</ns4:purchaseOrder>
+							</ns2:updatePurchaseOrderStatusRequest>
+						</ns2:body>
+					</ns2:updatePurchaseOrderStatus>
+				</exc:payload>
+			</exc:context>
+			<exc:severity>ERROR</exc:severity>
+			<exc:category>TriggerFault</exc:category>
+			<exc:faultInfo>
+					<exc:faultCode>OSB-382513</exc:faultCode>
+					<exc:faultMessage>OSB-Aktion "Ersetzen" beim Aktualisieren der Variable "body" nicht erfolgreich: {http://xmlns.oracle.com/xdk/xquery/error}TYPE003: Nicht ubereinstimmender Laufzeittyp</exc:faultMessage>
+					<exc:faultDetails/>
+					<exc:faultTimestamp>2015-11-30T12:05:34.047+01:00</exc:faultTimestamp>
+					<exc:faultUserArea>
+						<con:fault xmlns:con="http://www.bea.com/wli/sb/context">
+							<con:errorCode>OSB-382513</con:errorCode>
+							<con:reason>OSB-Aktion "Ersetzen" beim Aktualisieren der Variable "body" nicht erfolgreich: {http://xmlns.oracle.com/xdk/xquery/error}TYPE003: Nicht ubereinstimmender Laufzeittyp</con:reason>
+							<con:location>
+								<con:node>ConsumeFromQueuePipelinePairNode</con:node>
+								<con:pipeline>request-N3f57c7ff.N240e68a6.0.14fda2706ee.N7ea5</con:pipeline>
+								<con:stage>Stage_SalesOrderErrorMessage</con:stage>
+								<con:path>request-pipeline</con:path>
+							</con:location>
+						</con:fault>
+					</exc:faultUserArea>
+				</exc:faultInfo>
+		</exc:exception>
+	</soapenv:Body>
+</soapenv:Envelope>

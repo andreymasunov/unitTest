@@ -1,0 +1,62 @@
+<ns3:exception xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+	<ns3:context>
+		<ns3:sourceSystemName>Middleware</ns3:sourceSystemName>
+		<ns3:transactionId></ns3:transactionId>
+		<ns3:flowId />
+		<ns3:ecid />
+		<ns3:activityId>P1002-EDIFACT-INIT</ns3:activityId>
+		<ns3:compositeInstanceId />
+		<ns3:processLibraryId>P1002</ns3:processLibraryId>
+		<ns3:payload>
+			<ns2:initiateEdifactCreation
+				xmlns:ns2="http://home24.de/data/navision/edifactmessages/v1">
+				<ns2:header>
+					<ns3:CorrelationID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</ns3:CorrelationID>
+					<ns3:ActivityID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P1002-EDIFACT-INIT</ns3:ActivityID>
+					<ns3:KeyValueList
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+						<ns3:KeyValuePair>
+							<ns3:Key>ReplyTo</ns3:Key>
+							<ns3:Value>https://localhost:7102/soa-infra/services/dropship/EDIVendorTransmissionProcess!1.0*soa_622dcd65-31bb-46f5-85b8-e9396be2dc68/VendorTransmissionService%23InitiateEDIFACTProcessinginERP/VendorTransmissionService</ns3:Value>
+						</ns3:KeyValuePair>
+						<ns3:KeyValuePair>
+							<ns3:Key>MessageID</ns3:Key>
+							<ns3:Value>518535</ns3:Value>
+						</ns3:KeyValuePair>
+					</ns3:KeyValueList>
+				</ns2:header>
+				<ns2:body>
+					<ns2:edifactCreationRequest>
+						<ns4:purchaseOrderNumber
+							xmlns:ns4="http://home24.de/data/navision/edifact/v1">${PURCHASE_ORDER_NUM}</ns4:purchaseOrderNumber>
+						<ns4:labelPath xmlns:ns4="http://home24.de/data/navision/edifact/v1">dummyLabelRef</ns4:labelPath>
+						<ns4:deliveryNotePath xmlns:ns4="http://home24.de/data/navision/edifact/v1">dummyDeliveryNoteRef</ns4:deliveryNotePath>
+					</ns2:edifactCreationRequest>
+				</ns2:body>
+			</ns2:initiateEdifactCreation>
+		</ns3:payload>
+	</ns3:context>
+	<ns3:severity>ERROR</ns3:severity>
+	<ns3:category>TechnicalFault</ns3:category>
+	<ns3:faultInfo>
+		<ns3:faultCode>OSB-380002</ns3:faultCode>
+		<ns3:faultMessage>Not Found</ns3:faultMessage>
+		<ns3:faultDetails />
+		<ns3:faultTimestamp>2016-02-02T02:48:21.216+01:00</ns3:faultTimestamp>
+		<ns3:faultUserArea>
+			<fault xmlns:ns1="http://home24.de/data/common/exceptionparameterstypes/v1"
+				xmlns="http://www.bea.com/wli/sb/context">
+				<errorCode>OSB-380002</errorCode>
+				<reason>Not Found</reason>
+				<location>
+					<node>PipelinePairNode1</node>
+					<pipeline>request-N3f57c7ff.66713cfd.0.15299c67e1e.N8000</pipeline>
+					<stage>EdifactCallbackReq</stage>
+					<path>request-pipeline</path>
+				</location>
+			</fault>
+		</ns3:faultUserArea>
+	</ns3:faultInfo>
+</ns3:exception>

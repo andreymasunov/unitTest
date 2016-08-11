@@ -1,0 +1,3 @@
+<Body  	xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+	<opaqueElement  	xmlns="http://xmlns.oracle.com/pcbpel/adapter/opaque/">dGVzdA==</opaqueElement>
+</Body>

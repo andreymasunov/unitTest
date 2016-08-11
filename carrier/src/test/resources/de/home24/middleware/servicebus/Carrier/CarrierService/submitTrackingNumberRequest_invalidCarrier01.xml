@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<submitTrackingNumberRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+  <requestHeader>
+		<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+			<Version>v1</Version>
+		</Message>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P1002-TRACKNO-2MP</ActivityID>
+  </requestHeader>
+  <purchaseOrder typeCode="" actionCode="Add">
+		<oagis:PurchaseOrderHeader xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:ID>${PURCHASE_ORDER_ID}</oagis:ID>
+			<oagis:VariationID>DE266182271</oagis:VariationID>
+			<oagis:DocumentIDSet>
+				<oagis:ID typeCode="VendorOrderNo" />
+			</oagis:DocumentIDSet>
+			<oagis:DocumentDateTime>16.10.15</oagis:DocumentDateTime>
+			<oagis:Description languageCode="" />
+			<oagis:Note status="" typeCode="Comment" />
+			<oagis:Note status="" typeCode="ShipmentComment" />
+			<oagis:Status>
+				<oagis:Code />
+			</oagis:Status>
+			<oagis:SupplierParty>
+				<oagis:ID>711106</oagis:ID>
+				<oagis:Name sequenceNumber="1">Rauch GmbH</oagis:Name>
+				<oagis:Name sequenceNumber="2" />
+				<oagis:Location>
+					<oagis:Address>
+						<oagis:Name sequenceNumber="2" />
+						<oagis:StreetName>Wendelin-Rauch-Strasse</oagis:StreetName>
+						<oagis:BuildingNumber>1</oagis:BuildingNumber>
+						<oagis:AddressLine sequenceNumber="1">Wendelin-Rauch
+						</oagis:AddressLine>
+						<oagis:AddressLine sequenceNumber="2">Near Doner shop you know</oagis:AddressLine>
+						<oagis:CityName>CityName Freudenberg</oagis:CityName>
+						<oagis:CountrySubDivisionCode />
+						<oagis:CountryCode>DE</oagis:CountryCode>
+						<oagis:PostalCode>97896</oagis:PostalCode>
+					</oagis:Address>
+				</oagis:Location>
+				<oagis:Contact>
+					<oagis:EMailAddressCommunication>
+						<oagis:EMailAddressID />
+					</oagis:EMailAddressCommunication>
+				</oagis:Contact>
+			</oagis:SupplierParty>
+			<oagis:ShipToParty typeCode="LIEF001">
+				<oagis:ID>4260266310008</oagis:ID>
+				<oagis:Name sequenceNumber="1">Ship1 Julian Companierp
+				</oagis:Name>
+				<oagis:Name sequenceNumber="2">Ship2 Eno Ahmedspahic
+				</oagis:Name>
+				<oagis:Location>
+					<oagis:Address typeCode="Post Code+City">
+						<oagis:StreetName>Wendelin-Rauch-Strasse</oagis:StreetName>
+						<oagis:BuildingNumber>1</oagis:BuildingNumber>
+						<oagis:AddressLine sequenceNumber="1">Address Str. 10</oagis:AddressLine>
+						<oagis:AddressLine sequenceNumber="2">Adress Details Links</oagis:AddressLine>
+						<oagis:CityName>Berlin</oagis:CityName>
+						<oagis:CountrySubDivisionCode />
+						<oagis:CountryCode>DE</oagis:CountryCode>
+						<oagis:PostalCode>13595</oagis:PostalCode>
+					</oagis:Address>
+				</oagis:Location>
+				<oagis:Contact>
+					<oagis:OrganizationUnitID>ounitId</oagis:OrganizationUnitID>
+					<oagis:TelephoneCommunication>
+						<oagis:FormattedNumber>01711231212</oagis:FormattedNumber>
+					</oagis:TelephoneCommunication>
+					<oagis:EMailAddressCommunication>
+						<oagis:EMailAddressID>email@gmail.com</oagis:EMailAddressID>
+					</oagis:EMailAddressCommunication>
+				</oagis:Contact>
+			</oagis:ShipToParty>
+			<oagis:RequestedShipDateTime>16.10.15</oagis:RequestedShipDateTime>
+			<oagis:PromisedShipDateTime />
+			<oagis:PaymentMethodCode>ABC</oagis:PaymentMethodCode>
+			<oagis:Payment>
+				<oagis:PaymentTerm>
+					<oagis:ID>5-16</oagis:ID>
+				</oagis:PaymentTerm>
+			</oagis:Payment>
+			<oagis:ShippingInstructions />
+			<oagis:Classification>
+				<oagis:Codes>
+					<oagis:Code typeCode="AppDomain">1</oagis:Code>
+					<oagis:Code typeCode="GroupID">1</oagis:Code>
+					<oagis:Code typeCode="IsEDIOrder">No</oagis:Code>
+				</oagis:Codes>
+			</oagis:Classification>
+			<oagis:OrderDateTime>16.10.15</oagis:OrderDateTime>
+			<oagis:SalesOrderReference>
+				<oagis:ID>${SALES_ORDER_ID}</oagis:ID>
+			</oagis:SalesOrderReference>
+		</oagis:PurchaseOrderHeader>
+		<oagis:PurchaseOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:LineNumberID>10000</oagis:LineNumberID>
+			<oagis:LineIDSet>
+				<oagis:ID>0</oagis:ID>
+			</oagis:LineIDSet>
+			<oagis:Description typeCode="Line1">Wandboard Drake - Kernnuss</oagis:Description>
+			<oagis:Description typeCode="Line2" />
+			<oagis:Note typeCode="IsMarketPlace">No</oagis:Note>
+			<oagis:DocumentReference>
+				<oagis:ID>4038283001588</oagis:ID>
+			</oagis:DocumentReference>
+			<oagis:DocumentReference>
+				<oagis:DocumentDateTime />
+			</oagis:DocumentReference>
+			<oagis:Item>
+				<oagis:ID>M-L1-000003</oagis:ID>
+				<oagis:ItemIDSet>
+					<oagis:ID typeCode="VendorItemNo">AML168892</oagis:ID>
+				</oagis:ItemIDSet>
+				<oagis:Description>Description item 01</oagis:Description>
+				<oagis:Packaging>
+					<oagis:Note typeCode="NumberOfParcels">2</oagis:Note>
+				</oagis:Packaging>
+				<oagis:Packaging>
+					<oagis:Note typeCode="NumberOfParcels">2</oagis:Note>
+				</oagis:Packaging>
+				<oagis:Dimensions>
+					<oagis:NetWeightMeasure>0</oagis:NetWeightMeasure>
+					<oagis:GrossWeightMeasure>21</oagis:GrossWeightMeasure>
+				</oagis:Dimensions>
+			</oagis:Item>
+			<oagis:Quantity>1</oagis:Quantity>
+			<oagis:TransportationTerm>
+				<oagis:Note typeCode="LocationCode">DIREKT</oagis:Note>
+				<oagis:Note typeCode="PurchasingCode">GER-7</oagis:Note>
+			</oagis:TransportationTerm>
+			<oagis:PromisedDeliveryDateTime />
+			<oagis:ShippingInstructions />
+			<oagis:SalesOrderReference>
+				<oagis:Quantity>10000</oagis:Quantity>
+			</oagis:SalesOrderReference>
+		</oagis:PurchaseOrderLine>
+		<oagis:PurchaseOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:LineNumberID>20000</oagis:LineNumberID>
+			<oagis:LineIDSet>
+				<oagis:ID>0</oagis:ID>
+			</oagis:LineIDSet>
+			<oagis:Description typeCode="Line1">Wandboard Drake - Kernnuss</oagis:Description>
+			<oagis:Description typeCode="Line2" />
+			<oagis:Note typeCode="IsMarketPlace">No</oagis:Note>
+			<oagis:DocumentReference>
+				<oagis:ID>4038283001588</oagis:ID>
+			</oagis:DocumentReference>
+			<oagis:DocumentReference>
+				<oagis:DocumentDateTime />
+			</oagis:DocumentReference>
+			<oagis:Item>
+				<oagis:ID>M-L2-000105</oagis:ID>
+				<oagis:ItemIDSet>
+					<oagis:ID typeCode="VendorItemNo">AML268892</oagis:ID>
+				</oagis:ItemIDSet>
+				<oagis:Description>Description item 02</oagis:Description>
+				<oagis:Packaging>
+					<oagis:Note typeCode="NumberOfParcels">2</oagis:Note>
+					<oagis:Note typeCode="TransportationService">DPD_Paket</oagis:Note>
+				</oagis:Packaging>
+				<oagis:Packaging>
+					<oagis:Note typeCode="NumberOfParcels">2</oagis:Note>
+					<oagis:Note typeCode="TransportationService">DPD_Paket</oagis:Note>
+				</oagis:Packaging>
+				<oagis:Dimensions>
+					<oagis:NetWeightMeasure>0</oagis:NetWeightMeasure>
+					<oagis:GrossWeightMeasure>21</oagis:GrossWeightMeasure>
+				</oagis:Dimensions>
+			</oagis:Item>
+			<oagis:Quantity>1</oagis:Quantity>
+			<oagis:TransportationTerm>
+				<oagis:Note typeCode="LocationCode">DIREKT</oagis:Note>
+				<oagis:Note typeCode="PurchasingCode">GER-7</oagis:Note>
+			</oagis:TransportationTerm>
+			<oagis:PromisedDeliveryDateTime />
+			<oagis:ShippingInstructions />
+			<oagis:SalesOrderReference>
+				<oagis:Quantity>10000</oagis:Quantity>
+			</oagis:SalesOrderReference>
+		</oagis:PurchaseOrderLine>
+	</purchaseOrder>
+</submitTrackingNumberRequest>

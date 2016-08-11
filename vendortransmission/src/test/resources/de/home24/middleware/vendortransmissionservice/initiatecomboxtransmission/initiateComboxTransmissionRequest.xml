@@ -1,0 +1,60 @@
+<v1:initiateComboxTransmissionRequest
+	xmlns="" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1"
+	xmlns:v1="http://home24.de/interfaces/bas/vendortransmissionservice/vendortransmissionservicemessages/v1">
+	<v1:requestHeader>
+		<!--Optional: -->
+		<v11:Message>
+			<!--Optional: -->
+			<v11:CreationDate>string</v11:CreationDate>
+			<!--Optional: -->
+			<v11:Type>string</v11:Type>
+			<!--Optional: -->
+			<v11:ID>string</v11:ID>
+			<!--Optional: -->
+			<v11:Version>string</v11:Version>
+			<!--Optional: -->
+			<v11:ReferenceID>string</v11:ReferenceID>
+		</v11:Message>
+		<!--Optional: -->
+		<v11:Caller>
+			<!--Optional: -->
+			<v11:SourceSystemName>string</v11:SourceSystemName>
+			<!--Optional: -->
+			<v11:Environment>string</v11:Environment>
+			<!--Optional: -->
+			<v11:User>
+				<!--Optional: -->
+				<v11:UserID>string</v11:UserID>
+				<!--Optional: -->
+				<v11:UserPassword>string</v11:UserPassword>
+				<!--Optional: -->
+				<v11:UserLocation>string</v11:UserLocation>
+			</v11:User>
+		</v11:Caller>
+		<!--Optional: -->
+		<v11:Operation>
+			<!--Optional: -->
+			<v11:OperationName>string</v11:OperationName>
+			<!--Optional: -->
+			<v11:Batch>
+				<!--Optional: -->
+				<v11:BatchNr>100</v11:BatchNr>
+				<!--Optional: -->
+				<v11:JobNr>100</v11:JobNr>
+			</v11:Batch>
+		</v11:Operation>
+		<!--Optional: -->
+		<v11:CorrelationID>${CORRELATION_ID}</v11:CorrelationID>
+		<!--Optional: -->
+		<v11:ActivityID>string</v11:ActivityID>
+		<!--Optional: -->
+		<v11:KeyValueList>
+			<!--1 or more repetitions: -->
+			<v11:KeyValuePair>
+				<v11:Key>string</v11:Key>
+				<v11:Value>string</v11:Value>
+			</v11:KeyValuePair>
+		</v11:KeyValueList>
+	</v1:requestHeader>
+	<v1:zipFileReference>${ZIP_FILE_REFERENCE}</v1:zipFileReference>
+</v1:initiateComboxTransmissionRequest>

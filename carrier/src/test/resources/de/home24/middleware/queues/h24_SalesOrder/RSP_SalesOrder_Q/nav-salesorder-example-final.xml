@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ProcessRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://home24.de/data/navision/salesordermessages/v1">
+  <header>
+    <Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <CreationDate></CreationDate>
+      <Type></Type>
+      <ID></ID>
+      <Version></Version>
+      <ReferenceID></ReferenceID>
+    </Message>
+    <Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <SourceSystemName></SourceSystemName>
+      <Environment></Environment>
+      <User>
+        <UserID></UserID>
+        <UserPassword></UserPassword>
+        <UserLocation></UserLocation>
+      </User>
+    </Caller>
+    <Operation xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <OperationName></OperationName>
+      <Batch>
+        <BatchNr></BatchNr>
+        <JobNr></JobNr>
+      </Batch>
+    </Operation>
+    <CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1"></CorrelationID>
+    <ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1"></ActivityID>
+    <KeyValueList xmlns="http://home24.de/data/common/messageheadertypes/v1">
+      <KeyValuePair>
+        <Key></Key>
+        <Value></Value>
+      </KeyValuePair>
+    </KeyValueList>
+  </header>
+  <responseText>
+    <SalesOrder>
+      <SalesHeader xmlns="http://home24.de/data/navision/salesorder/v1">
+        <AppDom>1</AppDom>
+        <No>SP0005287</No>
+        <ExternalDocumentNo>10104001292619</ExternalDocumentNo>
+        <OrderDate>11.05.15</OrderDate>
+        <CreationDate>11.05.15</CreationDate>
+        <LanguageCode>DEU</LanguageCode>
+        <WebshopLanguageCode>DE_DE</WebshopLanguageCode>
+        <Comment/>
+		<ReturnReasonENU>enclosed you find an order due to a warranty case</ReturnReasonENU>
+		<ReturnReasonDEU>anbei erhalten Sie eine Bestellung aufgrund eines Gewährleistungsfalles</ReturnReasonDEU>
+        <CompleteDelivery>0</CompleteDelivery>
+        <CurrencyCode/>
+        <Amount>0</Amount>
+        <Status>3</Status>
+        <VATRegistrationNo/>
+        <ComissioningCode/>
+        <PaymentMethod>
+          <Code>RECHNUNG</Code>
+          <WebshopMehod/>
+          <TransactionId/>
+          <AccountNo/>
+        </PaymentMethod>
+        <SellTo>
+          <CustomerNo>1700026890</CustomerNo>
+          <Gender>Male</Gender>
+          <Name>Thomas Heger</Name>
+          <Company/>
+          <Address>Ricarda-Huch-Straße 4</Address>
+          <Address2/>
+          <City>Sarstedt</City>
+          <Zip>31157</Zip>
+          <CountryRegion>DE</CountryRegion>
+          <PhoneNo>05066 6959330</PhoneNo>
+          <Email>heger.th@web.de</Email>
+        </SellTo>
+        <ShipTo>
+          <Gender>Male</Gender>
+          <Name>Thomas Heger</Name>
+          <Company/>
+          <Address>Ricarda-Huch-Straße 4</Address>
+          <Address2/>
+          <City>Sarstedt</City>
+          <Zip>31157</Zip>
+          <CountryRegion>DE</CountryRegion>
+          <PhoneNo>05066 6959330</PhoneNo>
+          <Email>heger.th@web.de</Email>
+          <IsPackStation>1</IsPackStation>
+        </ShipTo>
+      </SalesHeader>
+      <SalesLines xmlns="http://home24.de/data/navision/salesorder/v1">
+        <SalesLine>
+          <LineNo>10000</LineNo>
+          <Type>Item</Type>
+          <No>P-PH-001-SP</No>
+          <Description>TNr.: 1x6; 1x7</Description>
+          <Quantity>1</Quantity>
+          <UnitPrice>0</UnitPrice>
+          <CurrencyCode/>
+          <LineAmount>0</LineAmount>
+          <ID>1</ID>
+          <ParentID>0</ParentID>
+          <DeliveryDays>0</DeliveryDays>
+          <LocationCode>DIREKT</LocationCode>
+          <PurchasingCode>GER-13</PurchasingCode>
+          <ShippingAgentCode>DHL</ShippingAgentCode>
+          <ShippingAgentCodeOriginal>NOTDHL</ShippingAgentCodeOriginal>
+          <GroupNo/>
+          <PurchaseOrderNo>SPP0001367</PurchaseOrderNo>
+          <PurchaseOrderLineNo>10000</PurchaseOrderLineNo>
+          <IPLStatus/>
+          <TrackingNo/>
+          <ShippingSource>442</ShippingSource>
+        </SalesLine>
+      </SalesLines>
+    </SalesOrder>
+  </responseText>
+</ProcessRequest>

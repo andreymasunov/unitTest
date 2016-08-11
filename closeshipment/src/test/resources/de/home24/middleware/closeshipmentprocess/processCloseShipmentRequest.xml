@@ -1,0 +1,52 @@
+<ns2:processCloseShipmentRequest xmlns:ns2="http://home24.de/interfaces/bps/closeshipmentprocess/closeshipmentprocessmessages/v1">
+	<ns2:requestHeader>
+		<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:KeyValuePair>
+				<ns3:Key/>
+				<ns3:Value/>
+			</ns3:KeyValuePair>
+		</ns3:KeyValueList>
+	</ns2:requestHeader>
+	<ns2:salesOrder>
+		<oagis:SalesOrderHeader xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:ID>${CORRELATION_ID}</oagis:ID>
+		</oagis:SalesOrderHeader>
+		<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:LineNumberID>${LINE_ID_1}</oagis:LineNumberID>
+			<oagis:Item>
+				<oagis:Packaging>
+					<oagis:ID typeCode="MetapackParcelRefNumber">${CORRELATION_ID}.${LINE_ID_1}.01</oagis:ID>
+					<oagis:Note typeCode="Status" status="SHCLD">Shipment closed</oagis:Note>
+				</oagis:Packaging>
+				<oagis:Packaging>
+					<oagis:ID typeCode="MetapackParcelRefNumber">${CORRELATION_ID}.${LINE_ID_1}.02</oagis:ID>
+					<oagis:Note typeCode="Status" status="SHCLD">Shipment closed</oagis:Note>
+				</oagis:Packaging>
+			</oagis:Item>
+			<oagis:SupplierParty>
+				<oagis:ID>${METAPACK_AUTH_VALUE}</oagis:ID>
+			</oagis:SupplierParty>
+		</oagis:SalesOrderLine>
+		<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+			<oagis:LineNumberID>${LINE_ID_2}</oagis:LineNumberID>
+			<oagis:Item>
+				<oagis:Packaging>
+					<oagis:ID typeCode="MetapackParcelRefNumber">${CORRELATION_ID}.${LINE_ID_2}.01</oagis:ID>
+					<oagis:Note typeCode="Status" status="SHCLD">Shipment closed</oagis:Note>
+				</oagis:Packaging>
+				<oagis:Packaging>
+					<oagis:ID typeCode="MetapackParcelRefNumber">${CORRELATION_ID}.${LINE_ID_2}.02</oagis:ID>
+					<oagis:Note typeCode="Status" status="SHCLD">Shipment closed</oagis:Note>
+				</oagis:Packaging>
+			</oagis:Item>
+			<oagis:SupplierParty>
+				<oagis:ID>${METAPACK_AUTH_VALUE}</oagis:ID>
+			</oagis:SupplierParty>
+		</oagis:SalesOrderLine>
+	</ns2:salesOrder>
+</ns2:processCloseShipmentRequest>

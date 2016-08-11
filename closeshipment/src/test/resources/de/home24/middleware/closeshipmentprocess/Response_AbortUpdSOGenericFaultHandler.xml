@@ -1,0 +1,71 @@
+<v1:handleFaultResponse
+	xmlns:v1="http://home24.de/interfaces/bas/genericfaulthandler/genericfaulthandlerservicemessages/v1"
+	xmlns:v11="http://home24.de/data/custom/genericfaulthandler/v1">
+	<v1:responseHeader />
+	<v1:faultHandlingStrategy>
+		<v11:transactionId>DS188512</v11:transactionId>
+		<v11:faultStrategy>Abort</v11:faultStrategy>
+		<v11:payload>
+			<updateSalesOrderLineRequest
+				xmlns="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1">
+				<requestHeader>
+					<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:CorrelationID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:ActivityID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P201-UPD-SO-LINE</ns3:ActivityID>
+					<ns3:KeyValueList
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+						<ns3:KeyValuePair>
+							<ns3:Key />
+							<ns3:Value />
+						</ns3:KeyValuePair>
+					</ns3:KeyValueList>
+				</requestHeader>
+				<salesOrder>
+					<oagis:SalesOrderHeader xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:ID>DS527770</oagis:ID>
+					</oagis:SalesOrderHeader>
+					<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:LineNumberID>814841</oagis:LineNumberID>
+						<oagis:Item>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.814841.01</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.814841.02</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+						</oagis:Item>
+						<oagis:SupplierParty>
+							<oagis:ID>70195</oagis:ID>
+						</oagis:SupplierParty>
+					</oagis:SalesOrderLine>
+					<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:LineNumberID>4178</oagis:LineNumberID>
+						<oagis:Item>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.4178.01</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.4178.02</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+						</oagis:Item>
+						<oagis:SupplierParty>
+							<oagis:ID>70195</oagis:ID>
+						</oagis:SupplierParty>
+					</oagis:SalesOrderLine>
+				</salesOrder>
+			</updateSalesOrderLineRequest>
+		</v11:payload>
+	</v1:faultHandlingStrategy>
+</v1:handleFaultResponse>

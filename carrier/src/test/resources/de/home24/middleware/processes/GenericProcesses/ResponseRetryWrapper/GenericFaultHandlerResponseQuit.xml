@@ -1,0 +1,22 @@
+<handleFaultResponse
+	xmlns="http://home24.de/interfaces/bas/genericfaulthandler/genericfaulthandlerservicemessages/v1">
+	<responseHeader>
+		<Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<SourceSystemName>Middleware</SourceSystemName>
+		</Caller>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">1231376876</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P1001-DELNT</ActivityID>
+	</responseHeader>
+	<faultHandlingStrategy>
+		<transactionId xmlns="http://home24.de/data/custom/genericfaulthandler/v1">1231376876</transactionId>
+		<faultStrategy xmlns="http://home24.de/data/custom/genericfaulthandler/v1">Quit</faultStrategy>
+		<payload xmlns="http://home24.de/data/custom/genericfaulthandler/v1">
+			<v1:message
+				xmlns:v1="http://home24.de/interfaces/bes/queueingservice/queueingservicemessages/v1">
+				<desc:description xmlns:desc="http://home24.de/data/common/desctypes/v1">Write me to the
+					queue (resend)
+				</desc:description>
+			</v1:message>
+		</payload>
+	</faultHandlingStrategy>
+</handleFaultResponse>

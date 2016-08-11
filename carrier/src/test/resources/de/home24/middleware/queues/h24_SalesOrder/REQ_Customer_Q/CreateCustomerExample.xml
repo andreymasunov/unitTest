@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:ProcessRequest xmlns:ns2="urn:microsoft-dynamics-schemas/codeunit/NavConnectorWS" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<ns2:header>
+		<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:CreationDate>2015-10-16T16:52:03.265+02:00</ns3:CreationDate>
+			<ns3:Type/>
+			<ns3:ID/>
+			<ns3:Version>v1</ns3:Version>
+			<ns3:ReferenceID/>
+		</ns3:Message>
+		<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:SourceSystemName/>
+			<ns3:Environment/>
+			<ns3:User>
+				<ns3:UserID/>
+				<ns3:UserPassword/>
+				<ns3:UserLocation/>
+			</ns3:User>
+		</ns3:Caller>
+		<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:OperationName/>
+			<ns3:Batch>
+				<ns3:BatchNr/>
+				<ns3:JobNr/>
+			</ns3:Batch>
+		</ns3:Operation>
+		<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1"/>
+		<ns3:KeyValueList xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+			<ns3:KeyValuePair>
+				<ns3:Key/>
+				<ns3:Value/>
+			</ns3:KeyValuePair>
+		</ns3:KeyValueList>
+	</ns2:header>
+	<ns2:requestText>
+		<Transfer xmls="http://schema.mp-gruppe.de/NAVconnect/Webshop/">
+			<Header AppDom="1" object="RemoteProcedureCall" action="Request"/>
+			<Body>
+				<CreateAccountRequest>
+					<Account>
+						<Email>test_56210e85ca797@qa.home24.de</Email>
+						<TypeId>1</TypeId>
+						<ExternalAccountNo>1000466228</ExternalAccountNo>
+						<Person>
+							<Prefix>Frau</Prefix>
+							<FirstName>Test</FirstName>
+							<LastName>Test</LastName>
+							<Gender>f</Gender>
+							<Language>de_DE</Language>
+						</Person>
+					</Account>
+				</CreateAccountRequest>
+			</Body>
+		</Transfer>
+	</ns2:requestText>
+	<ns2:responseText/>
+</ns2:ProcessRequest>

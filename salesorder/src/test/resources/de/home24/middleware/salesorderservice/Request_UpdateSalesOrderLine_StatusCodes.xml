@@ -1,0 +1,88 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	</soap:Header>
+	<soapenv:Body>
+		<v1:updateSalesOrderLineRequest
+			xmlns:v1="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1"
+			xmlns:v11="http://home24.de/data/common/messageheadertypes/v1"
+			xmlns:tns="http://www.openapplications.org/oagis/10">
+			<v1:requestHeader/>
+			<v1:salesOrder typeCode="token" actionCode="token">
+				<tns:SalesOrderHeader>
+					<tns:ID>1231376876</tns:ID>
+				</tns:SalesOrderHeader>
+				<tns:SalesOrderLine>
+					<tns:LineNumberID>10000</tns:LineNumberID>
+					<tns:Item>
+						<tns:ID>M-RA-000003</tns:ID>
+						<tns:SupplierItemIdentification>
+							<tns:ID>053.001.3</tns:ID>
+						</tns:SupplierItemIdentification>
+						<tns:Description>Hochschrank Nexa - Hochglanz Weiß / Weiß</tns:Description>
+						<tns:Note typeCode="NumberOfParcels">0</tns:Note>
+						<tns:Classification typeCode="EDI">
+							<tns:Codes>
+								<tns:Code typeCode="EdiProcessAvailable">true</tns:Code>
+							</tns:Codes>
+						</tns:Classification>
+						<tns:Packaging>
+							<tns:Note typeCode="TransportationService">DHL_NEW</tns:Note>
+							<tns:Note typeCode="Status" status="SC_Code"
+								entryDateTime="2015-12-09T11:13:09.38+01:00">Shipment closed</tns:Note>
+							<tns:Dimensions>
+								<tns:GrossWeightMeasure>45.0</tns:GrossWeightMeasure>
+							</tns:Dimensions>
+						</tns:Packaging>
+						<tns:Packaging>
+							<tns:Note typeCode="TransportationService">DHL_NEW</tns:Note>
+							<tns:Note typeCode="Status" status="SC_Code_2">Shipment closed</tns:Note>
+							<tns:Dimensions>
+								<tns:GrossWeightMeasure>22.0</tns:GrossWeightMeasure>
+							</tns:Dimensions>
+						</tns:Packaging>
+						<tns:Dimensions>
+							<tns:VolumeMeasure>0.01</tns:VolumeMeasure>
+							<tns:NetWeightMeasure>0</tns:NetWeightMeasure>
+							<tns:GrossWeightMeasure>6.3</tns:GrossWeightMeasure>
+						</tns:Dimensions>
+					</tns:Item>
+				</tns:SalesOrderLine>
+				<tns:SalesOrderLine>
+					<tns:LineNumberID>20000</tns:LineNumberID>
+					<tns:Item>
+						<tns:ID>M-RA-000003</tns:ID>
+						<tns:SupplierItemIdentification>
+							<tns:ID>053.001.3</tns:ID>
+						</tns:SupplierItemIdentification>
+						<tns:Description>Hochschrank Nexa - Hochglanz Weiß / Weiß</tns:Description>
+						<tns:Note typeCode="NumberOfParcels">0</tns:Note>
+						<tns:Classification typeCode="EDI">
+							<tns:Codes>
+								<tns:Code typeCode="EdiProcessAvailable">true</tns:Code>
+							</tns:Codes>
+						</tns:Classification>
+						<tns:Packaging>
+							<tns:Note typeCode="TransportationService">DHL_NEW</tns:Note>
+							<tns:Note typeCode="Status" status="SC_Code_2">Shipment closed</tns:Note>
+							<tns:Dimensions>
+								<tns:GrossWeightMeasure>45.0</tns:GrossWeightMeasure>
+							</tns:Dimensions>
+						</tns:Packaging>
+						<tns:Packaging>
+							<tns:Note typeCode="TransportationService">DHL_NEW</tns:Note>
+							<tns:Note typeCode="Status" status="SC_Code_3">Shipment closed</tns:Note>
+							<tns:Dimensions>
+								<tns:GrossWeightMeasure>22.0</tns:GrossWeightMeasure>
+							</tns:Dimensions>
+						</tns:Packaging>
+						<tns:Dimensions>
+							<tns:VolumeMeasure>0.01</tns:VolumeMeasure>
+							<tns:NetWeightMeasure>0</tns:NetWeightMeasure>
+							<tns:GrossWeightMeasure>6.3</tns:GrossWeightMeasure>
+						</tns:Dimensions>
+					</tns:Item>
+				</tns:SalesOrderLine>
+			</v1:salesOrder>
+		</v1:updateSalesOrderLineRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

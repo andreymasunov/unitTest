@@ -1,0 +1,14 @@
+<ns1:mergePDFsRequest xmlns:ns1="http://home24.de/interfaces/bas/attachment/attachmentservicemessages/v1" xmlns:mht="http://home24.de/data/common/messageheadertypes/v1">
+	<ns1:requestHeader>
+		<mht:Caller>
+			<mht:SourceSystemName>Middleware</mht:SourceSystemName>
+		</mht:Caller>
+		<mht:CorrelationID>${CORRELATION_ID}</mht:CorrelationID>
+	</ns1:requestHeader>
+	<ns1:mergedPDFReference>${MERGED_PDF_REFERENCE}</ns1:mergedPDFReference>
+	<ns1:pdfReferenceCollection>
+		<!--1 or more repetitions:-->
+		<ns1:pdfReference>${PDF_REFERENCE_1}</ns1:pdfReference>
+		<ns1:pdfReference>${PDF_REFERENCE_2}</ns1:pdfReference>
+	</ns1:pdfReferenceCollection>
+</ns1:mergePDFsRequest>

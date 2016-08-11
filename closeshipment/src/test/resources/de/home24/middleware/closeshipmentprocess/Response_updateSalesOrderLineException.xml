@@ -1,0 +1,98 @@
+<exc:exception xmlns:exc="http://home24.de/data/common/exceptiontypes/v1">
+	<exc:context>
+		<exc:sourceSystemName />
+		<exc:transactionId />
+		<exc:flowId />
+		<exc:ecid />
+		<exc:compositeInstanceId />
+		<exc:processLibraryId>P201</exc:processLibraryId>
+		<exc:payload>
+			<updateSalesOrderLineRequest
+				xmlns="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1">
+				<requestHeader>
+					<ns3:Message xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:Operation xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:CorrelationID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1" />
+					<ns3:ActivityID
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P201-UPD-SO-LINE</ns3:ActivityID>
+					<ns3:KeyValueList
+						xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+						<ns3:KeyValuePair>
+							<ns3:Key />
+							<ns3:Value />
+						</ns3:KeyValuePair>
+					</ns3:KeyValueList>
+				</requestHeader>
+				<salesOrder>
+					<oagis:SalesOrderHeader xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:ID>DS527770</oagis:ID>
+					</oagis:SalesOrderHeader>
+					<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:LineNumberID>814841</oagis:LineNumberID>
+						<oagis:Item>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.814841.01</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.814841.02</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+						</oagis:Item>
+						<oagis:SupplierParty>
+							<oagis:ID>70195</oagis:ID>
+						</oagis:SupplierParty>
+					</oagis:SalesOrderLine>
+					<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:LineNumberID>4178</oagis:LineNumberID>
+						<oagis:Item>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.4178.01</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Packaging>
+								<oagis:ID typeCode="MetapackParcelRefNumber">DS527770.4178.02</oagis:ID>
+								<oagis:Note typeCode="Status" status="SHCLD">Shipment closed
+								</oagis:Note>
+							</oagis:Packaging>
+						</oagis:Item>
+						<oagis:SupplierParty>
+							<oagis:ID>70195</oagis:ID>
+						</oagis:SupplierParty>
+					</oagis:SalesOrderLine>
+				</salesOrder>
+			</updateSalesOrderLineRequest>
+		</exc:payload>
+		<exc:additionalInfo>
+			<exc:keyValuePair>
+				<exc:key>StatusObject</exc:key>
+				<exc:value>CostumerCommunication</exc:value>
+			</exc:keyValuePair>
+			<exc:keyValuePair>
+				<exc:key>StatusType</exc:key>
+				<exc:value>Error</exc:value>
+			</exc:keyValuePair>
+			<exc:keyValuePair>
+				<exc:key>StatusText</exc:key>
+				<exc:value>Errors</exc:value>
+			</exc:keyValuePair>
+			<exc:keyValuePair>
+				<exc:key>TimestampInterface</exc:key>
+				<exc:value>2015-12-17T18:09:26.561+01:00</exc:value>
+			</exc:keyValuePair>
+		</exc:additionalInfo>
+	</exc:context>
+	<exc:severity>ERROR</exc:severity>
+	<exc:category>BusinessFault</exc:category>
+	<exc:faultInfo>
+		<exc:faultCode>2002</exc:faultCode>
+		<exc:faultMessage>UpdateSalesOrderLineCallback Exception</exc:faultMessage>
+		<exc:faultDetails />
+		<exc:faultTimestamp>2015-12-17T18:09:26.561+01:00</exc:faultTimestamp>
+	</exc:faultInfo>
+</exc:exception>

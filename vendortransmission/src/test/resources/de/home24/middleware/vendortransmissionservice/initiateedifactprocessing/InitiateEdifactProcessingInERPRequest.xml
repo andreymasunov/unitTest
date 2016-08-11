@@ -1,0 +1,11 @@
+<v1:initiateEdifactProcessingInERPRequest
+	xmlns:v1="http://home24.de/interfaces/bas/vendortransmissionservice/vendortransmissionservicemessages/v1"
+	xmlns:v11="http://home24.de/data/common/messageheadertypes/v1">
+	<v1:requestHeader>
+		<v11:CorrelationID>${CORRELATION_ID}</v11:CorrelationID>
+		<v11:ActivityID>P1002-EDIFACT-INIT</v11:ActivityID>
+	</v1:requestHeader>
+	<v1:labelReference>someLabelRef</v1:labelReference>
+	<v1:deliveryNoteReference>someDeliveryNoteRef</v1:deliveryNoteReference>
+	<v1:purchaseOrderNumber>${PURCHASE_ORDER_NUM}</v1:purchaseOrderNumber>
+</v1:initiateEdifactProcessingInERPRequest>

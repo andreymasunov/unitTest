@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<submitTrackingNumberResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                              xmlns="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+  <responseHeader>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">215453131613</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P1002-TRACKNO-2MP</ActivityID>
+  </responseHeader>
+</submitTrackingNumberResponse>

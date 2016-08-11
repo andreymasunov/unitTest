@@ -1,0 +1,27 @@
+<PrintParcelResponse xmlns="http://xlogics.eu/blackbox">
+	<ExitStatus xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+		<Status>Success</Status>
+		<StatusDetails>
+			<StatusDetail>
+				<Status>Success</Status>
+				<Code>0</Code>
+				<Message>Succeed</Message>
+				<Details/>
+			</StatusDetail>
+		</StatusDetails>
+	</ExitStatus>
+	<OutputParameters xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+		<ShippingParameter>
+			<Name>Parcel.Identcode</Name>
+			<Value>094400000893003</Value>
+		</ShippingParameter>
+		<ShippingParameter>
+			<Name>Shipment.Status</Name>
+			<Value>Created|Printed</Value>
+		</ShippingParameter>
+		<ShippingParameter>
+			<Name>LABEL.MERGE.Label.PDF|Unicode.LABEL_MERGE_635851645414210920</Name>
+			<Value>JVBERi==</Value>
+		</ShippingParameter>
+	</OutputParameters>
+</PrintParcelResponse>

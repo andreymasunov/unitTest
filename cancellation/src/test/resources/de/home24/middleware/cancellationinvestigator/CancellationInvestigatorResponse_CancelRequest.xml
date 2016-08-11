@@ -1,0 +1,12 @@
+<processCancellationInvestigationResponse
+	xmlns="http://home24.de/interfaces/bps/cancellationinvestigatorprocess/cancellationinvestigatorprocessmessages/v1">
+	<responseHeader>		
+		<common:CorrelationID
+			xmlns:common="http://home24.de/data/common/messageheadertypes/v1">30115002345288</common:CorrelationID>
+	</responseHeader>
+	<cancellationStatus>
+		<Status xmlns:ns4="http://home24.de/data/custom/ordertransaction/v1"
+			xmlns="http://home24.de/data/custom/cancellation/v1">DummyStatusCancelRequest</Status>
+		<SubStatus xmlns="http://home24.de/data/custom/cancellation/v1">DummySubStatusCancelRequest</SubStatus>
+	</cancellationStatus>
+</processCancellationInvestigationResponse>

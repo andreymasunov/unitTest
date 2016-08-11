@@ -1,0 +1,94 @@
+<forwardOrdRspToERPRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://home24.de/interfaces/bas/vendortransmissionservice/vendortransmissionservicemessages/v1"
+	xmlns="http://home24.de/interfaces/bas/vendortransmissionservice/vendortransmissionservicemessages/v1">
+	<requestHeader>
+
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">P1002-ORDRSP-2ERP</ActivityID>
+
+	</requestHeader>
+	<iwofurnOrdRsp>
+		<OrdrspMessage xmlns="http://home24.de/data/thirdparty/iwofurn/v1">
+			<ORDRSP>
+				<HEAD>
+					<VersionNumber>
+						<VersionName>XML.Einrichten</VersionName>
+						<VersionNo>1.0</VersionNo>
+					</VersionNumber>
+					<DocumentType>231</DocumentType>
+					<DocumentFunctionSymbol>9</DocumentFunctionSymbol>
+					<DocumentNumber>27210</DocumentNumber>
+					<DocumentDate FormatCode="102">20151119</DocumentDate>
+					<TechnicalReceiver>4260266310008</TechnicalReceiver>
+					<TechnicalSender>4399902210430</TechnicalSender>
+					<RequestedDeliveryDate />
+					<PartialDelivery>X1</PartialDelivery>
+					<OrderNumberRef>
+						<DocRefNumber>${PURCHASE_ORDER_NUM}</DocRefNumber>
+						<DocDate FormatCode="102">20151116</DocDate>
+					</OrderNumberRef>
+					<NAD>
+						<FlagOfParty>BY</FlagOfParty>
+						<AdressGLN>4260266310008</AdressGLN>
+					</NAD>
+					<NAD>
+						<FlagOfParty>SU</FlagOfParty>
+						<AdressGLN>4399902210430</AdressGLN>
+					</NAD>
+					<NAD>
+						<FlagOfParty>DP</FlagOfParty>
+						<AdressGLN>4260266310077</AdressGLN>
+						<Name1>Till SchÃ¤fer</Name1>
+						<Street1>Rhode-Island-Allee 59</Street1>
+						<PostalCode>76149</PostalCode>
+						<City>Karlsruhe</City>
+						<ISOCountryCode>DE</ISOCountryCode>
+					</NAD>
+					<NAD>
+						<FlagOfParty>IV</FlagOfParty>
+						<AdressGLN>4260266310008</AdressGLN>
+					</NAD>
+					<CONH>
+						<Consumer>
+							<QualifierType>DP</QualifierType>
+							<CustomerID>4260266310077</CustomerID>
+							<CompanyName>Till SchÃ¤fer</CompanyName>
+							<Street1>Rhode-Island-Allee 59</Street1>
+							<PostalCode>76149</PostalCode>
+							<ISOCountryCode>DE</ISOCountryCode>
+							<CustomerPhone>+4915114421105</CustomerPhone>
+						</Consumer>
+					</CONH>
+				</HEAD>
+				<LINE>
+					<LineItemNumber>46730</LineItemNumber>
+					<ProductID>
+						<GTIN>4016432408983</GTIN>
+						<Number>25d0669ed12afbb12cb7b5cfbc8442f2</Number>
+						<CustomerNumber>P-SL-4888</CustomerNumber>
+					</ProductID>
+					<RequestedDeliveryDate />
+					<OrderLineRef>
+						<DocRefNumber>${PURCHASE_ORDER_NUM}</DocRefNumber>
+						<DocRefLineNumber>0</DocRefLineNumber>
+					</OrderLineRef>
+
+					<AdditionalLineRef>
+						<DocRefNumber>10000</DocRefNumber>
+						<DocRefLineNumber>123456</DocRefLineNumber>
+					</AdditionalLineRef>
+
+					<OrderResponseQuantity Unit="PCE">1
+					</OrderResponseQuantity>
+					<AdditionalQuantity Unit="PCE">1
+					</AdditionalQuantity>
+					<AdditionalDate FormatCode="102">20151119
+					</AdditionalDate>
+				</LINE>
+				<FOOT>
+					<SendingDate FormatCode="102">20151124</SendingDate>
+				</FOOT>
+			</ORDRSP>
+		</OrdrspMessage>
+	</iwofurnOrdRsp>
+</forwardOrdRspToERPRequest>

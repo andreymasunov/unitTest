@@ -1,0 +1,5 @@
+<ns1:getFileResponse  	xmlns:ns1="http://www.home24.de/services/notificationservice">
+	<ns1:fileContent>	
+	</ns1:fileContent>
+	<ns1:fileName>order_DS13650050.csv</ns1:fileName>
+</ns1:getFileResponse>

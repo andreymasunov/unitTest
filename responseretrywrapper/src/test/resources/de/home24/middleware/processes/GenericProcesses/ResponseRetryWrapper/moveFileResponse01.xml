@@ -1,0 +1,11 @@
+<moveFileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://home24.de/interfaces/bes/ftproutingservice/ftproutingservicemessages/v1">
+	<responseHeader>
+		<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+			<Version>v1</Version>
+		</Message>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">946115</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">test-001</ActivityID>
+	</responseHeader>
+</moveFileResponse>

@@ -1,0 +1,7 @@
+<v1:receiveEdifactCreationCallback xmlns:v1="http://home24.de/data/navision/edifactmessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1" xmlns:v12="http://home24.de/data/navision/edifact/v1">
+	<v1:body>
+		<v1:edifactCreationResponse>
+			<v12:purchaseOrderNumber></v12:purchaseOrderNumber>
+		</v1:edifactCreationResponse>
+	</v1:body>
+</v1:receiveEdifactCreationCallback>

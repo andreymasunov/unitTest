@@ -1,0 +1,7 @@
+<systemmail_result>
+	<emstatus>${SUCCESS}</emstatus>
+	<emstatuscodes>+10</emstatuscodes>
+	<emstatusdescription>Email enqueued successfully</emstatusdescription>
+	<emsrvpid>undefined</emsrvpid>
+	<emguid>undefined</emguid>
+</systemmail_result>

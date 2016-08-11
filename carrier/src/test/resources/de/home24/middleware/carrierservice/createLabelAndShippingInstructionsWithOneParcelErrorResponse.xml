@@ -1,0 +1,274 @@
+
+<exc:exception xmlns:exc="http://home24.de/data/common/exceptiontypes/v1">
+	<exc:context>
+		<exc:sourceSystemName>Middleware</exc:sourceSystemName>
+		<exc:environment />
+		<exc:transactionId>string</exc:transactionId>
+		<exc:flowId />
+		<exc:ecid />
+		<exc:activityId>string</exc:activityId>
+		<exc:compositeInstanceId />
+		<exc:processLibraryId>P201</exc:processLibraryId>
+		<exc:payload>
+			<car:createLabelAndShippingInstructionsResponse
+				xmlns:car="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+				<car:responseHeader>
+					<ns1:Message xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+						<ns1:CreationDate>string</ns1:CreationDate>
+						<ns1:Type>string</ns1:Type>
+						<ns1:ID>string</ns1:ID>
+						<ns1:Version>string</ns1:Version>
+						<ns1:ReferenceID>string</ns1:ReferenceID>
+					</ns1:Message>
+					<ns1:Caller xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+						<ns1:SourceSystemName>string</ns1:SourceSystemName>
+						<ns1:Environment>string</ns1:Environment>
+						<ns1:User>
+							<ns1:UserID>string</ns1:UserID>
+							<ns1:UserPassword>string</ns1:UserPassword>
+							<ns1:UserLocation>string</ns1:UserLocation>
+						</ns1:User>
+					</ns1:Caller>
+					<ns1:Operation xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">
+						<ns1:OperationName>string</ns1:OperationName>
+						<ns1:Batch>
+							<ns1:BatchNr>100</ns1:BatchNr>
+							<ns1:JobNr>100</ns1:JobNr>
+						</ns1:Batch>
+					</ns1:Operation>
+					<ns1:CorrelationID
+						xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">string</ns1:CorrelationID>
+					<ns1:ActivityID
+						xmlns:ns1="http://home24.de/data/common/messageheadertypes/v1">string</ns1:ActivityID>
+				</car:responseHeader>
+				<purchaseOrder
+					xmlns="http://home24.de/interfaces/bas/carrier/carrierservicemessages/v1">
+					<oagis:PurchaseOrderHeader xmlns=""
+						xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:ID>DS136905411</oagis:ID>
+						<oagis:VariationID>DE266182271</oagis:VariationID>
+						<oagis:DocumentIDSet>
+							<oagis:ID typeCode="VendorOrderNo" />
+						</oagis:DocumentIDSet>
+						<oagis:DocumentDateTime>16.10.15</oagis:DocumentDateTime>
+						<oagis:Description languageCode="" />
+						<oagis:Note status="" typeCode="Comment" />
+						<oagis:Note status="" typeCode="ShipmentComment" />
+						<oagis:Status>
+							<oagis:Code />
+						</oagis:Status>
+						<oagis:SupplierParty>
+							<oagis:ID>711106</oagis:ID>
+							<oagis:Name sequenceNumber="1">Rauch GmbH</oagis:Name>
+							<oagis:Name sequenceNumber="2" />
+							<oagis:Location>
+								<oagis:Address>
+									<oagis:Name sequenceNumber="2" />
+									<oagis:StreetName>Wendelin-Rauch-Strasse</oagis:StreetName>
+									<oagis:BuildingNumber>1</oagis:BuildingNumber>
+									<oagis:AddressLine sequenceNumber="1">Wendelin-Rauch
+									</oagis:AddressLine>
+									<oagis:AddressLine sequenceNumber="2">Near
+										Doner shop you know
+									</oagis:AddressLine>
+									<oagis:CityName>CityName Freudenberg</oagis:CityName>
+									<oagis:CountrySubDivisionCode />
+									<oagis:CountryCode>DE</oagis:CountryCode>
+									<oagis:PostalCode>97896</oagis:PostalCode>
+								</oagis:Address>
+							</oagis:Location>
+							<oagis:Contact>
+								<oagis:EMailAddressCommunication>
+									<oagis:EMailAddressID />
+								</oagis:EMailAddressCommunication>
+							</oagis:Contact>
+						</oagis:SupplierParty>
+						<oagis:ShipToParty typeCode="LIEF001">
+							<oagis:ID>4260266310008</oagis:ID>
+							<oagis:Name sequenceNumber="1">Ship1 Julian Companierp
+							</oagis:Name>
+							<oagis:Name sequenceNumber="2">Ship2 Eno Ahmedspahic
+							</oagis:Name>
+							<oagis:Location>
+								<oagis:Address typeCode="Post Code+City">
+									<oagis:StreetName>Wendelin-Rauch-Strasse</oagis:StreetName>
+									<oagis:BuildingNumber>1</oagis:BuildingNumber>
+									<oagis:AddressLine sequenceNumber="1">Address
+										Str. 10
+									</oagis:AddressLine>
+									<oagis:AddressLine sequenceNumber="2">Adress
+										Details Links
+									</oagis:AddressLine>
+									<oagis:CityName>Berlin</oagis:CityName>
+									<oagis:CountrySubDivisionCode />
+									<oagis:CountryCode>DE</oagis:CountryCode>
+									<oagis:PostalCode>13595</oagis:PostalCode>
+								</oagis:Address>
+							</oagis:Location>
+							<oagis:Contact>
+								<oagis:OrganizationUnitID>ounitId</oagis:OrganizationUnitID>
+								<oagis:TelephoneCommunication>
+									<oagis:FormattedNumber>01711231212</oagis:FormattedNumber>
+								</oagis:TelephoneCommunication>
+								<oagis:EMailAddressCommunication>
+									<oagis:EMailAddressID>email@gmail.com</oagis:EMailAddressID>
+								</oagis:EMailAddressCommunication>
+							</oagis:Contact>
+						</oagis:ShipToParty>
+						<oagis:RequestedShipDateTime>16.10.15
+						</oagis:RequestedShipDateTime>
+						<oagis:PromisedShipDateTime />
+						<oagis:PaymentMethodCode>ABC</oagis:PaymentMethodCode>
+						<oagis:Payment>
+							<oagis:PaymentTerm>
+								<oagis:ID>5-16</oagis:ID>
+							</oagis:PaymentTerm>
+						</oagis:Payment>
+						<oagis:ShippingInstructions />
+						<oagis:Classification>
+							<oagis:Codes>
+								<oagis:Code typeCode="AppDomain">1</oagis:Code>
+								<oagis:Code typeCode="GroupID">1</oagis:Code>
+								<oagis:Code typeCode="IsEDIOrder">No</oagis:Code>
+							</oagis:Codes>
+						</oagis:Classification>
+						<oagis:OrderDateTime>16.10.15</oagis:OrderDateTime>
+						<oagis:SalesOrderReference>
+							<oagis:ID>SalesOrderID</oagis:ID>
+						</oagis:SalesOrderReference>
+					</oagis:PurchaseOrderHeader>
+					<oagis:PurchaseOrderLine xmlns=""
+						xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:LineNumberID>10000</oagis:LineNumberID>
+						<oagis:LineIDSet>
+							<oagis:ID>0</oagis:ID>
+						</oagis:LineIDSet>
+						<oagis:Description typeCode="Line1">Wandboard Drake -
+							Kernnuss
+						</oagis:Description>
+						<oagis:Description typeCode="Line2" />
+						<oagis:Note typeCode="IsMarketPlace">No</oagis:Note>
+						<oagis:DocumentReference>
+							<oagis:ID>4038283001588</oagis:ID>
+						</oagis:DocumentReference>
+						<oagis:DocumentReference>
+							<oagis:DocumentDateTime />
+						</oagis:DocumentReference>
+						<oagis:Item>
+							<oagis:ID>M-L1-000003</oagis:ID>
+							<oagis:ItemIDSet>
+								<oagis:ID typeCode="VendorItemNo">AML168892</oagis:ID>
+							</oagis:ItemIDSet>
+							<oagis:Description>Description item 01</oagis:Description>
+							<oagis:Packaging>
+								<oagis:ID>094400000893003</oagis:ID>
+								<oagis:Note typeCode="pathToLabelPDF">test\EDI_Outbound\711106\${MONTH_YEAR}\DS136905411_M-L1-000003_01.pdf</oagis:Note>
+								<oagis:Note typeCode="TransportationService">DPD_Paket</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Packaging>
+								<oagis:ID>094400000893100</oagis:ID>
+								<oagis:Note typeCode="pathToLabelPDF">test\EDI_Outbound\711106\${MONTH_YEAR}\DS136905411_M-L1-000003_02.pdf</oagis:Note>
+								<oagis:Note typeCode="TransportationService">DPD_Paket</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Dimensions>
+								<oagis:NetWeightMeasure>0</oagis:NetWeightMeasure>
+								<oagis:GrossWeightMeasure>21</oagis:GrossWeightMeasure>
+							</oagis:Dimensions>
+						</oagis:Item>
+						<oagis:Quantity>1</oagis:Quantity>
+						<oagis:TransportationTerm>
+							<oagis:Note typeCode="LocationCode">DIREKT</oagis:Note>
+							<oagis:Note typeCode="PurchasingCode">GER-7</oagis:Note>
+						</oagis:TransportationTerm>
+						<oagis:PromisedDeliveryDateTime />
+						<oagis:ShippingInstructions />
+						<oagis:SalesOrderReference>
+							<oagis:ID>SOrefPoLine1</oagis:ID>
+							<oagis:LineNumberID>LineID1</oagis:LineNumberID>
+							<oagis:Quantity>10000</oagis:Quantity>
+						</oagis:SalesOrderReference>
+					</oagis:PurchaseOrderLine>
+
+					<oagis:PurchaseOrderLine xmlns=""
+						xmlns:oagis="http://www.openapplications.org/oagis/10">
+						<oagis:LineNumberID>10000</oagis:LineNumberID>
+						<oagis:LineIDSet>
+							<oagis:ID>0</oagis:ID>
+						</oagis:LineIDSet>
+						<oagis:Description typeCode="Line1">Wandboard Drake -
+							Kernnuss
+						</oagis:Description>
+						<oagis:Description typeCode="Line2" />
+						<oagis:Note typeCode="IsMarketPlace">No</oagis:Note>
+						<oagis:DocumentReference>
+							<oagis:ID>4038283001588</oagis:ID>
+						</oagis:DocumentReference>
+						<oagis:DocumentReference>
+							<oagis:DocumentDateTime />
+						</oagis:DocumentReference>
+						<oagis:Item>
+							<oagis:ID>M-L2-000105</oagis:ID>
+							<oagis:ItemIDSet>
+								<oagis:ID typeCode="VendorItemNo">AML268892</oagis:ID>
+							</oagis:ItemIDSet>
+							<oagis:Description>Description item 02</oagis:Description>
+							<oagis:Packaging>
+								<oagis:ID>09440000089314S</oagis:ID>
+								<oagis:Note typeCode="pathToLabelPDF">test\EDI_Outbound\711106\${MONTH_YEAR}\DS136905411_M-L2-000105_03.pdf</oagis:Note>
+								<oagis:Note typeCode="TransportationService">DPD_Paket</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Packaging>
+								<oagis:Note typeCode="pathToLabelPDF">test\EDI_Outbound\711106\${MONTH_YEAR}\DS136905411_M-L2-000105_04.pdf</oagis:Note>
+								<oagis:Note typeCode="TransportationService">DPD_Paket_Fail</oagis:Note>
+							</oagis:Packaging>
+							<oagis:Dimensions>
+								<oagis:NetWeightMeasure>0</oagis:NetWeightMeasure>
+								<oagis:GrossWeightMeasure>21</oagis:GrossWeightMeasure>
+							</oagis:Dimensions>
+						</oagis:Item>
+						<oagis:Quantity>1</oagis:Quantity>
+						<oagis:TransportationTerm>
+							<oagis:Note typeCode="LocationCode">DIREKT</oagis:Note>
+							<oagis:Note typeCode="PurchasingCode">GER-7</oagis:Note>
+						</oagis:TransportationTerm>
+						<oagis:PromisedDeliveryDateTime />
+						<oagis:ShippingInstructions />
+						<oagis:SalesOrderReference>
+							<oagis:ID>SOrefPoLine2</oagis:ID>
+							<oagis:LineNumberID>LineID2</oagis:LineNumberID>
+							<oagis:Quantity>10000</oagis:Quantity>
+						</oagis:SalesOrderReference>
+					</oagis:PurchaseOrderLine>
+				</purchaseOrder>
+			</car:createLabelAndShippingInstructionsResponse>
+		</exc:payload>
+		<exc:additionalInfo>
+			<exc:keyValuePair>
+				<exc:key>StatusObject</exc:key>
+				<exc:value>CostumerCommunication</exc:value>
+			</exc:keyValuePair>
+			<exc:keyValuePair>
+				<exc:key>StatusType</exc:key>
+				<exc:value>Error</exc:value>
+			</exc:keyValuePair>
+			<exc:keyValuePair>
+				<exc:key>StatusText</exc:key>
+				<exc:value>Errors</exc:value>
+			</exc:keyValuePair>
+			<exc:keyValuePair>
+				<exc:key>TimestampInterface</exc:key>
+				<exc:value>2015-12-08T18:54:46.715+01:00</exc:value>
+			</exc:keyValuePair>
+		</exc:additionalInfo>
+	</exc:context>
+	<exc:severity>ERROR</exc:severity>
+	<exc:category>BusinessFault</exc:category>
+	<exc:faultInfo>
+		<exc:faultCode>000001</exc:faultCode>
+		<exc:faultMessage>2102Shipping definition DPD_PaketFAIL not found.
+		</exc:faultMessage>
+		<exc:faultDetails />
+		<exc:faultTimestamp>2015-12-08T18:54:46.715+01:00
+		</exc:faultTimestamp>
+	</exc:faultInfo>
+</exc:exception>

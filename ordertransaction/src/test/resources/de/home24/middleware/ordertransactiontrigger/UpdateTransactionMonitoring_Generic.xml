@@ -1,0 +1,34 @@
+<v1:updateTransactionMonitoringRequest
+	xmlns:v1="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1"
+	xmlns:v11="http://home24.de/data/common/messageheadertypes/v1"
+	xmlns:v12="http://home24.de/data/custom/ordertransaction/v1">
+	<v1:requestHeader>
+		<v11:Caller>
+			<v11:SourceSystemName>Middleware</v11:SourceSystemName>
+		</v11:Caller>
+		<v11:CorrelationID>${CORRELATION_ID}</v11:CorrelationID>
+		<v11:ActivityID>${ACTIVITY_ID}</v11:ActivityID>
+	</v1:requestHeader>
+	<v1:orderTransactionData>
+		<v12:CorrelationId>${CORRELATION_ID}</v12:CorrelationId>
+		<v12:BusinessActivityLogging>
+			<v12:ProcessId>Dummy process ID</v12:ProcessId>
+			<v12:ActivityCode>${ACTIVITY_ID}</v12:ActivityCode>
+			<v12:ActivityText>Dummy activity text</v12:ActivityText>
+			<v12:FlowId>876543345432</v12:FlowId>
+			<v12:InstanceId>12345</v12:InstanceId>
+			<v12:Payload>
+				<examplePayload />
+			</v12:Payload>
+		</v12:BusinessActivityLogging>
+		<v12:StatusMonitoring>
+			<v12:MonitoringSequence>
+				<v12:StatusObject>${STATUS_OBJECT}</v12:StatusObject>
+				<v12:StatusType>Default</v12:StatusType>
+				<v12:StatusCode>${ACTIVITY_ID}</v12:StatusCode>
+				<v12:StatusText>Dummy status text</v12:StatusText>
+				<v12:TimestampInterface>${TIMESTAMP_INTERFACE}</v12:TimestampInterface>
+			</v12:MonitoringSequence>
+		</v12:StatusMonitoring>
+	</v1:orderTransactionData>
+</v1:updateTransactionMonitoringRequest>

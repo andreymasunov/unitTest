@@ -1,0 +1,5 @@
+<ns2:putH24FileServerDocumentRequest xmlns:ns2="http://home24.com/interfaces/pipeline/H24FileServerPipelineMessages/v1">
+	<ns2:fileName>DS136905411_M-L1-000003_01.pdf</ns2:fileName>
+	<ns2:directoryPath>/test/EDI_Outbound/Vendors/711106/${MONTH_YEAR}</ns2:directoryPath>
+	<ns2:opaqueContent>JVBERi==</ns2:opaqueContent>
+</ns2:putH24FileServerDocumentRequest>

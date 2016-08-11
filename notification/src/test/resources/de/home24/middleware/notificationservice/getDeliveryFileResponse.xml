@@ -1,0 +1,4 @@
+<ns1:getFileResponse  	xmlns:ns1="http://www.home24.de/services/notificationservice">
+	<ns1:fileContent/>		
+	<ns1:fileName>home24.de_Packzettel_DS13650050.pdf</ns1:fileName>
+</ns1:getFileResponse>

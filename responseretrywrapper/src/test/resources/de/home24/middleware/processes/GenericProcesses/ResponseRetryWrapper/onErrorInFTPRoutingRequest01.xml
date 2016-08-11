@@ -1,0 +1,57 @@
+<onErrorInFTPRoutingRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xmlns="http://home24.de/interfaces/bas/responseretrywrapper/responseretrywrappermessages/v1"
+							xmlns:ns4="http://home24.de/data/common/exceptiontypes/v1">
+	<requestHeader>
+		<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+			<Version>v1</Version>
+		</Message>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">test-001</ActivityID>
+	</requestHeader>
+	<exception>
+		<ns4:context>
+			<ns4:sourceSystemName>Middleware</ns4:sourceSystemName>
+			<ns4:environment/>
+			<ns4:transactionId>${CORRELATION_ID}</ns4:transactionId>
+			<ns4:flowId/>
+			<ns4:ecid/>
+			<ns4:activityId>test-001</ns4:activityId>
+			<ns4:compositeInstanceId/>
+			<ns4:processLibraryId>test</ns4:processLibraryId>
+			<ns4:payload>
+				<v1:moveFileRequest xmlns:v1="http://home24.de/interfaces/bes/ftproutingservice/ftproutingservicemessages/v1" xmlns:v11="http://home24.de/data/common/messageheadertypes/v1">
+					<v1:requestHeader>
+						<Message xmlns="http://home24.de/data/common/messageheadertypes/v1">
+							<CreationDate>2015-10-16T10:01:04.593+02:00</CreationDate>
+							<Version>v1</Version>
+						</Message>
+						<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+						<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">test-001</ActivityID>
+					</v1:requestHeader>
+					<v1:connection>edi</v1:connection>
+					<v1:sourceFileReference>/test/EDI_Inbound/TestRouting/in/test.err</v1:sourceFileReference>
+					<v1:destinationFileReference>/test/EDI_Inbound/TestRouting/in/test.ok</v1:destinationFileReference>
+				</v1:moveFileRequest>
+			</ns4:payload>
+			<ns4:additionalInfo>
+				<ns4:keyValuePair>
+					<ns4:key>StatusObject</ns4:key>
+					<ns4:value>SalesOrder</ns4:value>
+				</ns4:keyValuePair>
+			</ns4:additionalInfo>
+		</ns4:context>
+		<ns4:severity>ERROR</ns4:severity>
+		<ns4:category>TechnicalFault</ns4:category>
+		<ns4:faultInfo>
+			<ns4:faultCode>MW_PAY_CB_POSTPONED</ns4:faultCode>
+			<ns4:faultMessage>No waiting P101-Instance found</ns4:faultMessage>
+			<ns4:faultDetails/>
+			<ns4:faultTimestamp>2016-01-25T13:40:23+01:00</ns4:faultTimestamp>
+			<ns4:faultUserArea/>
+		</ns4:faultInfo>
+	</exception>
+	<connection>edi</connection>
+	<sourceFileReference>testSourceFolder/TestSourceFileName.err</sourceFileReference>
+	<destinationFileReference>testDestinationFolder/TestDestinationFileName.ok</destinationFileReference>
+</onErrorInFTPRoutingRequest>

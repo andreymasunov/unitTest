@@ -1,0 +1,42 @@
+
+<ns1:onErrorInResponseQueueRequest
+	xmlns:ns1="http://home24.de/interfaces/bas/responseretrywrapper/responseretrywrappermessages/v1"
+	xmlns:ns4="http://home24.de/data/common/exceptiontypes/v1">
+	<ns1:requestHeader></ns1:requestHeader>
+	<ns1:exception>
+		<ns4:context>
+			<ns4:sourceSystemName>Middleware</ns4:sourceSystemName>
+			<ns4:environment></ns4:environment>
+			<ns4:transactionId>123456</ns4:transactionId>
+			<ns4:flowId></ns4:flowId>
+			<ns4:ecid></ns4:ecid>
+			<ns4:activityId>P101-PAY-ERR</ns4:activityId>
+			<ns4:compositeInstanceId></ns4:compositeInstanceId>
+			<ns4:processLibraryId>P101</ns4:processLibraryId>
+			<ns4:payload>
+					<v1:message xmlns:v1="http://home24.de/interfaces/bes/queueingservice/queueingservicemessages/v1">
+						<desc:description xmlns:desc="http://home24.de/data/common/desctypes/v1">Write me to the
+							queue
+						</desc:description>
+					</v1:message>
+			</ns4:payload>
+			<ns4:additionalInfo>
+				<ns4:keyValuePair>
+					<ns4:key>StatusObject</ns4:key>
+					<ns4:value>SalesOrder</ns4:value>
+				</ns4:keyValuePair>
+			</ns4:additionalInfo>
+		</ns4:context>
+		<ns4:severity>ERROR</ns4:severity>
+		<ns4:category>TechnicalFault</ns4:category>
+		<ns4:faultInfo>
+			<ns4:faultCode>MW_PAY_CB_POSTPONED</ns4:faultCode>
+			<ns4:faultMessage>No waiting P101-Instance found</ns4:faultMessage>
+			<ns4:faultDetails></ns4:faultDetails>
+			<ns4:faultTimestamp>2016-01-25T13:40:23+01:00</ns4:faultTimestamp>
+			<ns4:faultUserArea></ns4:faultUserArea>
+		</ns4:faultInfo>
+	</ns1:exception>
+	<ns1:jmsDestination>h24jms.RSP_Payment_Q</ns1:jmsDestination>
+	<ns1:jmsFactory>h24jms.Payment</ns1:jmsFactory>
+</ns1:onErrorInResponseQueueRequest>

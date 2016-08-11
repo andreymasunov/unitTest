@@ -1,0 +1,42 @@
+<v1:sendInboundReclamationToERPRequest
+	xmlns:v1="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1">
+	<v1:requestHeader />
+	<v1:updateWrapper>
+		<update xmlns="NO_NAMESPACE">
+			<base_data>
+				<order order_number="30101002102560" reference-id="1">
+					<order_items>
+						<order_item item_id="2" reference-id="2" />
+					</order_items>
+				</order>
+			</base_data>
+			<transaction_data>
+				<message Created="2015-11-25 08:59:59" Structure_Version="1.00"
+					type="order.item.reclamation.requested" />
+				<actions>
+					<action for="2">
+						<code>update.order.item.reclamation.requested</code>
+						<data>
+							<reclamation_type>correction</reclamation_type>
+							<reclamation_reason>recla.correction.product_package_issue.product_damaged_packing_fine
+							</reclamation_reason>
+							<attachments>
+								<attachment>
+									<type>image</type>
+									<link>http://cdn.home24.net/static/media/reclamation/5/3/10115002173735/2015-11-25-08-56-51_565577d3efcd8.jpg
+									</link>
+								</attachment>
+							</attachments>
+						</data>
+					</action>
+					<action for="1">
+						<code>update.order.item.reclamation.requested</code>
+						<data>
+							<comment>Der gesamte Artikel ist gespickt von gebrauchs- und Montagespuren, Dellen und Macken. Ich habe ein recht hohes Budget in M&amp;ouml;bel und Wohnungsausstattung bei Ihnen investiert. Ich kann nicht fassen, dass Sie einen gebrauchten und defekten Artikel bei mir entsorgen m&amp;ouml;chten. Bitte liefern Sie mir unverz&amp;uuml;glich einen neuen Artikel und holen Sie den alten bei der Gelegenheit wieder ab. Leider habe ich die Originalverpackung nicht mehr. Danke.</comment>
+						</data>
+					</action>
+				</actions>
+			</transaction_data>
+		</update>
+	</v1:updateWrapper>
+</v1:sendInboundReclamationToERPRequest>

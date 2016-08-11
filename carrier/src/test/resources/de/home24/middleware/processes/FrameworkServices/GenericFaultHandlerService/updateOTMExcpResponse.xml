@@ -1,0 +1,6 @@
+<ns1:updateTransactionMonitoringWithExceptionResponse
+	xmlns:ns1="http://home24.de/interfaces/bts/ordertransactiontrigger/ordertransactiontriggermessages/v1"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<ns1:responseHeader />
+	<ns1:successfulUpdateResponse />
+</ns1:updateTransactionMonitoringWithExceptionResponse>

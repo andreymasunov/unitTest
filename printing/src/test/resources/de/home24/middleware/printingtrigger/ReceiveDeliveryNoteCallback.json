@@ -1,0 +1,12 @@
+{
+  "documentInfoLink" : "http://${MOCK_HOST}:${MOCK_PORT}/api/v1/docs/${DOC_ID}",
+  "documentDownloadLink" : "http://${MOCK_HOST}:${MOCK_PORT}/api/v1/docs/${DOC_ID}/download",
+  "printStatus" : "${PRINT_STATUS}",
+  "documentTags" : {
+    "replyToAddress" : "http://${MOCK_HOST}:${MOCK_PORT}/PrintingTrigger/exposed/v1/PrintingTriggerPingback/deliveryNote",
+    "messageId" : "123456789",
+    "salesOrderId" : "${SALES_ORDER_ID}",
+    "purchaseOrderId" : "${PURCHASE_ORDER_ID}",
+    "vedorId" : "5467"
+  }
+}

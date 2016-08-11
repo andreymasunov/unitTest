@@ -1,0 +1,136 @@
+<tns:initiateSalesOrderCreationRequest xmlns:tns="http://home24.de/interfaces/bps/salesordercreationprocess/salesordercreationprocessmessages/v1" xmlns:common="http://home24.de/data/common/messageheadertypes/v1" xmlns:navso="http://home24.de/data/navision/salesorder/v1" xmlns:serviceInfo="http://home24.de/data/common/serviceinformationtypes/v1" xmlns:soms="http://home24.de/data/navision/salesordermessages/v1" xmlns:oagis="http://www.openapplications.org/oagis/10">
+	<tns:requestHeader>
+		<common:Message>
+			<common:CreationDate/>
+			<common:Type/>
+			<common:ID/>
+			<common:Version/>
+			<common:ReferenceID/>
+		</common:Message>
+		<common:Caller>
+			<common:SourceSystemName/>
+			<common:Environment/>
+			<common:User>
+				<common:UserID/>
+				<common:UserPassword/>
+				<common:UserLocation/>
+			</common:User>
+		</common:Caller>
+		<common:Operation>
+			<common:OperationName/>
+			<common:Batch>
+				<common:BatchNr/>
+				<common:JobNr/>
+			</common:Batch>
+		</common:Operation>
+		<common:CorrelationID>30201002346654</common:CorrelationID>
+		<common:ActivityID/>
+		<common:KeyValueList/>
+	</tns:requestHeader>
+	<tns:salesOrder>
+		<oagis:SalesOrderHeader>
+			<oagis:ID>30201002346654</oagis:ID>
+			<oagis:DocumentIDSet>
+				<oagis:ID typeCode="ExternalDocumentNo">30201002346654</oagis:ID>
+			</oagis:DocumentIDSet>
+			<oagis:LastModificationDateTime>29.01.16</oagis:LastModificationDateTime>
+			<oagis:DocumentDateTime>29.01.16</oagis:DocumentDateTime>
+			<oagis:Description typeCode="navLanguageCode">FRA</oagis:Description>
+			<oagis:Description typeCode="shopLanguageCode">FR_FR</oagis:Description>
+			<oagis:Note typeCode="Comment"/>
+			<oagis:Note typeCode="SparePartReason" languageCode="de"/>
+			<oagis:Note typeCode="SparePartReason" languageCode="en"/>
+			<oagis:Status>
+				<oagis:Description>3</oagis:Description>
+			</oagis:Status>
+			<oagis:CustomerParty>
+				<oagis:AccountID>2000504591</oagis:AccountID>
+				<oagis:Name>FristName LastName</oagis:Name>
+				<oagis:Location>
+					<oagis:Address>
+						<oagis:AddressLine/>
+						<oagis:StreetName>Greifswalder Straﬂe 212-213</oagis:StreetName>
+						<oagis:CityName>DefaultCity</oagis:CityName>
+						<oagis:CountryCode>FR</oagis:CountryCode>
+						<oagis:PostalCode>10405</oagis:PostalCode>
+					</oagis:Address>
+				</oagis:Location>
+				<oagis:Contact>
+					<oagis:OrganizationUnitID/>
+					<oagis:TelephoneCommunication>
+						<oagis:FormattedNumber>034567898765</oagis:FormattedNumber>
+					</oagis:TelephoneCommunication>
+					<oagis:EMailAddressCommunication>
+						<oagis:Extension>
+							<oagis:Text>test_56ab694d6e4d1@qa.home24.de</oagis:Text>
+						</oagis:Extension>
+					</oagis:EMailAddressCommunication>
+				</oagis:Contact>
+			</oagis:CustomerParty>
+			<oagis:ShipToParty>
+				<oagis:Name>FristName LastName</oagis:Name>
+				<oagis:Location>
+					<oagis:Address>
+						<oagis:AddressLine/>
+						<oagis:StreetName>Greifswalder Straﬂe 212-213</oagis:StreetName>
+						<oagis:CityName>DefaultCity</oagis:CityName>
+						<oagis:CountryCode>FR</oagis:CountryCode>
+						<oagis:PostalCode>10405</oagis:PostalCode>
+					</oagis:Address>
+				</oagis:Location>
+				<oagis:Contact>
+					<oagis:OrganizationUnitID/>
+					<oagis:TelephoneCommunication>
+						<oagis:FormattedNumber>034567898765</oagis:FormattedNumber>
+					</oagis:TelephoneCommunication>
+					<oagis:EMailAddressCommunication>
+						<oagis:Extension>
+							<oagis:Text>test_56ab694d6e4d1@qa.home24.de</oagis:Text>
+						</oagis:Extension>
+					</oagis:EMailAddressCommunication>
+				</oagis:Contact>
+			</oagis:ShipToParty>
+			<oagis:ExtendedAmount/>
+			<oagis:TotalAmount>0</oagis:TotalAmount>
+			<oagis:Tax type="VAT">
+				<oagis:ID/>
+			</oagis:Tax>
+			<oagis:PaymentMethodCode>KK</oagis:PaymentMethodCode>
+			<oagis:OrderCommission>
+				<oagis:ID>30201002346654</oagis:ID>
+			</oagis:OrderCommission>
+		</oagis:SalesOrderHeader>
+		<oagis:SalesOrderLine>
+			<oagis:LineNumberID>10000</oagis:LineNumberID>
+			<oagis:Description>EtagËre murale Drake - Duramen de noyer</oagis:Description>
+			<oagis:Item>
+				<oagis:ID>M-RA-000003</oagis:ID>
+				<oagis:Classification>
+					<oagis:Description/>
+				</oagis:Classification>
+			</oagis:Item>
+			<oagis:Quantity>1</oagis:Quantity>
+			<oagis:UnitPrice>
+				<oagis:ChargeAmount>34,99</oagis:ChargeAmount>
+			</oagis:UnitPrice>
+			<oagis:TotalAmount currencyCode="">34,99</oagis:TotalAmount>
+			<oagis:Party typeCode="Carrier">
+				<oagis:ID typeCode="ConsolidatedCarrier">DHL</oagis:ID>
+				<oagis:ID typeCode="OriginalCarrier"/>
+			</oagis:Party>
+			<oagis:TransportationTerm>
+				<oagis:Description/>
+				<oagis:Note>OPEN</oagis:Note>
+			</oagis:TransportationTerm>
+			<oagis:PromisedDeliveryDateTime>28</oagis:PromisedDeliveryDateTime>
+			<oagis:ShipFromParty>
+				<oagis:ID/>
+			</oagis:ShipFromParty>
+			<oagis:PurchaseOrderReference>
+				<oagis:ID/>
+				<oagis:VariationID>FRA-7</oagis:VariationID>
+				<oagis:LineNumberID>0</oagis:LineNumberID>
+			</oagis:PurchaseOrderReference>
+		</oagis:SalesOrderLine>
+	</tns:salesOrder>
+</tns:initiateSalesOrderCreationRequest>

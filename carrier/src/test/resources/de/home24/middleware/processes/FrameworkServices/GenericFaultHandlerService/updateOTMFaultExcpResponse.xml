@@ -1,0 +1,151 @@
+<ns3:exception xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+	<ns3:context>
+		<ns3:sourceSystemName>Middleware</ns3:sourceSystemName>
+		<ns3:transactionId>177781</ns3:transactionId>
+		<ns3:flowId />
+		<ns3:ecid />
+		<ns3:activityId />
+		<ns3:compositeInstanceId />
+		<ns3:processLibraryId />
+		<ns3:payload>
+			<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<env:Header>
+					<wsa:To>http://192.168.56.1:10123/SoaMockServicePublisher6c3010f4-3075-47bb-bd04-993d19244ea9/OrderTransactionTrigger</wsa:To>
+					<wsa:Action>updateTransactionMonitoringWithException</wsa:Action>
+					<wsa:MessageID>urn:5fedccec-cf88-11e5-a578-080027469b57</wsa:MessageID>
+					<wsa:RelatesTo>urn:5fedccec-cf88-11e5-a578-080027469b57</wsa:RelatesTo>
+					<wsa:ReplyTo>
+						<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+						<wsa:ReferenceParameters>
+							<instra:tracking.ecid xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">52133c21-f1fb-4dcc-bdce-37682c26d317-0000473a</instra:tracking.ecid>
+							<instra:tracking.conversationId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">urn:5fedccec-cf88-11e5-a578-080027469b57</instra:tracking.conversationId>
+							<instra:tracking.FlowEventId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">150341</instra:tracking.FlowEventId>
+							<instra:tracking.FlowId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">140025</instra:tracking.FlowId>
+							<instra:tracking.CorrelationFlowId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">0000LB8TAIYFw000jzwkno1MiSV600002K</instra:tracking.CorrelationFlowId>
+						</wsa:ReferenceParameters>
+					</wsa:ReplyTo>
+					<wsa:FaultTo>
+						<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+					</wsa:FaultTo>
+				</env:Header>
+				<env:Body>
+					<updateTransactionMonitoringWithExceptionRequest xmlns="http://home24.de/interfaces/bts/ordertransactiontrigger/ordertransactiontriggermessages/v1">
+						<requestHeader/>
+						<businessException xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+							<ns3:context>
+								<ns3:sourceSystemName>Middleware</ns3:sourceSystemName>
+								<ns3:environment/>
+								<ns3:transactionId>177781</ns3:transactionId>
+								<ns3:flowId>2134</ns3:flowId>
+								<ns3:ecid>123</ns3:ecid>
+								<ns3:activityId>P101-SIISHOP-ERR</ns3:activityId>
+								<ns3:compositeInstanceId>456456456</ns3:compositeInstanceId>
+								<ns3:processLibraryId>P0000</ns3:processLibraryId>
+								<ns3:payload>
+									<ns1:receiveUpdateCommitmentFromShopRequest xmlns:ns1="http://home24.de/interfaces/bps/siimessagehandlerprocess/siimessagehandlerprocessmessages/v1">
+										<ns1:requestHeader>
+											<ns4:Message xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+											<ns4:Caller xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+											<ns4:Operation xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+											<ns4:CorrelationID xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1">177781</ns4:CorrelationID>
+											<ns4:ActivityID xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+											<ns4:KeyValueList xmlns:ns4="http://home24.de/data/common/messageheadertypes/v1"/>
+										</ns1:requestHeader>
+										<ns1:updateCommitment>
+											<o_n:queueId xmlns:o_n="NO_NAMESPACE">38081912</o_n:queueId>
+											<o_n:orderNumber xmlns:o_n="NO_NAMESPACE">177781</o_n:orderNumber>
+											<o_n:status xmlns:o_n="NO_NAMESPACE">ERROR</o_n:status>
+											<o_n:resultDetails xmlns:o_n="NO_NAMESPACE">Array ( [invalid] =&gt; Provided object is not an Item object
+                                                          reference-id: 2 )</o_n:resultDetails>
+										</ns1:updateCommitment>
+									</ns1:receiveUpdateCommitmentFromShopRequest>
+								</ns3:payload>
+								<ns3:additionalInfo>
+									<ns3:keyValuePair>
+										<ns3:key>StatusObject</ns3:key>
+										<ns3:value>CustomerCommunication</ns3:value>
+									</ns3:keyValuePair>
+									<ns3:keyValuePair>
+										<ns3:key>StatusType</ns3:key>
+										<ns3:value>Error</ns3:value>
+									</ns3:keyValuePair>
+									<ns3:keyValuePair>
+										<ns3:key>StatusCode</ns3:key>
+										<ns3:value>Errors</ns3:value>
+									</ns3:keyValuePair>
+									<ns3:keyValuePair>
+										<ns3:key>StatusText</ns3:key>
+										<ns3:value>Bla</ns3:value>
+									</ns3:keyValuePair>
+									<ns3:keyValuePair>
+										<ns3:key>GenericAttribute_SII_LOGENTRY_ID</ns3:key>
+										<ns3:value>123456789</ns3:value>
+									</ns3:keyValuePair>
+									<ns3:keyValuePair>
+										<ns3:key>GenericAttribute_QUEUE_ID</ns3:key>
+										<ns3:value>123456789</ns3:value>
+									</ns3:keyValuePair>
+									<ns3:keyValuePair>
+										<ns3:key>SalesOrderItems</ns3:key>
+										<ns3:value>1</ns3:value>
+									</ns3:keyValuePair>
+								</ns3:additionalInfo>
+							</ns3:context>
+							<ns3:severity>ERROR</ns3:severity>
+							<ns3:category>TechnicalFault</ns3:category>
+							<ns3:faultInfo>
+								<ns3:faultCode>2010</ns3:faultCode>
+								<ns3:faultMessage>Provide the fault message and describe what happened</ns3:faultMessage>
+								<ns3:faultDetails>Provide further fault details</ns3:faultDetails>
+								<ns3:faultTimestamp>2015-09-28T09:00:00</ns3:faultTimestamp>
+								<ns3:faultUserArea>
+									<salesOrderLineCollection xmlns="http://home24.de/data/navision/salesordermessages/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+										<salesOrderLine>
+											<salesOrderLineNumber>20000</salesOrderLineNumber>
+											<trackingCodeCollection>
+												<trackingCode>567</trackingCode>
+												<trackingCode>678</trackingCode>
+												<trackingCode>789</trackingCode>
+											</trackingCodeCollection>
+										</salesOrderLine>
+										<salesOrderLine>
+											<salesOrderLineNumber>30000</salesOrderLineNumber>
+											<trackingCodeCollection>
+												<trackingCode>890</trackingCode>
+												<trackingCode>900</trackingCode>
+												<trackingCode>190</trackingCode>
+											</trackingCodeCollection>
+										</salesOrderLine>
+									</salesOrderLineCollection>
+								</ns3:faultUserArea>
+							</ns3:faultInfo>
+						</businessException>
+					</updateTransactionMonitoringWithExceptionRequest>
+				</env:Body>
+			</env:Envelope>
+		</ns3:payload>
+		<ns3:additionalInfo/>
+	</ns3:context>
+	<ns3:severity>ERROR</ns3:severity>
+	<ns3:category>TechnicalFault</ns3:category>
+	<ns3:faultInfo>
+		<ns3:faultCode>MOCK_UpdateOTMWithException_ERROR</ns3:faultCode>
+		<ns3:faultMessage>Mocked business error</ns3:faultMessage>
+		<ns3:faultDetails />
+		<ns3:faultTimestamp>2016-01-18T20:59:37.933+01:00</ns3:faultTimestamp>
+		<ns3:faultUserArea>
+			<fault xmlns:ns1="http://home24.de/data/common/exceptionparameterstypes/v1"
+				xmlns="http://www.bea.com/wli/sb/context">
+				<errorCode>OSB-380000</errorCode>
+				<reason>Internal Server Error</reason>
+				<location>
+					<node>PipelinePairNode1</node>
+					<pipeline>request-7f000001.721a27d2.0.15215dd66f7.N7fff
+					</pipeline>
+					<stage>dummystage</stage>
+					<path>request-pipeline</path>
+				</location>
+			</fault>
+		</ns3:faultUserArea>
+	</ns3:faultInfo>
+</ns3:exception>

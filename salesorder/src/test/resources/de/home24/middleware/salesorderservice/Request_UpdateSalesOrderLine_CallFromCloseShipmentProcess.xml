@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	</soap:Header>
+	<soapenv:Body>
+		<v1:updateSalesOrderLineRequest
+			xmlns:v1="http://home24.de/interfaces/bas/salesorderservice/salesorderservicemessages/v1"
+			xmlns:v11="http://home24.de/data/common/messageheadertypes/v1"
+			xmlns:tns="http://www.openapplications.org/oagis/10">
+			<v1:requestHeader/>
+			<v1:salesOrder typeCode="token" actionCode="token">
+				<tns:SalesOrderHeader>
+					<tns:ID>1231376876</tns:ID>
+				</tns:SalesOrderHeader>
+				<tns:SalesOrderLine>
+					<tns:LineNumberID>10000</tns:LineNumberID>
+					<tns:Item>
+						<tns:Packaging>
+							<tns:Note typeCode="Status" status="SC_Code">Shipment closed</tns:Note>
+						</tns:Packaging>
+						<tns:Packaging>
+							<tns:Note typeCode="Status" status="SC_Code">Shipment closed</tns:Note>
+						</tns:Packaging>
+					</tns:Item>
+				</tns:SalesOrderLine>
+				<tns:SalesOrderLine>
+					<tns:LineNumberID>20000</tns:LineNumberID>
+					<tns:Item>
+						<tns:Packaging>
+							<tns:Note typeCode="Status" status="SC_Code">Shipment closed</tns:Note>
+						</tns:Packaging>
+						<tns:Packaging>
+							<tns:Note typeCode="Status" status="SC_Code">Shipment closed</tns:Note>
+						</tns:Packaging>
+					</tns:Item>
+				</tns:SalesOrderLine>
+			</v1:salesOrder>
+		</v1:updateSalesOrderLineRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

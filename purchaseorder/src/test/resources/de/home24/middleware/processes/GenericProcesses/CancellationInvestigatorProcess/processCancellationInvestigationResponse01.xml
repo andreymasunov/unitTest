@@ -1,0 +1,34 @@
+<processCancellationInvestigationResponse xmlns="http://home24.de/interfaces/bps/cancellationinvestigatorprocess/cancellationinvestigatorprocessmessages/v1">
+	<responseHeader>
+		<common:Message xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+			<common:CreationDate/>
+			<common:Type/>
+			<common:ID/>
+			<common:Version/>
+			<common:ReferenceID/>
+		</common:Message>
+		<common:Caller xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+			<common:SourceSystemName/>
+			<common:Environment/>
+			<common:User>
+				<common:UserID/>
+				<common:UserPassword/>
+				<common:UserLocation/>
+			</common:User>
+		</common:Caller>
+		<common:Operation xmlns:common="http://home24.de/data/common/messageheadertypes/v1">
+			<common:OperationName/>
+			<common:Batch>
+				<common:BatchNr/>
+				<common:JobNr/>
+			</common:Batch>
+		</common:Operation>
+		<common:CorrelationID xmlns:common="http://home24.de/data/common/messageheadertypes/v1">30201002346654</common:CorrelationID>
+		<common:ActivityID xmlns:common="http://home24.de/data/common/messageheadertypes/v1"/>
+		<common:KeyValueList xmlns:common="http://home24.de/data/common/messageheadertypes/v1"/>
+	</responseHeader>
+	<cancellationStatus>
+		<Status xmlns="http://home24.de/data/custom/cancellation/v1" xmlns:ns4="http://home24.de/data/custom/ordertransaction/v1">NotCancelled</Status>
+		<SubStatus xmlns="http://home24.de/data/custom/cancellation/v1">NotCancelled</SubStatus>
+	</cancellationStatus>
+</processCancellationInvestigationResponse>

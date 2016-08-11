@@ -1,0 +1,136 @@
+<initiateDropshipOrderRequest xmlns="http://home24.de/interfaces/bps/processordergenerationprocess/purchaseordergenerationprocessmessages/v1" xmlns:client="http://home24.de/bpel/GenericProcesses/SalesOrderCreationProcess/InitiateSalesOrderCreationProcess" xmlns:cor="http://home24.de/bpel/GenericProcesses/SalesOrderCreationProcess/InitiateSalesOrderCreationProcess/correlationset" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:exception="http://home24.de/interfaces/common/exceptions/v1" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:ns9="http://home24.de/interfaces/bps/processordergenerationprocess/purchaseordergenerationprocess/v1" xmlns:ns5="http://www.openapplications.org/oagis/10" xmlns:ns6="http://home24.de/data/common/serviceinformationtypes/v1" xmlns:ns10="http://home24.de/data/custom/cancellation/v1" xmlns:ns7="http://home24.de/data/custom/ordertransaction/v1" xmlns:ns8="http://home24.de/data/common/messageheadertypes/v1" xmlns:ns2="http://home24.de/interfaces/bes/ordertransactionservice/ordertransactionservicemessages/v1" xmlns:ns1="http://home24.de/bpel/GenericProcesses/SalesOrderCreationProcess/DetermineOrderTypeRuleFacts/v1" xmlns:ns4="http://home24.de/data/common/exceptiontypes/v1" xmlns:ns3="http://schemas.oracle.com/bpel/extension" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://home24.de/interfaces/bps/processordergenerationprocess/purchaseordergenerationprocessmessages/v1">
+	<tns:requestHeader>
+		<ns8:Message>
+			<ns8:CreationDate/>
+			<ns8:Type/>
+			<ns8:ID/>
+			<ns8:Version/>
+			<ns8:ReferenceID/>
+		</ns8:Message>
+		<ns8:Caller>
+			<ns8:SourceSystemName/>
+			<ns8:Environment/>
+			<ns8:User>
+				<ns8:UserID/>
+				<ns8:UserPassword/>
+				<ns8:UserLocation/>
+			</ns8:User>
+		</ns8:Caller>
+		<ns8:Operation>
+			<ns8:OperationName/>
+			<ns8:Batch>
+				<ns8:BatchNr/>
+				<ns8:JobNr/>
+			</ns8:Batch>
+		</ns8:Operation>
+		<ns8:CorrelationID>30201002346654</ns8:CorrelationID>
+		<ns8:ActivityID/>
+		<ns8:KeyValueList/>
+	</tns:requestHeader>
+	<tns:salesOrder>
+		<oagis:SalesOrderHeader xmlns:oagis="http://www.openapplications.org/oagis/10" xmlns:tns="http://home24.de/interfaces/bps/salesordercreationprocess/salesordercreationprocessmessages/v1" xmlns:navso="http://home24.de/data/navision/salesorder/v1" xmlns:common="http://home24.de/data/common/messageheadertypes/v1" xmlns:soms="http://home24.de/data/navision/salesordermessages/v1" xmlns:serviceInfo="http://home24.de/data/common/serviceinformationtypes/v1">
+			<oagis:ID>30201002346654</oagis:ID>
+			<oagis:DocumentIDSet>
+				<oagis:ID typeCode="ExternalDocumentNo">30201002346654</oagis:ID>
+			</oagis:DocumentIDSet>
+			<oagis:LastModificationDateTime>29.01.16</oagis:LastModificationDateTime>
+			<oagis:DocumentDateTime>29.01.16</oagis:DocumentDateTime>
+			<oagis:Description typeCode="navLanguageCode">FRA</oagis:Description>
+			<oagis:Description typeCode="shopLanguageCode">FR_FR</oagis:Description>
+			<oagis:Note typeCode="Comment"/>
+			<oagis:Note typeCode="SparePartReason" languageCode="de"/>
+			<oagis:Note typeCode="SparePartReason" languageCode="en"/>
+			<oagis:Status>
+				<oagis:Description>3</oagis:Description>
+			</oagis:Status>
+			<oagis:CustomerParty>
+				<oagis:AccountID>2000504591</oagis:AccountID>
+				<oagis:Name>FristName LastName</oagis:Name>
+				<oagis:Location>
+					<oagis:Address>
+						<oagis:AddressLine/>
+						<oagis:StreetName>Greifswalder Straße 212-213</oagis:StreetName>
+						<oagis:CityName>DefaultCity</oagis:CityName>
+						<oagis:CountryCode>FR</oagis:CountryCode>
+						<oagis:PostalCode>10405</oagis:PostalCode>
+					</oagis:Address>
+				</oagis:Location>
+				<oagis:Contact>
+					<oagis:OrganizationUnitID/>
+					<oagis:TelephoneCommunication>
+						<oagis:FormattedNumber>034567898765</oagis:FormattedNumber>
+					</oagis:TelephoneCommunication>
+					<oagis:EMailAddressCommunication>
+						<oagis:Extension>
+							<oagis:Text>test_56ab694d6e4d1@qa.home24.de</oagis:Text>
+						</oagis:Extension>
+					</oagis:EMailAddressCommunication>
+				</oagis:Contact>
+			</oagis:CustomerParty>
+			<oagis:ShipToParty>
+				<oagis:Name>FristName LastName</oagis:Name>
+				<oagis:Location>
+					<oagis:Address>
+						<oagis:AddressLine/>
+						<oagis:StreetName>Greifswalder Straße 212-213</oagis:StreetName>
+						<oagis:CityName>DefaultCity</oagis:CityName>
+						<oagis:CountryCode>FR</oagis:CountryCode>
+						<oagis:PostalCode>10405</oagis:PostalCode>
+					</oagis:Address>
+				</oagis:Location>
+				<oagis:Contact>
+					<oagis:OrganizationUnitID/>
+					<oagis:TelephoneCommunication>
+						<oagis:FormattedNumber>034567898765</oagis:FormattedNumber>
+					</oagis:TelephoneCommunication>
+					<oagis:EMailAddressCommunication>
+						<oagis:Extension>
+							<oagis:Text>test_56ab694d6e4d1@qa.home24.de</oagis:Text>
+						</oagis:Extension>
+					</oagis:EMailAddressCommunication>
+				</oagis:Contact>
+			</oagis:ShipToParty>
+			<oagis:ExtendedAmount/>
+			<oagis:TotalAmount>0</oagis:TotalAmount>
+			<oagis:Tax type="VAT">
+				<oagis:ID/>
+			</oagis:Tax>
+			<oagis:PaymentMethodCode>KK</oagis:PaymentMethodCode>
+			<oagis:OrderCommission>
+				<oagis:ID>30201002346654</oagis:ID>
+			</oagis:OrderCommission>
+		</oagis:SalesOrderHeader>
+		<oagis:SalesOrderLine xmlns:oagis="http://www.openapplications.org/oagis/10" xmlns:tns="http://home24.de/interfaces/bps/salesordercreationprocess/salesordercreationprocessmessages/v1" xmlns:navso="http://home24.de/data/navision/salesorder/v1" xmlns:common="http://home24.de/data/common/messageheadertypes/v1" xmlns:soms="http://home24.de/data/navision/salesordermessages/v1" xmlns:serviceInfo="http://home24.de/data/common/serviceinformationtypes/v1">
+			<oagis:LineNumberID>10000</oagis:LineNumberID>
+			<oagis:Description>Etagère murale Drake - Duramen de noyer</oagis:Description>
+			<oagis:Item>
+				<oagis:ID>M-RA-000003</oagis:ID>
+				<oagis:Classification>
+					<oagis:Description/>
+				</oagis:Classification>
+			</oagis:Item>
+			<oagis:Quantity>1</oagis:Quantity>
+			<oagis:UnitPrice>
+				<oagis:ChargeAmount>34,99</oagis:ChargeAmount>
+			</oagis:UnitPrice>
+			<oagis:TotalAmount currencyCode="">34,99</oagis:TotalAmount>
+			<oagis:Party typeCode="Carrier">
+				<oagis:ID typeCode="ConsolidatedCarrier">DHL</oagis:ID>
+				<oagis:ID typeCode="OriginalCarrier"/>
+			</oagis:Party>
+			<oagis:TransportationTerm>
+				<oagis:Description/>
+				<oagis:Note>OPEN</oagis:Note>
+			</oagis:TransportationTerm>
+			<oagis:PromisedDeliveryDateTime>28</oagis:PromisedDeliveryDateTime>
+			<oagis:ShipFromParty>
+				<oagis:ID/>
+			</oagis:ShipFromParty>
+			<oagis:PurchaseOrderReference>
+				<oagis:ID/>
+				<oagis:VariationID>FRA-7</oagis:VariationID>
+				<oagis:LineNumberID>0</oagis:LineNumberID>
+			</oagis:PurchaseOrderReference>
+		</oagis:SalesOrderLine>
+	</tns:salesOrder>
+</initiateDropshipOrderRequest>

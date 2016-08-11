@@ -1,0 +1,28 @@
+<processNonLegacyResponseElement xmlns="http://bpeltonavision.soa.opitzconsulting.com/types/">
+	<result>
+		<payload>
+			<GetAddressData_Result xmlns="urn:microsoft-dynamics-schemas/codeunit/MasterDataWS">
+				<salesOrderNumber>30101002102560</salesOrderNumber>
+				<customerNumber>1000219662</customerNumber>
+				<code>LIEF001</code>
+				<firstName>Marco</firstName>
+				<lastName>Seelbinder</lastName>
+				<name>Marco Seelbinder</name>
+				<name2/>
+				<streetName>Weißenburger Str.</streetName>
+				<streetNumber>10</streetNumber>
+				<address>Weißenburger Str. 10</address>
+				<address2>Seitenflügel links</address2>
+				<city>Berlin</city>
+				<contact/>
+				<postCode>13595</postCode>
+				<county/>
+				<countryRegionCode>DE</countryRegionCode>
+				<phoneNumber>030-66376876</phoneNumber>
+				<eMail>marco@seelbinder.de</eMail>
+				<errorMessage/>
+			</GetAddressData_Result>
+		</payload>
+		<httpResponseCode>200</httpResponseCode>
+	</result>
+</processNonLegacyResponseElement>

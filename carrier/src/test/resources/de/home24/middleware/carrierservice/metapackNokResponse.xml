@@ -1,0 +1,14 @@
+<PrintParcelResponse xmlns="http://xlogics.eu/blackbox">
+	<ExitStatus xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+		<Status>Error</Status>
+		<StatusDetails>
+			<StatusDetail>
+				<Status>Error</Status>
+				<Code>2102</Code>
+				<Message>Shipping definition DPD_Paket_Fail not found.</Message>
+				<Details i:nil="true"/>
+			</StatusDetail>
+		</StatusDetails>
+	</ExitStatus>
+	<OutputParameters xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+</PrintParcelResponse>

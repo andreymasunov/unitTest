@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<InboundFTPHeaderType xmlns="http://xmlns.oracle.com/pcbpel/adapter/ftp/">
+			<fileName>71808_ExportFile_201601181741597347.csv</fileName>
+			<directory>/test/Trackingupdates/1601</directory>
+			<size>524</size>
+			<batch>Aq6zMINgYEiex2LvqSUQ9cdWWx5iLN9cfI29TL-D310.</batch>
+			<batchIndex>1</batchIndex>
+		</InboundFTPHeaderType>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ns2:onErrorReceiveCarrierStatusUpdateRequest xmlns:ns2="http://home24.de/interfaces/bps/carrierstatusprocesserrorlistener/carrierstatuserrorlistenermessages/v1">
+			<ns2:requestHeader>
+				<ns3:Caller xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">
+					<ns3:SourceSystemName>Middleware</ns3:SourceSystemName>
+				</ns3:Caller>
+				<ns3:CorrelationID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">71808_ExportFile_201601181741597347.csv</ns3:CorrelationID>
+				<ns3:ActivityID xmlns:ns3="http://home24.de/data/common/messageheadertypes/v1">P202-INIT</ns3:ActivityID>
+			</ns2:requestHeader>
+			<ns2:exception>
+				<ns3:context xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+					<ns3:sourceSystemName>Middleware</ns3:sourceSystemName>
+					<ns3:transactionId>71808_ExportFile_201601181741597347.csv</ns3:transactionId>
+					<ns3:flowId/>
+					<ns3:ecid/>
+					<ns3:activityId>P202-INIT</ns3:activityId>
+					<ns3:compositeInstanceId/>
+					<ns3:processLibraryId>P202</ns3:processLibraryId>
+					<ns3:payload>
+						${PAYLOAD}
+					</ns3:payload>
+				</ns3:context>
+				<ns3:severity xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">ERROR</ns3:severity>
+				<ns3:category xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">TechnicalFault</ns3:category>
+				<ns3:faultInfo xmlns:ns3="http://home24.de/data/common/exceptiontypes/v1">
+					<ns3:faultCode>CAR-UPD-00001</ns3:faultCode>
+					<ns3:faultMessage>Error while transmitting file to H24 FTP server</ns3:faultMessage>
+					<ns3:faultDetails/>
+					<ns3:faultTimestamp>2016-01-28T10:10:07.923+01:00</ns3:faultTimestamp>
+					<ns3:faultUserArea>
+						<fault xmlns="http://www.bea.com/wli/sb/context" xmlns:ns1="http://home24.de/data/common/exceptionparameterstypes/v1">
+							<errorCode>CAR-UPD-00001</errorCode>
+							<reason>Error while transmitting file to H24 FTP server</reason>
+							<location>
+								<node>RouteNode1</node>
+								<pipeline>error-N3f57fef7.5dd8a643.0.15242300764.N8000</pipeline>
+								<path>response-pipeline</path>
+								<error-handler>true</error-handler>
+							</location>
+						</fault>
+					</ns3:faultUserArea>
+				</ns3:faultInfo>
+			</ns2:exception>
+		</ns2:onErrorReceiveCarrierStatusUpdateRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

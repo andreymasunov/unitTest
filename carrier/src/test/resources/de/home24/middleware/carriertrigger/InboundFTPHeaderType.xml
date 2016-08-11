@@ -1,0 +1,7 @@
+<InboundFTPHeaderType xmlns="http://xmlns.oracle.com/pcbpel/adapter/ftp/">
+	<fileName>${FILENAME}</fileName>
+	<directory>/test/Trackingupdates/1601</directory>
+	<size>524</size>
+	<batch>Aq6zMINgYEiex2LvqSUQ9cdWWx5iLN9cfI29TL-D310.</batch>
+	<batchIndex>1</batchIndex>
+</InboundFTPHeaderType>

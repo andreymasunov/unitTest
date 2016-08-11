@@ -1,0 +1,15 @@
+<handleFaultResponse
+	xmlns="http://home24.de/interfaces/bas/genericfaulthandler/genericfaulthandlerservicemessages/v1">
+	<responseHeader>
+		<Caller xmlns="http://home24.de/data/common/messageheadertypes/v1">
+			<SourceSystemName>Middleware</SourceSystemName>
+		</Caller>
+		<CorrelationID xmlns="http://home24.de/data/common/messageheadertypes/v1">${CORRELATION_ID}</CorrelationID>
+		<ActivityID xmlns="http://home24.de/data/common/messageheadertypes/v1">${ACTIVITY_ID}</ActivityID>
+	</responseHeader>
+	<faultHandlingStrategy>
+		<transactionId xmlns="http://home24.de/data/custom/genericfaulthandler/v1">${CORRELATION_ID}</transactionId>
+		<faultStrategy xmlns="http://home24.de/data/custom/genericfaulthandler/v1">${FAULT_STRATEGY}</faultStrategy>
+		<payload xmlns="http://home24.de/data/custom/genericfaulthandler/v1">${PAYLOAD}</payload>
+	</faultHandlingStrategy>
+</handleFaultResponse>
