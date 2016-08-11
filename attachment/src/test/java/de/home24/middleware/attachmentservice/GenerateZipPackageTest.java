@@ -116,7 +116,7 @@ public class GenerateZipPackageTest extends AbstractBaseSoaTest {
 	mockOsbBusinessService(PATH_FTP_READ, home24FtpReadSuccessMock);
 	mockOsbBusinessService(PATH_FTP_WRITE, home24FtpWriteSuccessMock);
 
-	LOGGER.info("+++invoke Service with Succes");
+	LOGGER.info("+++generate Zip Package Success");
 	String invocationResult = invokeOsbProxyService(PATH_ATTACHMENT_SERVICE,
 		SoapUtil.getInstance().soapEnvelope(SoapVersion.SOAP11, requestXML));
 	LOGGER.info("+++invocation Result: " + invocationResult);
@@ -146,7 +146,7 @@ public class GenerateZipPackageTest extends AbstractBaseSoaTest {
 	mockOsbBusinessService(PATH_FTP_READ, home24FtpReadSuccessMock);
 	mockOsbBusinessService(PATH_FTP_WRITE, home24FtpWriteSuccessMock);
 
-	LOGGER.info("+++invoke Service with Succes");
+	LOGGER.info("+++Invoke with success, without label reference");
 	String invocationResult = invokeOsbProxyService(PATH_ATTACHMENT_SERVICE,
 		SoapUtil.getInstance().soapEnvelope(SoapVersion.SOAP11, requestXML));
 	LOGGER.info("+++invocation Result: " + invocationResult);
@@ -178,7 +178,7 @@ public class GenerateZipPackageTest extends AbstractBaseSoaTest {
 	mockOsbBusinessService(PATH_FTP_READ, home24FtpReadFaultMock);
 	mockOsbBusinessService(PATH_FTP_WRITE, home24FtpWriteFaultMock);
 
-	LOGGER.info("+++invoke Carrier closeShippingInstructions with Succes");
+	LOGGER.info("+++generate Zip Package Technical Fault");
 	try {
 	    response = invokeOsbProxyService(PATH_ATTACHMENT_SERVICE,
 		    SoapUtil.getInstance().soapEnvelope(SoapVersion.SOAP11, requestXML));

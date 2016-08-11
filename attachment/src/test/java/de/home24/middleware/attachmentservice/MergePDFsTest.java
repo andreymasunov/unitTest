@@ -106,7 +106,7 @@ public class MergePDFsTest extends AbstractBaseSoaTest {
 		attachmentServiceCallbackMock);
 
 	try {
-	    LOGGER.info("+++invoke Service with Succes");
+	    LOGGER.info("+++invoke Service with Success");
 
 	    final HttpResponseWrapper httpResponseWrapper = invokeSbSoapProxy(
 		    String.format("http://%s:%s/%s", getConfig().getOsbServerConfig().getServiceHost(),
@@ -164,7 +164,7 @@ public class MergePDFsTest extends AbstractBaseSoaTest {
 	String invocationResult = null;
 
 	try {
-	    LOGGER.info("+++invoke Service with Succes");
+	    LOGGER.info("+++Merge 50 pfds with success");
 
 	    final HttpResponseWrapper httpResponseWrapper = invokeSbSoapProxy(
 		    String.format("http://%s:%s/%s", getConfig().getOsbServerConfig().getServiceHost(),
@@ -220,7 +220,7 @@ public class MergePDFsTest extends AbstractBaseSoaTest {
 		attachmentServiceCallbackMock);
 
 	try {
-	    LOGGER.info("+++invoke Service with Succes");
+	    LOGGER.info("+++Invoke with TechnicalFault");
 
 	    final HttpResponseWrapper httpResponseWrapper = invokeSbSoapProxy(
 		    String.format("http://%s:%s/%s", getConfig().getOsbServerConfig().getServiceHost(),
@@ -263,6 +263,7 @@ public class MergePDFsTest extends AbstractBaseSoaTest {
     @Test
     public void whenWsaHeaderInformationContainedinRequestThenForwardToInternalOperationsHttpProxy() {
 
+	LOGGER.info("+++when Wsa Header Information Contained in Request Then Forward To Internal Operations HttpProxy");
 	DefaultSoapMockService createLabelAndShippingInstructionsInternalRef = new DefaultSoapMockService();
 	mockOsbBusinessService("AttachmentService/operations/mergePDFs/business-service/MergePdfsInternalRef",
 		createLabelAndShippingInstructionsInternalRef);
