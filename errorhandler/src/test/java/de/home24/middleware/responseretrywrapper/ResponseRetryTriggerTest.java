@@ -69,6 +69,7 @@ public class ResponseRetryTriggerTest extends AbstractBaseSoaTest {
 	@Test
 	public void receiveJMSErrorSuccesTest() {
 		try {
+			LOGGER.info("+++invoke receiveJMSErrorSuccessTest+++");
 			mockOsbBusinessService(PATH_RESPONSE_RETRY_MOCK, responseRetryWrapperRefMock);
 			String requestXML = new ParameterReplacer(readClasspathFile(PATH_RESOURCE+"onErrorInResponseQueueRequest.xml"))
 					.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId).build();
@@ -103,6 +104,7 @@ public class ResponseRetryTriggerTest extends AbstractBaseSoaTest {
 	@Test
 	public void receiveFTPErrorSuccesTest() {
 		try {
+			LOGGER.info("+++invoke receiveFTPErrorSuccessTest+++");
 			mockOsbBusinessService(PATH_RESPONSE_RETRY_MOCK, responseRetryWrapperRefMock);
 			String requestXML = new ParameterReplacer(readClasspathFile(PATH_RESOURCE+"onErrorInFTPRoutingRequest.xml"))
 					.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId).build();
@@ -136,6 +138,7 @@ public class ResponseRetryTriggerTest extends AbstractBaseSoaTest {
 	@Test
 	public void receiveJMSErrorReturnErrorTest() {		
 		try {
+			LOGGER.info("+++invoke receiveJMSErrorReturnErrorTest+++");
 			mockOsbBusinessService(PATH_RESPONSE_RETRY_MOCK, responseRetryWrapperRefMock);
 			String requestXML = new ParameterReplacer(readClasspathFile(PATH_RESOURCE+"onErrorInFTPRoutingRequestWithError.xml"))
 					.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId).build();			
@@ -165,6 +168,7 @@ public class ResponseRetryTriggerTest extends AbstractBaseSoaTest {
 	@Test
 	public void receiveFTPErrorReturnErrorTest() {		
 		try {
+			LOGGER.info("+++invoke receiveFTPErrorReturnErrorTest+++");
 			mockOsbBusinessService(PATH_RESPONSE_RETRY_MOCK, responseRetryWrapperRefMock);
 			String requestXML = new ParameterReplacer(readClasspathFile(PATH_RESOURCE+"onErrorInFTPRoutingRequestWithError.xml"))
 					.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId).build();			
