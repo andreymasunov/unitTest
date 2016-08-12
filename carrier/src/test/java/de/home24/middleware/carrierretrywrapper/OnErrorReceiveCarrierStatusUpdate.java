@@ -40,7 +40,7 @@ public class OnErrorReceiveCarrierStatusUpdate extends AbstractBaseSoaTest {
     @Test
     public void handleOnErrorNxsdTransformation() {
 
-	LOGGER.info("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorNxsdTransformation");
+	System.out.println("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorNxsdTransformation");
 	final String opaqueElementPayload = readClasspathFile("OpaqueElementPayload.xml");
 
 	final DefaultSoapMockService genericFaultHandlerRef = new DefaultSoapMockService(
@@ -61,7 +61,7 @@ public class OnErrorReceiveCarrierStatusUpdate extends AbstractBaseSoaTest {
     @Test
     public void handleOnErrorH24FtpUnavailable() {
 
-	LOGGER.info("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorH24FtpUnavailable");
+	System.out.println("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorH24FtpUnavailable");
 	final String opaqueElementPayload = readClasspathFile("OpaqueElementPayload.xml");
 
 	final DefaultSoapMockService genericFaultHandlerRef = new DefaultSoapMockService(
@@ -85,7 +85,7 @@ public class OnErrorReceiveCarrierStatusUpdate extends AbstractBaseSoaTest {
     @Test
     public void handleOnErrorH24FtpUnavailableWithErrorDuringResend() throws Exception {
 
-	LOGGER.info("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorH24FtpUnavailableWithErrorDuringResend");
+	System.out.println("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorH24FtpUnavailableWithErrorDuringResend");
 	final String toggleCarrierStatusPollingRequest = readClasspathFile(
 		"ToggleCarrierStatusPollingRequest.xml");
 
@@ -163,7 +163,7 @@ public class OnErrorReceiveCarrierStatusUpdate extends AbstractBaseSoaTest {
     @Test
     public void handleOnErrorProcessInvocationError() {
 
-	LOGGER.info("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorProcessInvocationError");
+	System.out.println("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorProcessInvocationError");
 	final String receiveCarrierStatusUpdatePayload = readClasspathFile(
 		"ReceiveCarrierStatusUpdatePayload.xml");
 
@@ -188,7 +188,7 @@ public class OnErrorReceiveCarrierStatusUpdate extends AbstractBaseSoaTest {
     @Test
     public void handleOnErrorProcessInvocationErrorWithErrorDuringResend() {
 
-	LOGGER.info("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorProcessInvocationErrorWithErrorDuringResend");
+	System.out.println("+++OnErrorReceiveCarrierStatusUpdate_handleOnErrorProcessInvocationErrorWithErrorDuringResend");
 	final String receiveCarrierStatusUpdatePayload = readClasspathFile(
 		"ReceiveCarrierStatusUpdatePayload.xml");
 
