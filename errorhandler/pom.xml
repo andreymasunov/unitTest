@@ -4,119 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.home24.middleware.octestframework</groupId>
 	<artifactId>errorhandler</artifactId>
+	<parent>
+		<groupId>de.home24.middleware.octestframework</groupId>
+		<artifactId>MiddlewareTests</artifactId>
+		<version>1.0</version>
+	</parent>
 	<version>1.0</version>
 	<packaging>pom</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>2.6</version>
-					<executions>
-						<execution>
-							<id>copy-resources-messages</id>
-							<phase>process-resources</phase>
-							<goals>
-								<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-								<encoding>UTF-8</encoding>
-								<outputDirectory>${project.basedir}/src/test/resources/de/home24/middleware</outputDirectory>
-								<resources>
-									<resource>
-										<directory>${project.basedir}/../../resources</directory>
-										<includes>
-											<include>**/*</include>
-										</includes>
-										<filtering>false</filtering>
-									</resource>
-								</resources>
-							</configuration>
-						</execution>
-						<execution>
-							<id>copy-contracts</id>
-							<phase>process-resources</phase>
-							<goals>
-								<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-								<encoding>UTF-8</encoding>
-								<outputDirectory>${project.basedir}/src/test/resources/de/home24/middleware</outputDirectory>
-								<resources>
-									<resource>
-										<directory>${env.MDS_HOME}</directory>
-										<includes>
-											<include>**/*.xsd</include>
-										</includes>
-										<filtering>false</filtering>
-									</resource>
-								</resources>
-							</configuration>
-						</execution>
-						<execution>
-							<id>copy-examples</id>
-							<phase>process-resources</phase>
-							<goals>
-								<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-								<encoding>UTF-8</encoding>
-								<outputDirectory>${project.basedir}/src/test/resources/de/home24/middleware/examples</outputDirectory>
-								<resources>
-									<resource>
-										<directory>${env.MDS_HOME}/../../../../../examples</directory>
-										<excludes>
-											<exclude>metadata/*</exclude>
-										</excludes>
-										<includes>
-											<include>**/*.xml</include>
-											<include>**/*.txt</include>
-										</includes>
-										<filtering>false</filtering>
-									</resource>
-								</resources>
-							</configuration>
-						</execution>
-						<execution>
-							<id>copy-nxsd-sources</id>
-							<phase>process-resources</phase>
-							<goals>
-								<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-								<encoding>UTF-8</encoding>
-								<outputDirectory>${project.basedir}/src/test/resources/de/home24/middleware/nxsd</outputDirectory>
-								<resources>
-									<resource>
-										<directory>${env.MW_PROJECT_HOME}/servicebus</directory>
-										<excludes>
-											<exclude>target/*</exclude>
-										</excludes>
-										<includes>
-											<include>VendorTransmission/VendorTransmissionService/operations/convertPurchaseOrderToCSV/wsdl/xsd/PurchaseOrderCsv.xsd</include>
-										</includes>
-										<filtering>false</filtering>
-									</resource>
-								</resources>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 	<dependencies>
 		<dependency>
 			<groupId>de.home24.middleware.octestframework</groupId>
