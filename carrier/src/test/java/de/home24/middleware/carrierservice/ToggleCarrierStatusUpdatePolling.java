@@ -7,6 +7,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.logging.Logger;
+
 import com.google.common.collect.Lists;
 import com.opitzconsulting.soa.testing.ServiceException;
 import com.opitzconsulting.soa.testing.util.SoapUtil;
