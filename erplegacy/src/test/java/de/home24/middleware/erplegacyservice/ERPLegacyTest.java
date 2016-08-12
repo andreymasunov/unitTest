@@ -110,6 +110,7 @@ public class ERPLegacyTest extends AbstractBaseSoaTest {
 	@Test
 	public void processPaymentUpdaterequestOSMPOshouldBeCreated() {
 		
+		LOGGER.info("+++ invoke processPaymentUpdaterequestOSMPOshouldBeCreated");
 		mockOsbBusinessService(PATH_WRITE_TO_PAYMENT_QUEUE, writeToPaymentQueueMock);
 
 		final String paymentUpdateRequest = new ParameterReplacer(
@@ -177,6 +178,7 @@ public class ERPLegacyTest extends AbstractBaseSoaTest {
 
 	@Test
 	public void processCreateCustomerRequestOSMCUSTShouldBeCreated() {
+		LOGGER.info("+++ invoke processCreateCustomerRequestOSMCUSTShouldBeCreated");
 		mockOsbBusinessService(PATH_WRITE_TO_PAYMENT_QUEUE, writeToPaymentQueueMock);
 		
 		final String createCustomerRequest = new ParameterReplacer(
@@ -216,6 +218,7 @@ public class ERPLegacyTest extends AbstractBaseSoaTest {
 	@Test
 	public void processCreateDocumentRequestOSMCUSTShouldBeCreated() {
 
+		LOGGER.info("+++ invoke processCreateDocumentRequestOSMCUSTShouldBeCreated");
 		mockOsbBusinessService(PATH_WRITE_TO_PAYMENT_QUEUE, writeToPaymentQueueMock);
 		
 		final String CreateDocumentRequest = new ParameterReplacer(
@@ -253,6 +256,7 @@ public class ERPLegacyTest extends AbstractBaseSoaTest {
 
 	@Test
 	public void processUnsupportedMessageTypeCasePreparedResponseIsReturned() {
+		LOGGER.info("+++ invoke processUnsupportedMessageTypeCasePreparedResponseIsReturned");
 		mockOsbBusinessService(PATH_WRITE_TO_PAYMENT_QUEUE, writeToPaymentQueueMock);
 		
 		final String unsupportedTypeRequest = new ParameterReplacer(
@@ -276,6 +280,8 @@ public class ERPLegacyTest extends AbstractBaseSoaTest {
 
 	@Test
 	public void processPaymentUpdateExceptionOnEnqueueTestExceptionHandling() {
+		
+		LOGGER.info("+++ invoke processPaymentUpdateExceptionOnEnqueueTestExceptionHandling");
 		writeToPaymentErrorQueueMock = new DefaultSoapMockService(Lists.newArrayList(new MockResponsePojo(ResponseType.FAULT , "","")));
 		mockOsbBusinessService(PATH_WRITE_TO_PAYMENT_QUEUE, writeToPaymentErrorQueueMock);
 		
