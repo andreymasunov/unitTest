@@ -186,6 +186,8 @@ public class CloseShipmentProcessTest extends AbstractBaseSoaTest {
 	@Test
 	public void closeShipmentProcessHappyPathTest() {
 
+		LOGGER.info("+++ invoke closeShipmentProcessHappyPathTest");
+		LOGGER.info("+++Mock Composite References");
 		final String requestXML = new ParameterReplacer(readClasspathFile(RESOURCE_DIR+"processCloseShipmentRequest.xml"))
 				.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId)
 				.replace(REPLACE_PARAM_LINE_ID_1, randomLineId1)
@@ -252,6 +254,7 @@ public class CloseShipmentProcessTest extends AbstractBaseSoaTest {
 	@Test
 	public void closeShipmentProcessBusinessFaultWithResendTest() {
 
+		LOGGER.info("+++ invoke closeShipmentProcessBusinessFaultWithResendTest");
 		final String requestXML = new ParameterReplacer(readClasspathFile(RESOURCE_DIR+"processCloseShipmentRequest.xml"))
 				.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId)
 				.replace(REPLACE_PARAM_LINE_ID_1, randomLineId1)
@@ -293,6 +296,7 @@ public class CloseShipmentProcessTest extends AbstractBaseSoaTest {
 	@Test
 	public void closeShipmentProcessTechnicalFaultWithResendTest() {
 
+		LOGGER.info("+++ invoke closeShipmentProcessTechnicalFaultWithResendTest");
 		final String requestXML = new ParameterReplacer(readClasspathFile(RESOURCE_DIR+"processCloseShipmentRequest.xml"))
 				.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId)
 				.replace(REPLACE_PARAM_LINE_ID_1, randomLineId1)
@@ -338,6 +342,7 @@ public class CloseShipmentProcessTest extends AbstractBaseSoaTest {
 	@Test
 	public void closeShipmentProcessBusinessFaultWithAbortTest() {
 
+		LOGGER.info("+++ invoke closeShipmentProcessBusinessFaultWithAbortTest");
 		final String requestXML = new ParameterReplacer(readClasspathFile(RESOURCE_DIR+"processCloseShipmentRequest.xml"))
 				.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId)
 				.replace(REPLACE_PARAM_LINE_ID_1, randomLineId1)
@@ -377,6 +382,7 @@ public class CloseShipmentProcessTest extends AbstractBaseSoaTest {
 	@Test
 	public void closeShipmentProcessTechnicalFaultWithAbortTest() {
 
+		LOGGER.info("+++ invoke closeShipmentProcessTechnicalFaultWithAbortTest");
 		final String requestXML = new ParameterReplacer(readClasspathFile(RESOURCE_DIR+"processCloseShipmentRequest.xml"))
 				.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId)
 				.replace(REPLACE_PARAM_LINE_ID_1, randomLineId1)
@@ -417,6 +423,7 @@ public class CloseShipmentProcessTest extends AbstractBaseSoaTest {
 	@Test
 	public void closeShipmentProcessUpdSOCallbackExceptionTest() {
 
+		LOGGER.info("+++ invoke closeShipmentProcessUpdSOCallbackExceptionTest");
 		final String requestXML = new ParameterReplacer(readClasspathFile(RESOURCE_DIR+"processCloseShipmentRequest.xml"))
 				.replace(REPLACE_PARAM_CORRELATION_ID, randomCorrelationId)
 				.replace(REPLACE_PARAM_LINE_ID_1, randomLineId1)
