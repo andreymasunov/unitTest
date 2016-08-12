@@ -36,6 +36,7 @@ public class CreateLableAndShippingInstructionsErrorTest
 		readClasspathFile("metapackNokResponse.xml"));
 
 	try {
+		LOGGER.info("+++invoke createLabelAndShippingInstructionsWithOneParcelError");
 	    final HttpResponseWrapper httpResponseWrapper = invokeSbSoapProxy(
 		    String.format("http://%s:%s/%s", getConfig().getOsbServerConfig().getServiceHost(),
 			    getConfig().getOsbServerConfig().getServicePort(), PATH_CARRIER_SERVICE),

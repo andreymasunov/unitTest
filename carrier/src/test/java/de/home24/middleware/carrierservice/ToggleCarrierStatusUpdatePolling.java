@@ -38,6 +38,7 @@ public class ToggleCarrierStatusUpdatePolling extends AbstractBaseSoaTest {
     @Test
     public void activateFtpPollingByAddingTriggerFile() {
 
+	LOGGER.info("+++ invoke activateFtpPollingByAddingTriggerFile");
 	final DefaultSoapMockService writeTriggerFileMockRef = new DefaultSoapMockService();
 
 	mockOsbBusinessService(
@@ -60,6 +61,7 @@ public class ToggleCarrierStatusUpdatePolling extends AbstractBaseSoaTest {
     @Test
     public void deactivateFtpPollingByRemovingTriggerFile() {
 
+	LOGGER.info("+++ invoke deactivateFtpPollingByRemovingTriggerFile");
 	final DefaultSoapMockService removeTriggerFileMockRef = new DefaultSoapMockService();
 
 	mockOsbBusinessService(
@@ -82,6 +84,7 @@ public class ToggleCarrierStatusUpdatePolling extends AbstractBaseSoaTest {
     @Test
     public void receiveErrorWhileDeletingTriggerFileCausedByAlreadyDeletedTriggerFile() {
 
+	LOGGER.info("+++ invoke receiveErrorWhileDeletingTriggerFileCausedByAlreadyDeletedTriggerFile");
 	final DefaultSoapMockService removeTriggerFileMockRef = new DefaultSoapMockService(Lists
 		.newArrayList(new MockResponsePojo(ResponseType.BUSINESS_FAULT, "JCA-11007", "JCA-11007")));
 
@@ -105,6 +108,7 @@ public class ToggleCarrierStatusUpdatePolling extends AbstractBaseSoaTest {
     @Test
     public void receiveErrorWhileDeletingTriggerFileCausedByFtpUnavailability() {
 
+	LOGGER.info("+++ invoke receiveErrorWhileDeletingTriggerFileCausedByFtpUnavailability");
 	String invocationResult = null;
 
 	final DefaultSoapMockService writeTriggerFileMockRef = new DefaultSoapMockService(

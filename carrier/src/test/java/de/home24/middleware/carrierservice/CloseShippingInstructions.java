@@ -78,7 +78,7 @@ public class CloseShippingInstructions extends AbstractBaseSoaTest {
 
 		mockOsbBusinessService(PATH_METAPACK_API, metapackCloseShippingInstructionsSuccesMock);
 
-		LOGGER.info("+++invoke Carrier closeShippingInstructions with Succes");
+		LOGGER.info("+++invoke Carrier closeShippingInstructions with Success");
 		String invocationResult = invokeOsbProxyService(PATH_CARRIER_SERVICE, carrierRequest);
 		LOGGER.info("+++invocation Result: "+invocationResult);
 
@@ -112,7 +112,7 @@ public class CloseShippingInstructions extends AbstractBaseSoaTest {
 
 		mockOsbBusinessService(PATH_METAPACK_API, metapackCloseShippingInstructionsErrorMock);
 
-		LOGGER.info("+++invoke Carrier closeShippingInstructions with Succes");
+		LOGGER.info("+++invoke closeShippingInstructionsBusinessError");
 		try {
 			carrierResponse = invokeOsbProxyService(PATH_CARRIER_SERVICE, carrierRequest);
 			LOGGER.info("+++invocation Result: "+carrierResponse);
@@ -159,7 +159,7 @@ public class CloseShippingInstructions extends AbstractBaseSoaTest {
 
 			mockOsbBusinessService(PATH_METAPACK_API, metapackCloseShippingInstructionsFaultMock);
 
-			LOGGER.info("+++invoke Carrier closeShippingInstructions with Succes");
+			LOGGER.info("+++invoke closeShippingInstructionsTechnicalError");
 			try {
 				carrierResponse = invokeOsbProxyService(PATH_CARRIER_SERVICE, carrierRequest);
 				LOGGER.info("+++invocation Result: "+carrierResponse);

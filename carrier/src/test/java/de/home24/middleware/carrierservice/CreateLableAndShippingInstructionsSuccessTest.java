@@ -39,6 +39,7 @@ public class CreateLableAndShippingInstructionsSuccessTest
 		readClasspathFile("metapackOkResponse4.xml"));
 
 	try {
+		LOGGER.info("+++ invoke createLabelAndShippingInstructionsWithSucess");
 	    final HttpResponseWrapper httpResponseWrapper = invokeSbSoapProxy(
 		    String.format("http://%s:%s/%s", getConfig().getOsbServerConfig().getServiceHost(),
 			    getConfig().getOsbServerConfig().getServicePort(), PATH_CARRIER_SERVICE),
@@ -70,6 +71,7 @@ public class CreateLableAndShippingInstructionsSuccessTest
     @Test
     public void whenWsaHeaderInformationContainedinRequestThenForwardToInternalOperationsHttpProxy() {
 
+	LOGGER.info("+++ invoke whenWsaHeaderInformationContainedinRequestThenForwardToInternalOperationsHttpProxy");
 	DefaultSoapMockService createLabelAndShippingInstructionsInternalRef = new DefaultSoapMockService();
 	mockOsbBusinessService(PATH_CREATE_LABEL_AND_SHIPPING_INSTR_INTERNAL,
 		createLabelAndShippingInstructionsInternalRef);

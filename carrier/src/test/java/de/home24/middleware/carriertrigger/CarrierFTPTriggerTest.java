@@ -59,6 +59,7 @@ public class CarrierFTPTriggerTest extends AbstractBaseSoaTest {
 			.replace("MONTH_YEAR", "1602").build();
 
 	try {
+		LOGGER.info("+++Invoke successfulSendFilesToH24Ftp");
 		invokeOsbProxyService("CarrierTrigger/operations/sendCarrierParcel/ReceiveCarrierParcelMessage",
 					requestMessage);
 
@@ -86,6 +87,7 @@ public class CarrierFTPTriggerTest extends AbstractBaseSoaTest {
 
 	@Test
 	public void faultSendTargetFileToH24Ftp() {
+		LOGGER.info("+++Invoke faultSendTargetFileToH24Ftp");
 		DefaultSoapMockService ftpFaultAdapterPutMock;
 		DefaultSoapMockService jmsErrorQueueMock;
 		List<MockResponsePojo> pMockedResponses = new ArrayList<MockResponsePojo>();
@@ -128,6 +130,7 @@ public class CarrierFTPTriggerTest extends AbstractBaseSoaTest {
 
 	@Test
 	public void faultSendCheckFileToH24Ftp() {
+		LOGGER.info("+++Invoke faultSendCheckFileToH24Ftp");
 		DefaultSoapMockService ftpFaultAdapterPutMock;
 		DefaultSoapMockService jmsErrorQueueMock;
 		List<MockResponsePojo> pMockedResponses = new ArrayList<MockResponsePojo>();		

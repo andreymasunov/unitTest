@@ -112,6 +112,7 @@ public class CarrierStatusProcessTest extends AbstractBaseSoaTest {
     @Test
     public void updateSalesOrderLine() {
         // Init happy path UpdateSalesOrderLine
+		LOGGER.info("+++Invoke updateSalesOrderLine+++");
         LOGGER.info("+++Create Mocks+++");
 
         genericFaultHandlerServiceMockList = new ArrayList<>();
@@ -157,6 +158,7 @@ public class CarrierStatusProcessTest extends AbstractBaseSoaTest {
     @Test
     public void updateSalesOrderLineCloseShipment() {
         // Init happy path UpdateSalesOrderLine
+		LOGGER.info("+++Invoke updateSalesOrderLineCloseShipment+++");
         LOGGER.info("+++Create Mocks+++");
 
         genericFaultHandlerServiceMockList = new ArrayList<>();
@@ -204,6 +206,7 @@ public class CarrierStatusProcessTest extends AbstractBaseSoaTest {
     @Test
     public void updateBothSalesOrderLineAndCloseShipment() {
         // Init happy path UpdateSalesOrderLine
+		LOGGER.info("+++Invoke updateBothSalesOrderLineAndCloseShipment+++");
         LOGGER.info("+++Create Mocks+++");
 
         genericFaultHandlerServiceMockList = new ArrayList<>();
@@ -260,6 +263,7 @@ public class CarrierStatusProcessTest extends AbstractBaseSoaTest {
     @Test
     public void updateSalesOrderLineWithError() {
         // Init happy path UpdateSalesOrderLine
+		LOGGER.info("+++Invoke updateSalesOrderLineWithError+++");
         LOGGER.info("+++Create Mocks+++");
         final String handleFaultResponse =
                 new ParameterReplacer(readClasspathFile(RESOURCE_DIR +"carrierStatusProcess_Reponse-handleFaultResponse_Quit.xml")).replace("FAULT_TRANSACTION_ID",
@@ -315,6 +319,7 @@ public class CarrierStatusProcessTest extends AbstractBaseSoaTest {
     @Test
   	public void receiveCarrierStatusUpdateRequestSuccess() throws Exception {
 
+		LOGGER.info("+++Invoke receiveCarrierStatusUpdateRequestSuccess+++");
   		final DefaultSoapMockService salesOrderServiceMockRef = new DefaultSoapMockService(
   				readClasspathFile(RESOURCE_DIR + "UpdateSalesOrderLineResponse.xml"));
   		mockCompositeReference(COMPOSITE, REVISION, "SalesOrderService", salesOrderServiceMockRef);
@@ -340,6 +345,7 @@ public class CarrierStatusProcessTest extends AbstractBaseSoaTest {
       @Test
   	public void receiveCarrierStatusUpdateRequestException() throws Exception {
 
+		LOGGER.info("+++Invoke receiveCarrierStatusUpdateRequestException+++");
   		final DefaultSoapMockService salesOrderServiceMockRef = new DefaultSoapMockService(
   				readClasspathFile(RESOURCE_DIR + "UpdateSalesOrderLineResponseException.xml"));
   		mockCompositeReference(COMPOSITE, REVISION, "SalesOrderService", salesOrderServiceMockRef);

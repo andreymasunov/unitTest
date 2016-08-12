@@ -73,6 +73,7 @@ public class ReadCarrierStatusUpdateTest extends AbstractBaseSoaTest {
     @Test
     public void successfulTransmissionFromMetapackToH24Ftp() {
 
+	LOGGER.info("+++Invoke successfulTransmissionFromMetapackToH24Ftp");
 	DefaultSoapMockService h24FileServerFtpCarrierUpdateRef = new DefaultSoapMockService();
 
 	final String receivedRequestFromMetapack = getBase64EncodedRequest(SUCCESS_CSV_FILE,RESOURCE_DIR);
@@ -102,6 +103,7 @@ public class ReadCarrierStatusUpdateTest extends AbstractBaseSoaTest {
     @Test
     public void errorneousTransmissionFromMetapackToH24Ftp() {
 
+	LOGGER.info("+++Invoke errorneousTransmissionFromMetapackToH24Ftp");
 	final DefaultSoapMockService h24FileServerFtpCarrierUpdateRef = new DefaultSoapMockService(Lists
 		.newArrayList(new MockResponsePojo(ResponseType.FAULT, "", "FTP server not available!")));
 	final DefaultSoapMockService carrierServiceRef = new DefaultSoapMockService();
@@ -158,6 +160,7 @@ public class ReadCarrierStatusUpdateTest extends AbstractBaseSoaTest {
 
 	try {
 
+	LOGGER.info("+++Invoke readInvalidCsvThatFailsAtXmlCreation");
 	    mockOsbBusinessService(
 		    "CarrierTrigger/operations/receiveCarrierStatusUpdate/business-service/FileMarkerRef",
 		    writeErrorneousFileRef);
@@ -194,6 +197,7 @@ public class ReadCarrierStatusUpdateTest extends AbstractBaseSoaTest {
 
 	try {
 
+	LOGGER.info("+++Invoke errorWhenSendingCarrierStatusUpdateDataToCarrierStatusUpdateProcess");
 	    mockOsbBusinessService(
 		    "CarrierTrigger/operations/receiveCarrierStatusUpdate/business-service/CarrierStatusProcessRef",
 		    carrierStatusProcessRef);
@@ -224,6 +228,7 @@ public class ReadCarrierStatusUpdateTest extends AbstractBaseSoaTest {
     @Test
     public void readValidCsvWithMetapackFilterXLStatusCode() {
 
+	LOGGER.info("+++Invoke readValidCsvWithMetapackFilterXLStatusCode");
 	DefaultSoapMockService carrierStatusProcessRef = new DefaultSoapMockService();
 
 	mockOsbBusinessService(
@@ -245,6 +250,7 @@ public class ReadCarrierStatusUpdateTest extends AbstractBaseSoaTest {
     @Test
     public void readValidCsvWithoutMetapackFilter() {
 
+	LOGGER.info("+++Invoke readValidCsvWithoutMetapackFilter");
 	DefaultSoapMockService carrierStatusProcessRef = new DefaultSoapMockService();
 
 	mockOsbBusinessService(
