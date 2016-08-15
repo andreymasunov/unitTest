@@ -162,28 +162,4 @@
 			<version>3.5.1</version>
 		</dependency>
 	</dependencies>
-	<modules>
-		<module>attachment</module>
-		<module>cancellation</module>
-		<module>carrier</module>
-
-		<!--module>carrierstatus</module-->
-		<module>errorhandler</module>			
-		<module>closeshipment</module>
-		<module>frameworkservices</module>
-		<module>itemmaster</module>
-		<module>notification</module>
-		<module>ordertransaction</module>
-		<module>printing</module>
-		<module>purchaseorder</module>
-		<module>routing</module>
-		<module>responseretrywrapper</module>
-		<module>salesorder</module>
-		<module>sii</module>
-		<module>siimessagehandler</module>
-		<module>vendortransmission</module>
-		<module>erplegacy</module>
-		<module>genericprocesses</module>
-		<module>maintenance</module>
-	</modules>
 </project>
